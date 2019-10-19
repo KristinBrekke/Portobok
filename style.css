@@ -1,3 +1,20 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+
+/*CSS til designers.html*/
+
+#designers{
+	padding-left: 10%;
+	background-color: #DEF3ED;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+#person{
+	width: 450px;
+	height:  450px; /*endret bildestørrelse til 450 px og ikke 770 som planlagt*/
+	
+}
+
+
