@@ -10,11 +10,29 @@
 	background-color: #DEF3ED;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
-
+/*bilder*/
 #person{
 	width: 450px;
 	height:  450px; /*endret bildestørrelse til 450 px og ikke 770 som planlagt*/
 	
+}
+.produktbilder{
+	column-count: 2;
+	column-gap: 5px;
+
+}
+
+.produkt {
+	width:450px;
+	height: 450px;
+
+}
+
+.person_info {
+	padding-top: 110px;
+	column-count: 2;
+	column-gap: 1px;
+
 }
 
 
