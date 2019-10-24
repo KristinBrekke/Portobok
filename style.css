@@ -17,13 +17,39 @@ p{
 
 .row{
     display: flex;
+
 }
 .column{
     flex: 50%;
+}
+
+@media only screen and (max-width: 1200px){
+    .row{
+        flex: 100%; /* funker ikke*/
+    }
+}
+
+.image_element{
+    position: relative;
     padding: 2%;
+    width: 100%;
+}
+.image_name{
+    position: absolute;
+    background: #846A6A;
+    bottom: 25px;
+    left: 30px;
+    color: #000000;
+    visibility: hidden;
+    opacity: 0;
+}
+.image_element:hover .image_name{
+    visibility: visible;
+    opacity: 1;
     
 }
-/*CSS til dina.html +++*/
+
+/*CSS til dina.html, kristin.html +++ */
 
 #designers{
 	padding-left: 10%;
