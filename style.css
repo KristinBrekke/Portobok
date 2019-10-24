@@ -1,9 +1,29 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-
+body{
+    background-color: #DEF3ED;
+    margin: 5%;
+}
+header{
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 40pt;
+}
+p{
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 20pt;
+}
 /*CSS til designers.html*/
+
+.row{
+    display: flex;
+}
+.column{
+    flex: 50%;
+    padding: 2%;
+    
+}
+/*CSS til dina.html +++*/
 
 #designers{
 	padding-left: 10%;
