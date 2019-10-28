@@ -3,15 +3,27 @@
 
 body{
     background-color: #DEF3ED;
-    margin: 5%;
+    margin: 10%;
+    width: 100%;
+    padding: 0;
 }
+
 header{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 40pt;
 }
+
 p{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 20pt;
+}
+
+a{
+    cursor: pointer; /* Gjør pekern om til klikkehånd*/
+}
+
+footer{
+    position: relative;
 }
 /*CSS til designers.html*/
 
@@ -28,13 +40,21 @@ p{
         flex: 100%; /* funker ikke*/
     }
 }
-
+#designers_h1{
+    font-size: 40pt;
+    margin-left: 10%;
+    
+}
+.text_about_designers{
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
 .image_element{
     position: relative;
     padding: 2%;
     width: 100%;
 }
-.image_name_right{
+.image_name_right{ 
     position: absolute;
     bottom: 20px;
     right: 55px;
@@ -54,8 +74,9 @@ p{
 }
 .icon{
     position: absolute;
-    left: 25px;
-    top: 25px;
+    left: 30px;
+    top: 30px;
+    width: 100%;
     visibility: hidden;
 }
 .image_element:hover .image_name_right{
