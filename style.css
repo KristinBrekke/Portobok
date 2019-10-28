@@ -34,10 +34,19 @@ p{
     padding: 2%;
     width: 100%;
 }
-.image_name{
+.image_name_right{
     position: absolute;
     bottom: 20px;
     right: 55px;
+    color: #000000;
+    visibility: hidden;
+    font-size: 30pt;
+    font-weight: bold;
+}
+.image_name_left{
+    position: absolute;
+    bottom: 20px;
+    left: 55px;
     color: #000000;
     visibility: hidden;
     font-size: 30pt;
@@ -49,7 +58,10 @@ p{
     top: 25px;
     visibility: hidden;
 }
-.image_element:hover .image_name{
+.image_element:hover .image_name_right{
+    visibility: visible;  
+}
+.image_element:hover .image_name_left{
     visibility: visible;  
 }
 .image_element:hover .icon{
