@@ -36,17 +36,28 @@ p{
 }
 .image_name{
     position: absolute;
-    background: #846A6A;
-    bottom: 25px;
-    left: 30px;
+    bottom: 20px;
+    right: 55px;
     color: #000000;
     visibility: hidden;
-    opacity: 0;
+    font-size: 30pt;
+    font-weight: bold;
+}
+.icon{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    visibility: hidden;
 }
 .image_element:hover .image_name{
+    visibility: visible;  
+}
+.image_element:hover .icon{
     visibility: visible;
-    opacity: 1;
-    
+    opacity: 1;  
+}
+.image_element:hover{
+    opacity: 0.7;
 }
 
 /*CSS til dina.html, kristin.html +++ */
