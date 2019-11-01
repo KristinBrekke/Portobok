@@ -37,7 +37,7 @@ footer{
 
 @media only screen and (max-width: 1200px){
     .row{
-        flex: 100%; /* funker ikke*/
+        flex-direction: column; 
     }
 }
 #designers_h1{
