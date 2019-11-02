@@ -3,7 +3,7 @@
 
 body{
     background-color: #DEF3ED;
-    margin: 10%;
+   /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
     width: 100%;
     padding: 0;
 }
@@ -124,5 +124,14 @@ footer{
 	column-gap: 1px;
 
 }
+
+/* fraside*/
+#banner {
+	position: static;
+	width: 100vw;
+	height: 15vw;
+	background-color: black;
+	/*font-family:*/ 
+	}
 
 
