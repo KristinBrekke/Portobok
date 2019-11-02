@@ -94,6 +94,7 @@ footer{
 }
 
 /*CSS til dina.html, kristin.html +++ */
+/*Jenny Marie*/
 
 #designers{
 
@@ -102,34 +103,12 @@ footer{
 	
 	
 }
-/*bilder*/
-/*#person{
-	width: 450px;
-	height:  450px; /*endret bildestørrelse til 450 px og ikke 770 som planlagt*/
-	
-/*
-/*.produkt{
+
+.undertekst{
 	float:left;
-	width: 50%;
-	padding: 5px;
-
 }
 
-.produkt {
-	width: 450px;
-	height: 450px;
-}
 
-.person_info {
-	padding-top: 110px;
-	
-
-}
-.person{
-	float: left;
-	width: 450px;
-	height:  450px; 
-}*/
 
 .bilde{
 	width: 770px;
@@ -143,6 +122,7 @@ footer{
 }
 
 .row{
+	clear: left;
 	display: flex;
 	flex-direction: row;
 }
