@@ -100,15 +100,10 @@ footer{
 
 	background-color: #DEF3ED;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+
 	
 	
 }
-
-.undertekst{
-	float:left;
-}
-
-
 
 .bilde{
 	width: 770px;
@@ -123,8 +118,7 @@ footer{
 
 .row{
 	clear: left;
-	display: flex;
-	flex-direction: row;
+	
 }
 
 /* fraside*/
