@@ -13,14 +13,21 @@ header{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 40px;
 }
+/*generelle størrelse på tekst marginer for all tekst*/
 h1 {
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 40px;
+	margin-left: 5vw;
+	margin-bottom: 2vw; 
+	
 }
 
 p{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 20px;
+	margin-left: 5vw;
+    margin-bottom: 2vw;
+    
 }
 
 a{
@@ -37,9 +44,6 @@ footer{
 /*Slutt felleskode*/
 /*CSS til designers.html*/
 
-/*.pictures_designers{
-    display: flex;
-}*/
 .row{
     display: flex;  
 }
@@ -50,50 +54,51 @@ footer{
     .row{
         flex-direction: column;
     }
+    .image_name_right{
+        right: 55vw !important;
+    }
 }
-#designers_h1{
-    font-size: 40pt;
-    margin-left: 10%;
-    
-}
+
+
+/*{
 .text_about_designers{
     margin-left: 10%;
     margin-bottom: 5%;
     margin-right: 10%;
-}
+}*/
+
 .pictures_designers{
     margin-left: 10%;
 }
 .image_element{
     position: relative;
     padding: 2%;
-   
 }
 .image_designer{
     width: 35vw;
 }
 .image_name_right{ 
     position: absolute;
-    bottom: 20px;
-    right: 55px;
+    bottom: 1vw;
+    right: 3vw;
     color: #000000;
     visibility: hidden;
-    font-size: 30pt;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 .image_name_left{
     position: absolute;
-    bottom: 20px;
-    left: 55px;
+    bottom: 1vw;
+    left: -2vw;
     color: #000000;
     visibility: hidden;
-    font-size: 30pt;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 .icon{
     position: absolute;
-    left: 13.5px;
-    top: 13.5px;
+    left: 0.9vw;
+    top: 0.9vw;
     width: 35vw;
     visibility: hidden;
 }
