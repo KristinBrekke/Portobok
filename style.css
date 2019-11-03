@@ -367,7 +367,7 @@ footer{
 	width: 500px;
 	position: relative;
 	margin: auto;
-	
+	margin-bottom: 100px;
 	
 	padding: 50px;
 }
@@ -376,6 +376,7 @@ footer{
 	width: 100%;
 	padding: 10px;
 	border: none;
+	margin: 0 0 20px;
 } 
 
 #contact_form textarea {
@@ -398,6 +399,10 @@ footer{
 	border-radius: 5px;
 }
 
+#contact_form datalist {
+	position: relative;
+	width: 100%;
+}
 
 
 /*Slutt kontaktside*/
