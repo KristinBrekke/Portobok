@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-
+/* felles css-kode*/
 body{
     background-color: #DEF3ED;
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
@@ -20,11 +20,15 @@ p{
 
 a{
     cursor: pointer; /* Gjør pekern om til klikkehånd*/
+	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
+
 }
 
 footer{
     position: relative;
 }
+
+/*Slutt felleskode*/
 /*CSS til designers.html*/
 
 .row{
@@ -120,13 +124,49 @@ footer{
 }
 
 
-/* fraside*/
 #banner {
 	position: static;
 	width: 100vw;
-	height: 15vw;
+	height: 20vw;
 	background-color: black;
-	/*font-family:*/ 
+	font-family: "pt-serif"; /*får ikke til å ha en backupfont uten at den blir gjeldende*/
+	font-size: 18vw; /*bruker vw isteden for px fordi den stiller seg inn etter nettsiden*/
+	color: #009F67; 
+	text-align: center;
+	
+}
+.flex-container {
+	display: flex;
+	
+}
+
+.ikonF{ 
+ 	width: 10vw;
+	margin-left: 5vw;
+	margin-top: 15vw; /*still denne ned når navbaren er satt inn*/
+	margin-right: 5vw;
+	
+}
+.ikon-navn{
+	margin-left: 5vw;
+	margin-right: 5vw;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+	color: black;
+	font-size: 12px;
+}
+
+@media (max-width: 940px){    /*hvorfor er det brukt 1200 og ikke 940 som i trodde var standar???*/
+	.flex-container{
+		flex-wrap: wrap;
+		/*flex-direction: column;*/
+		/*flex-direction: column;*/ /*skal gjøre at når siden er mindre enn 1200px legger bildene seg i kolonner på 2*/
 	}
+	.ikon-navn {
+		font-size: 10px;
+	}
+	.ikonF{
+		width: 18vw;
+	}
+}
 
-
+/*framside slutt*/
