@@ -116,6 +116,99 @@ footer{
     opacity: 0.7;
 }
 
+/*CSS til slideshow/bildekarusell */ 
+#slideshow_header{
+	text-align:left;
+	margin-left: 420px;
+	font-size: 20px;
+	
+}
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+  display: none;
+  height: 598px;
+  border: solid 1px black;
+     
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #009F67;
+}
+
+.text {
+    font-family: "Pt serif", Helvetica, Arial, "sans-serif";
+	color: #009F67;
+	background-color: black;
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 99.9%;
+    text-align: center;
+}
+
+/*.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}*/
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 0%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+#dots {
+	text-align: center;
+}
+
+.active,
+.dot:hover {
+    background-color: black;
+}
+
+
 /*CSS til dina.html, kristin.html +++ */
 /*Jenny Marie*/
 
