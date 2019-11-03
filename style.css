@@ -394,35 +394,39 @@ footer{
 	position: relative;
 	margin: auto;
 	margin-bottom: 100px;
-	
 	padding: 50px;
 }
+
+
 
 #contact_form input {
 	width: 100%;
 	padding: 10px;
-	border: none;
+	
 	margin: 0 0 20px;
+	outline: none;
 } 
 
 #contact_form textarea {
 	width: 100%;
 	padding: 10px;
 	height: 300px;
-	border: none;
+	resize: none;
+	outline: none;
 }
 
 #contact_form button {
 	position: absolute;
 	right: 30px;
-	
-	background-color: green;
+	margin-top: 10px;
+	background-color: #009F67;
 	border: none;
-	width: 80px;
-	height: 30px;
+	width: 120px;
+	height: 40px;
 	font-size: 16px;
 	font-weight: 600;
-	border-radius: 5px;
+	cursor: pointer;
+	
 }
 
 #contact_form datalist {
@@ -430,6 +434,13 @@ footer{
 	width: 100%;
 }
 
+#contact_form h1 {
+	
+	position: inherit;
+	left: 0;
+	margin: 50px 0;
+	padding: 0;
+}
 
 /*Slutt kontaktside*/
 
