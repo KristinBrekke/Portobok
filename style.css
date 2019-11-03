@@ -189,7 +189,7 @@ footer{
     height: 15px;
     width: 15px;
     margin: 0 2px;
-	border: solid black 1px; 
+	background-color: lightgray;
     display: inline-block;
     transition: background-color .6s ease;
 }
@@ -200,7 +200,7 @@ footer{
 
 .active,
 .dot:hover {
-	border: solid #009F67 1px; 
+	background-color: black;
 }
 
 
