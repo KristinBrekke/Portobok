@@ -103,17 +103,17 @@ footer{
     width: 35vw;
     visibility: hidden;
 }
-.image_element:hover .image_name_right{
+.image_element:hover .image_name_right{ /* Gjør navnene som er høyrestilt synlig når hovret over*/
     visibility: visible;  
 }
-.image_element:hover .image_name_left{
+.image_element:hover .image_name_left{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
     visibility: visible;  
 }
-.image_element:hover .icon{
+.image_element:hover .icon{ /* Gjør ikonene synlig når hovret over*/
     visibility: visible;
     opacity: 1;  
 }
-.image_element:hover{
+.image_element:hover{ /* Gjør opacityen til bildet svakere når hovret over*/
     opacity: 0.7;
 }
 
@@ -329,6 +329,33 @@ footer{
 
 /*framside slutt*/
 
+/* Navigasjonsbar*/
+#navigasjonsbar{
+	background-color:#000000;
+	height: 100px;
+    padding: 20px;
+	position: relative;	
+}
+#logo_portobok{
+    width: 6vw;
+}
+.navbar{
+    list-style-type: none;
+    margin: auto;
+    display: block;
+    height: 50px;
+    width: 96vw;
+}
+.navbar li { /*Styling av listeelementer i navigasjonsmenyen*/
+	float: left;
+	width: 20vw;
+    color: #DEF3ED;
+    font-size: 20px;
+}
+.navbar a{
+    cursor: pointer; /* Gjør pekern om til klikkehånd*/
+	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
+}
 /*Start kontaktside*/
 
 
