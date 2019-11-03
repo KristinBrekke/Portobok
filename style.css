@@ -45,13 +45,19 @@ footer{
 }
 
 /*Slutt felleskode*/
+
 /*CSS til designers.html*/
+.pictures_designers_and_projects{ /*Gjelder både designers og projects*/
+    margin-left: 10%;
+}
+
+.image_designer_and_project{ /*Gjelder både designers og projects*/
+    width: 35vw;
+}
 
 .row{
     display: flex;  
 }
-
-
 
 @media (max-width: 940px){
     .row{
@@ -62,24 +68,11 @@ footer{
     }
 }
 
-
-/*{
-.text_about_designers{
-    margin-left: 10%;
-    margin-bottom: 5%;
-    margin-right: 10%;
-}*/
-
-.pictures_designers{
-    margin-left: 10%;
-}
 .image_element{
     position: relative;
     padding: 2%;
 }
-.image_designer{
-    width: 35vw;
-}
+
 .image_name_right{ 
     position: absolute;
     bottom: 1vw;
@@ -117,6 +110,36 @@ footer{
 }
 .image_element:hover{ /* Gjør opacityen til bildet svakere når hovret over*/
     opacity: 0.7;
+}
+/*CSS til projects.html*/
+
+.image_name_design_dark{
+    position: absolute;
+    bottom: 1vw;
+    left: -2vw;
+    color:#000000;
+    visibility: hidden;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.image_name_design_light{
+    position: absolute;
+    bottom: 1vw;
+    left: -2vw;
+    color: #DEF3ED;
+    visibility: hidden;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.image_element_project{
+    position: relative;
+    padding: 2%;
+}
+.image_element_project:hover .image_name_design_dark{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
+    visibility: visible;  
+}
+.image_element_project:hover .image_name_design_light{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
+    visibility: visible;  
 }
 
 /*CSS til slideshow/bildekarusell */ 
@@ -371,35 +394,39 @@ footer{
 	position: relative;
 	margin: auto;
 	margin-bottom: 100px;
-	
 	padding: 50px;
 }
+
+
 
 #contact_form input {
 	width: 100%;
 	padding: 10px;
-	border: none;
+	
 	margin: 0 0 20px;
+	outline: none;
 } 
 
 #contact_form textarea {
 	width: 100%;
 	padding: 10px;
 	height: 300px;
-	border: none;
+	resize: none;
+	outline: none;
 }
 
 #contact_form button {
 	position: absolute;
 	right: 30px;
-	
-	background-color: green;
+	margin-top: 10px;
+	background-color: #009F67;
 	border: none;
-	width: 80px;
-	height: 30px;
+	width: 120px;
+	height: 40px;
 	font-size: 16px;
 	font-weight: 600;
-	border-radius: 5px;
+	cursor: pointer;
+	
 }
 
 #contact_form datalist {
@@ -407,39 +434,16 @@ footer{
 	width: 100%;
 }
 
+#contact_form h1 {
+	
+	position: inherit;
+	left: 0;
+	margin: 50px 0;
+	padding: 0;
+}
 
 /*Slutt kontaktside*/
 
-/*Start prosjekter*/
-
-.image_name_design_dark{
-    position: absolute;
-    bottom: 1vw;
-    left: -2vw;
-    color:#000000;
-    visibility: hidden;
-    font-size: 2vw;
-    font-weight: bold;
-}
-.image_name_design_light{
-    position: absolute;
-    bottom: 1vw;
-    left: -2vw;
-    color: #DEF3ED;
-    visibility: hidden;
-    font-size: 2vw;
-    font-weight: bold;
-}
-.image_element_project{
-    position: relative;
-    padding: 2%;
-}
-.image_element_project:hover .image_name_design_dark{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
-    visibility: visible;  
-}
-.image_element_project:hover .image_name_design_light{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
-    visibility: visible;  
-}
 
 
 
