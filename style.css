@@ -136,9 +136,7 @@ footer{
 
 .mySlides {
   display: none;
-  height: 598px;
-  border: solid 1px black;
-     
+  height: 600px;
 }
 
 .prev,
@@ -180,7 +178,7 @@ footer{
     padding-bottom: 12px;
     position: absolute;
     bottom: 0;
-    width: 99.9%;
+    width: 100%;
     text-align: center;
 }
 
