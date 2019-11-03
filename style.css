@@ -122,6 +122,7 @@ footer{
 	text-align:left;
 	margin-left: 420px;
 	font-size: 20px;
+	font-weight: 350;
 	
 }
 
@@ -180,14 +181,6 @@ footer{
     width: 99.9%;
     text-align: center;
 }
-
-/*.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}*/
 
 .dot {
     cursor: pointer;
@@ -361,16 +354,20 @@ footer{
 
 
 #contact_main {
-	border: dashed;
 	position: relative;
 	width: 95%;
 	overflow-x: hidden;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 }
 
 #contact_form {
-	width: 70vw;
+	width: 500px;
+	position: relative;
+	margin: auto;
+	border: dashed;
+	
+	padding: 50px;
 }
 /*Slutt kontaktside*/
 
