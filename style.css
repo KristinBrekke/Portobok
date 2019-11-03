@@ -11,12 +11,23 @@ body{
 
 header{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 40pt;
+    font-size: 40px;
+}
+/*generelle størrelse på tekst marginer for all tekst*/
+h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 40px;
+	margin-left: 5vw;
+	margin-bottom: 2vw; 
+	
 }
 
 p{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 20pt;
+    font-size: 20px;
+	margin-left: 5vw;
+    margin-bottom: 2vw;
+    
 }
 
 a{
@@ -46,16 +57,15 @@ footer{
         right: 55vw !important;
     }
 }
-#designers_h1{
-    font-size: 40pt;
-    margin-left: 10%;
-    
-}
+
+
+/*{
 .text_about_designers{
     margin-left: 10%;
     margin-bottom: 5%;
     margin-right: 10%;
-}
+}*/
+
 .pictures_designers{
     margin-left: 10%;
 }
@@ -109,21 +119,46 @@ footer{
 /*Jenny Marie*/
 
 .designers{
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 .bilde{
-	width: 450px;
-	height: 450px;
+	width: 35vw;
+	height: 35vw;
+}
+
+.produktbilde{
+	width: 35vw;
+	height: 35vw;
+}
+
+.produkttekst{
+	position: absolute;
+	bottom: 8px;
+ 	left: 20px;
+  	font-size: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	opacity: 0;
+	
+}
+
+.columnD:hover .produktbilde{
+	opacity: 0.3;
+}
+
+.columnD:hover .produkttekst{
+	opacity: 1;
 }
 
 .columnD{
-	
-	padding: 10px;
+	position: relative;
+	flex: 50%;	
 	
 }
 
 .rowD{
 	display: flex;
+	margin: 10%;
 	
 }
 
