@@ -4,7 +4,7 @@
 body{
     background-color: #DEF3ED;
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
-    width: 100%;
+    width:  1920px;
     padding: 0;
 }
 
@@ -107,32 +107,30 @@ footer{
 /*CSS til dina.html, kristin.html +++ */
 /*Jenny Marie*/
 
-#designers{
+.designers{
 
-	background-color: #DEF3ED;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-
 	
 	
 }
 
 .bilde{
-	width: 770px;
-	height: 770px;
+	width: 450px;
+	height: 450px;
 }
 
-.column{
-	float: left;
-	width: 50%;
-	padding: 50px;
+.columnD{
+	
+	padding: 10px;
+	margin: auto;
 }
 
-.row{
-	clear: left;
+.rowD{
+	display: flex;
 	
 }
 
-/* framside*/
+
 #banner {
 	position: static;
 	width: 100vw;
@@ -166,9 +164,7 @@ footer{
 
 @media (max-width: 940px){    /*hvorfor er det brukt 1200 og ikke 940 som i trodde var standar???*/
 	.flex-container{
-		flex-wrap: wrap;
-		/*flex-direction: column;*/
-		/*flex-direction: column;*/ /*skal gjøre at når siden er mindre enn 1200px legger bildene seg i kolonner på 2*/
+		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
 	}
 	.ikon-navn {
 		font-size: 10px;
