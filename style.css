@@ -26,6 +26,7 @@ p{
 a{
     cursor: pointer; /* Gjør pekern om til klikkehånd*/
 	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
+	color: black;
 
 }
 
@@ -122,6 +123,11 @@ footer{
 	height: 35vw;
 }
 
+#ikon{
+	display: block;
+	margin-left: auto;
+}
+
 .produktbilde{
 	width: 35vw;
 	height: 35vw;
@@ -154,6 +160,8 @@ footer{
 .rowD{
 	display: flex;
 	margin: 10%;
+	text-align: justify;
+	
 	
 }
 
