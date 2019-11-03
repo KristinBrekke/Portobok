@@ -6,6 +6,8 @@ body{
     background-color: #DEF3ED;
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
     width:  100vw;
+	max-width: 100vw;
+	overflow-x: hidden;
     padding: 0;
 	
 }
@@ -15,7 +17,7 @@ header{
     font-size: 40px;
 }
 /*generelle størrelse på tekst marginer for all tekst*/
-h1 {
+h1,h2 {
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 40px;
 	margin-left: 5vw;
@@ -319,6 +321,7 @@ footer{
 		width: 18vw;
 	}
 }
+
 
 /*framside slutt*/
 
