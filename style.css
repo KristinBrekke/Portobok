@@ -1,82 +1,105 @@
 @charset "UTF-8";
 /* CSS Document */
-
+/* felles css-kode*/
 body{
     background-color: #DEF3ED;
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
-    width: 100%;
+    width:  100vw;
     padding: 0;
+	
 }
 
 header{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 40pt;
+    font-size: 40px;
+}
+/*generelle størrelse på tekst marginer for all tekst*/
+h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 40px;
+	margin-left: 5vw;
+	margin-bottom: 2vw; 
+	
 }
 
 p{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 20pt;
+    font-size: 20px;
+	margin-left: 5vw;
+    margin-bottom: 2vw;
+    
 }
 
 a{
     cursor: pointer; /* Gjør pekern om til klikkehånd*/
+	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
+	color: black;
+
 }
 
 footer{
     position: relative;
 }
+
+/*Slutt felleskode*/
 /*CSS til designers.html*/
 
 .row{
-    display: flex;
-
-}
-.column{
-    flex: 50%;
+    display: flex;  
 }
 
-@media only screen and (max-width: 1200px){
+
+
+@media (max-width: 940px){
     .row{
-        flex-direction: column; 
+        flex-direction: column;
+    }
+    .image_name_right{
+        right: 55vw !important;
     }
 }
-#designers_h1{
-    font-size: 40pt;
-    margin-left: 10%;
-    
-}
+
+
+/*{
 .text_about_designers{
     margin-left: 10%;
     margin-bottom: 5%;
+    margin-right: 10%;
+}*/
+
+.pictures_designers{
+    margin-left: 10%;
 }
 .image_element{
     position: relative;
     padding: 2%;
-    width: 100%;
+}
+.image_designer{
+    width: 35vw;
 }
 .image_name_right{ 
     position: absolute;
-    bottom: 20px;
-    right: 55px;
+    bottom: 1vw;
+    right: 3vw;
     color: #000000;
     visibility: hidden;
-    font-size: 30pt;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 .image_name_left{
     position: absolute;
-    bottom: 20px;
-    left: 55px;
+    bottom: 1vw;
+    left: -2vw;
     color: #000000;
     visibility: hidden;
-    font-size: 30pt;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 .icon{
     position: absolute;
-    left: 30px;
-    top: 30px;
-    width: 100%;
+    left: 0.9vw;
+    top: 0.9vw;
+    width: 35vw;
     visibility: hidden;
 }
 .image_element:hover .image_name_right{
@@ -189,32 +212,58 @@ footer{
 /*CSS til dina.html, kristin.html +++ */
 /*Jenny Marie*/
 
-#designers{
-
-	background-color: #DEF3ED;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-
-	
-	
+.designers{
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 .bilde{
-	width: 770px;
-	height: 770px;
+	width: 35vw;
+	height: 35vw;
 }
 
-.column{
-	float: left;
-	width: 50%;
-	padding: 50px;
+#ikon{
+	display: block;
+	margin-left: auto;
 }
 
-.row{
-	clear: left;
+.produktbilde{
+	width: 35vw;
+	height: 35vw;
+}
+
+.produkttekst{
+	position: absolute;
+	bottom: 8px;
+ 	left: 20px;
+  	font-size: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	opacity: 0;
 	
 }
 
-/* framside*/
+.columnD:hover .produktbilde{
+	opacity: 0.3;
+}
+
+.columnD:hover .produkttekst{
+	opacity: 1;
+}
+
+.columnD{
+	position: relative;
+	flex: 50%;	
+	
+}
+
+.rowD{
+	display: flex;
+	margin: 10%;
+	text-align: justify;
+	
+	
+}
+
+
 #banner {
 	position: static;
 	width: 100vw;
@@ -228,10 +277,9 @@ footer{
 }
 .flex-container {
 	display: flex;
+	
 }
-a { /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
-	text-decoration: none;
-}
+
 .ikonF{ 
  	width: 10vw;
 	margin-left: 5vw;
@@ -247,12 +295,9 @@ a { /* fjerner understreken under alle tekstene i alle linker kan sette på klas
 	font-size: 12px;
 }
 
-@media (max-width: 960px){    /*hvorfor er det brukt 1200 og ikke 940 som i trodde var standar???*/
+@media (max-width: 940px){    /*hvorfor er det brukt 1200 og ikke 940 som i trodde var standar???*/
 	.flex-container{
-		justify-content: 
-		float: left;
-		width: 50%;
-		/*flex-direction: column;*/ /*skal gjøre at når siden er mindre enn 1200px legger bildene seg i kolonner på 2*/
+		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
 	}
 	.ikon-navn {
 		font-size: 10px;
@@ -262,4 +307,4 @@ a { /* fjerner understreken under alle tekstene i alle linker kan sette på klas
 	}
 }
 
-
+/*framside slutt*/
