@@ -147,13 +147,52 @@ footer{
 	flex-direction: row;
 }
 
-/* fraside*/
+/* framside*/
 #banner {
 	position: static;
 	width: 100vw;
-	height: 15vw;
+	height: 20vw;
 	background-color: black;
-	/*font-family:*/ 
+	font-family: "pt-serif"; /*får ikke til å ha en backupfont uten at den blir gjeldende*/
+	font-size: 18vw; /*bruker vw isteden for px fordi den stiller seg inn etter nettsiden*/
+	color: #009F67; 
+	text-align: center;
+	
+}
+.flex-container {
+	display: flex;
+}
+a { /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
+	text-decoration: none;
+}
+.ikonF{ 
+ 	width: 10vw;
+	margin-left: 5vw;
+	margin-top: 15vw; /*still denne ned når navbaren er satt inn*/
+	margin-right: 5vw;
+	
+}
+.ikon-navn{
+	margin-left: 5vw;
+	margin-right: 5vw;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+	color: black;
+	font-size: 12px;
+}
+
+@media (max-width: 960px){    /*hvorfor er det brukt 1200 og ikke 940 som i trodde var standar???*/
+	.flex-container{
+		justify-content: 
+		float: left;
+		width: 50%;
+		/*flex-direction: column;*/ /*skal gjøre at når siden er mindre enn 1200px legger bildene seg i kolonner på 2*/
 	}
+	.ikon-navn {
+		font-size: 10px;
+	}
+	.ikonF{
+		width: 18vw;
+	}
+}
 
 
