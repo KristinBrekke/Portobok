@@ -355,6 +355,7 @@ footer{
 .navbar a{
     cursor: pointer; /* Gjør pekern om til klikkehånd*/
 	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
+    color: #DEF3ED;
 }
 /*Start kontaktside*/
 
