@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-
+/* felles css-kode*/
 body{
     background-color: #DEF3ED;
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
@@ -20,11 +20,15 @@ p{
 
 a{
     cursor: pointer; /* Gjør pekern om til klikkehånd*/
+	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
+
 }
 
 footer{
     position: relative;
 }
+
+/*Slutt felleskode*/
 /*CSS til designers.html*/
 
 .row{
@@ -135,10 +139,9 @@ footer{
 }
 .flex-container {
 	display: flex;
+	
 }
-a { /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
-	text-decoration: none;
-}
+
 .ikonF{ 
  	width: 10vw;
 	margin-left: 5vw;
@@ -154,11 +157,10 @@ a { /* fjerner understreken under alle tekstene i alle linker kan sette på klas
 	font-size: 12px;
 }
 
-@media (max-width: 960px){    /*hvorfor er det brukt 1200 og ikke 940 som i trodde var standar???*/
+@media (max-width: 940px){    /*hvorfor er det brukt 1200 og ikke 940 som i trodde var standar???*/
 	.flex-container{
-		justify-content: 
-		float: left;
-		width: 50%;
+		flex-wrap: wrap;
+		/*flex-direction: column;*/
 		/*flex-direction: column;*/ /*skal gjøre at når siden er mindre enn 1200px legger bildene seg i kolonner på 2*/
 	}
 	.ikon-navn {
@@ -169,4 +171,4 @@ a { /* fjerner understreken under alle tekstene i alle linker kan sette på klas
 	}
 }
 
-
+/*framside slutt*/
