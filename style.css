@@ -298,7 +298,7 @@ footer{
 .ikonF{ 
  	width: 10vw;
 	margin-left: 5vw;
-	margin-top: 15vw; /*still denne ned når navbaren er satt inn*/
+	margin-top: 5vw; /*still denne ned når navbaren er satt inn*/
 	margin-right: 5vw;
 	
 }
@@ -353,6 +353,11 @@ footer{
 	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
     color: #DEF3ED;
 }
+
+/*responsiv navbar///hamburgermeny*/
+
+
+/* ferdig hamburgermeny*/
 /*Start kontaktside*/
 
 
