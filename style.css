@@ -32,9 +32,6 @@ footer{
 /*Slutt felleskode*/
 /*CSS til designers.html*/
 
-/*.pictures_designers{
-    display: flex;
-}*/
 .row{
     display: flex;  
 }
@@ -44,6 +41,9 @@ footer{
 @media (max-width: 940px){
     .row{
         flex-direction: column;
+    }
+    .image_name_right{
+        right: 55vw !important;
     }
 }
 #designers_h1{
@@ -62,33 +62,32 @@ footer{
 .image_element{
     position: relative;
     padding: 2%;
-   
 }
 .image_designer{
     width: 35vw;
 }
 .image_name_right{ 
     position: absolute;
-    bottom: 20px;
-    right: 55px;
+    bottom: 1vw;
+    right: 3vw;
     color: #000000;
     visibility: hidden;
-    font-size: 30pt;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 .image_name_left{
     position: absolute;
-    bottom: 20px;
-    left: 55px;
+    bottom: 1vw;
+    left: 3vw;
     color: #000000;
     visibility: hidden;
-    font-size: 30pt;
+    font-size: 2.5vw;
     font-weight: bold;
 }
 .icon{
     position: absolute;
-    left: 13.5px;
-    top: 13.5px;
+    left: 0.9vw;
+    top: 0.9vw;
     width: 35vw;
     visibility: hidden;
 }
