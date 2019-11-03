@@ -361,16 +361,20 @@ footer{
 
 
 #contact_main {
-	border: dashed;
 	position: relative;
 	width: 95%;
 	overflow-x: hidden;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 }
 
 #contact_form {
-	width: 70vw;
+	width: 500px;
+	position: relative;
+	margin: auto;
+	border: dashed;
+	
+	padding: 50px;
 }
 /*Slutt kontaktside*/
 
