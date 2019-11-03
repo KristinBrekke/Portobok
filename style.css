@@ -136,9 +136,7 @@ footer{
 
 .mySlides {
   display: none;
-  height: 598px;
-  border: solid 1px black;
-     
+  height: 600px;
 }
 
 .prev,
@@ -180,7 +178,7 @@ footer{
     padding-bottom: 12px;
     position: absolute;
     bottom: 0;
-    width: 99.9%;
+    width: 100%;
     text-align: center;
 }
 
@@ -189,7 +187,7 @@ footer{
     height: 15px;
     width: 15px;
     margin: 0 2px;
-	border: solid black 1px; 
+	background-color: lightgray;
     display: inline-block;
     transition: background-color .6s ease;
 }
@@ -200,7 +198,7 @@ footer{
 
 .active,
 .dot:hover {
-	border: solid #009F67 1px; 
+	background-color: black;
 }
 
 
@@ -297,7 +295,7 @@ footer{
 .ikonF{ 
  	width: 10vw;
 	margin-left: 5vw;
-	margin-top: 15vw; /*still denne ned når navbaren er satt inn*/
+	margin-top: 5vw; /*still denne ned når navbaren er satt inn*/
 	margin-right: 5vw;
 	
 }
@@ -352,6 +350,11 @@ footer{
 	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
     color: #DEF3ED;
 }
+
+/*responsiv navbar///hamburgermeny*/
+
+
+/* ferdig hamburgermeny*/
 /*Start kontaktside*/
 
 
@@ -367,10 +370,44 @@ footer{
 	width: 500px;
 	position: relative;
 	margin: auto;
-	border: dashed;
+	margin-bottom: 100px;
 	
 	padding: 50px;
 }
+
+#contact_form input {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	margin: 0 0 20px;
+} 
+
+#contact_form textarea {
+	width: 100%;
+	padding: 10px;
+	height: 300px;
+	border: none;
+}
+
+#contact_form button {
+	position: absolute;
+	right: 30px;
+	
+	background-color: green;
+	border: none;
+	width: 80px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
+#contact_form datalist {
+	position: relative;
+	width: 100%;
+}
+
+
 /*Slutt kontaktside*/
 
 /*Start prosjekter*/
