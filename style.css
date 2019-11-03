@@ -226,26 +226,44 @@ footer{
 	margin-left: auto;
 }
 
+#kaffekanne{
+	margin-left: 5vw;
+}
+
 .produktbilde{
 	width: 35vw;
 	height: 35vw;
+	
 }
 
-.produkttekst{
+#produkttekst1{
 	position: absolute;
-	bottom: 8px;
- 	left: 20px;
-  	font-size: 18px;
+	bottom: 50px;
+ 	left: 50px;
+  	font-size: 30px;
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	opacity: 0;
 	
+}
+
+#produkttekst2{
+	position: absolute;
+	bottom: 50px;
+ 	left: 115px;
+  	font-size: 30px;
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	opacity: 0;
 }
 
 .columnD:hover .produktbilde{
 	opacity: 0.3;
 }
 
-.columnD:hover .produkttekst{
+.columnD:hover #produkttekst1{
+	opacity: 1;
+}
+
+.columnD:hover #produkttekst2{
 	opacity: 1;
 }
 
@@ -259,6 +277,7 @@ footer{
 	display: flex;
 	margin: 10%;
 	text-align: justify;
+	
 	
 	
 }
