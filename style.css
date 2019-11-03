@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 /* felles css-kode*/
+
 body{
     background-color: #DEF3ED;
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
@@ -215,3 +216,33 @@ footer{
 }
 
 /*framside slutt*/
+
+/*Start kontaktside*/
+
+
+#contact_main {
+	border: dashed;
+	position: relative;
+	width: 95%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+#contact_form {
+	width: 70vw;
+}
+/*Slutt kontaktside*/
+
+
+
+
+
+
+
+
+
+
+
+
+
