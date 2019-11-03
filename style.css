@@ -6,6 +6,7 @@ body{
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
     width:  100vw;
     padding: 0;
+	
 }
 
 header{
@@ -35,17 +36,18 @@ footer{
 /*Slutt felleskode*/
 /*CSS til designers.html*/
 
-.row{
+/*.pictures_designers{
     display: flex;
-
+}*/
+.row{
+    display: flex;  
 }
-.column{
-    flex: 50%;
-}
 
-@media only screen and (max-width: 1200px){
+
+
+@media (max-width: 940px){
     .row{
-        flex-direction: column; 
+        flex-direction: column;
     }
 }
 #designers_h1{
@@ -67,7 +69,7 @@ footer{
    
 }
 .image_designer{
-    width: 30vw;
+    width: 35vw;
 }
 .image_name_right{ 
     position: absolute;
@@ -89,9 +91,9 @@ footer{
 }
 .icon{
     position: absolute;
-    left: 30px;
-    top: 30px;
-    width: 30vw;
+    left: 13.5px;
+    top: 13.5px;
+    width: 35vw;
     visibility: hidden;
 }
 .image_element:hover .image_name_right{
@@ -112,10 +114,6 @@ footer{
 /*Jenny Marie*/
 
 .designers{
-
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	
-	
 }
 
 .bilde{
@@ -126,7 +124,7 @@ footer{
 .columnD{
 	
 	padding: 10px;
-	margin: auto;
+	
 }
 
 .rowD{
