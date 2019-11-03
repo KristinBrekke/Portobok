@@ -32,15 +32,18 @@ footer{
 /*Slutt felleskode*/
 /*CSS til designers.html*/
 
-.row{
+/*.pictures_designers{
     display: flex;
+}*/
+.row{
+    display: flex;  
 }
+
 
 
 @media (max-width: 940px){
     .row{
-        flex-direction: column; 
-        /*flex-wrap: wrap;*/
+        flex-direction: column;
     }
 }
 #designers_h1{
