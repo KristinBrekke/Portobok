@@ -109,21 +109,46 @@ footer{
 /*Jenny Marie*/
 
 .designers{
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 .bilde{
-	width: 450px;
-	height: 450px;
+	width: 35vw;
+	height: 35vw;
+}
+
+.produktbilde{
+	width: 35vw;
+	height: 35vw;
+}
+
+.produkttekst{
+	position: absolute;
+	bottom: 8px;
+ 	left: 20px;
+  	font-size: 18px;
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	opacity: 0;
+	
+}
+
+.columnD:hover .produktbilde{
+	opacity: 0.3;
+}
+
+.columnD:hover .produkttekst{
+	opacity: 1;
 }
 
 .columnD{
-	
-	padding: 10px;
+	position: relative;
+	flex: 50%;	
 	
 }
 
 .rowD{
 	display: flex;
+	margin: 10%;
 	
 }
 
