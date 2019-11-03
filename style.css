@@ -4,7 +4,7 @@
 body{
     background-color: #DEF3ED;
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
-    width: 100%;
+    width:  1920px;
     padding: 0;
 }
 
@@ -153,9 +153,7 @@ footer{
 
 @media (max-width: 940px){    /*hvorfor er det brukt 1200 og ikke 940 som i trodde var standar???*/
 	.flex-container{
-		flex-wrap: wrap;
-		/*flex-direction: column;*/
-		/*flex-direction: column;*/ /*skal gjøre at når siden er mindre enn 1200px legger bildene seg i kolonner på 2*/
+		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
 	}
 	.ikon-navn {
 		font-size: 10px;
