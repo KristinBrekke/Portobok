@@ -11,12 +11,16 @@ body{
 
 header{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 40pt;
+    font-size: 40px;
+}
+h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 40px;
 }
 
 p{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 20pt;
+    font-size: 20px;
 }
 
 a{
@@ -32,17 +36,18 @@ footer{
 /*Slutt felleskode*/
 /*CSS til designers.html*/
 
-.row{
+/*.pictures_designers{
     display: flex;
-
+}*/
+.row{
+    display: flex;  
 }
-.column{
-    flex: 50%;
-}
 
-@media only screen and (max-width: 1200px){
+
+
+@media (max-width: 940px){
     .row{
-        flex-direction: column; 
+        flex-direction: column;
     }
 }
 #designers_h1{
@@ -64,7 +69,7 @@ footer{
    
 }
 .image_designer{
-    width: 30vw;
+    width: 35vw;
 }
 .image_name_right{ 
     position: absolute;
@@ -86,9 +91,9 @@ footer{
 }
 .icon{
     position: absolute;
-    left: 30px;
-    top: 30px;
-    width: 30vw;
+    left: 13.5px;
+    top: 13.5px;
+    width: 35vw;
     visibility: hidden;
 }
 .image_element:hover .image_name_right{
