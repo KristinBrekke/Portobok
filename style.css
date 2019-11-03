@@ -4,7 +4,7 @@
 body{
     background-color: #DEF3ED;
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
-    width:  1920px;
+    width:  100vw;
     padding: 0;
 	
 }
@@ -53,11 +53,18 @@ footer{
 .text_about_designers{
     margin-left: 10%;
     margin-bottom: 5%;
+    margin-right: 10%;
+}
+.pictures_designers{
+    margin-left: 10%;
 }
 .image_element{
     position: relative;
     padding: 2%;
-    width: 100%;
+   
+}
+.image_designer{
+    width: 30vw;
 }
 .image_name_right{ 
     position: absolute;
@@ -81,7 +88,7 @@ footer{
     position: absolute;
     left: 30px;
     top: 30px;
-    width: 100%;
+    width: 30vw;
     visibility: hidden;
 }
 .image_element:hover .image_name_right{
