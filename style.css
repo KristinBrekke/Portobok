@@ -373,9 +373,36 @@ footer{
 }
 /*Slutt kontaktside*/
 
+/*Start prosjekter*/
 
-
-
+.image_name_design_dark{
+    position: absolute;
+    bottom: 1vw;
+    left: -2vw;
+    color:#000000;
+    visibility: hidden;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.image_name_design_light{
+    position: absolute;
+    bottom: 1vw;
+    left: -2vw;
+    color: #DEF3ED;
+    visibility: hidden;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.image_element_project{
+    position: relative;
+    padding: 2%;
+}
+.image_element_project:hover .image_name_design_dark{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
+    visibility: visible;  
+}
+.image_element_project:hover .image_name_design_light{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
+    visibility: visible;  
+}
 
 
 
