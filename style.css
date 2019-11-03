@@ -6,6 +6,8 @@ body{
     background-color: #DEF3ED;
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
     width:  100vw;
+	max-width: 100vw;
+	overflow-x: hidden;
     padding: 0;
 	
 }
@@ -15,7 +17,7 @@ header{
     font-size: 40px;
 }
 /*generelle størrelse på tekst marginer for all tekst*/
-h1 {
+h1,h2 {
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 40px;
 	margin-left: 5vw;
@@ -320,6 +322,7 @@ footer{
 	}
 }
 
+
 /*framside slutt*/
 
 /* Navigasjonsbar*/
@@ -354,16 +357,20 @@ footer{
 
 
 #contact_main {
-	border: dashed;
 	position: relative;
 	width: 95%;
 	overflow-x: hidden;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 }
 
 #contact_form {
-	width: 70vw;
+	width: 500px;
+	position: relative;
+	margin: auto;
+	border: dashed;
+	
+	padding: 50px;
 }
 /*Slutt kontaktside*/
 
