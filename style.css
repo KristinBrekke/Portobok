@@ -4,8 +4,9 @@
 body{
     background-color: #DEF3ED;
    /* margin:10%; fjerner dette da det går ut over alt av som skal gå helt ut*/
-    width:  1920px;
+    width:  100vw;
     padding: 0;
+	
 }
 
 header{
@@ -106,10 +107,6 @@ footer{
 /*Jenny Marie*/
 
 .designers{
-
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	
-	
 }
 
 .bilde{
@@ -120,7 +117,7 @@ footer{
 .columnD{
 	
 	padding: 10px;
-	margin: auto;
+	
 }
 
 .rowD{
