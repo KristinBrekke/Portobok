@@ -28,11 +28,12 @@ h1,h2 {
 
 p{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 20px;
-	margin-left: 10vw;
+    font-size: 20px; 
+}
+.text_about_page{
+    margin-left: 10vw;
     margin-bottom: 2vw;
-	margin-right: 10vw;
-    
+	margin-right: 10vw; 
 }
 
 a{
@@ -87,7 +88,7 @@ footer{
 .image_name_left{
     position: absolute;
     bottom: 1vw;
-    left: -2vw;
+    left: 3vw;
     color: #000000;
     visibility: hidden;
     font-size: 2.5vw;
@@ -118,7 +119,7 @@ footer{
 .image_name_design_dark{
     position: absolute;
     bottom: 1vw;
-    left: -2vw;
+    left: 3vw;
     color:#000000;
     visibility: hidden;
     font-size: 2vw;
@@ -127,7 +128,7 @@ footer{
 .image_name_design_light{
     position: absolute;
     bottom: 1vw;
-    left: -2vw;
+    left: 3vw;
     color: #DEF3ED;
     visibility: hidden;
     font-size: 2vw;
@@ -146,7 +147,7 @@ footer{
 
 /*CSS til slideshow/bildekarusell */ 
 .slideshow-container {
-    max-width: 600px;
+    max-width: 1066.5px;
     position: relative;
     margin: auto;
 }
