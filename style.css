@@ -30,6 +30,7 @@ p{
     font-size: 20px;
 	margin-left: 5vw;
     margin-bottom: 2vw;
+	margin-right: 10vw;
     
 }
 
@@ -143,14 +144,6 @@ footer{
 }
 
 /*CSS til slideshow/bildekarusell */ 
-#slideshow_header{
-	text-align:left;
-	margin-left: 420px;
-	font-size: 20px;
-	font-weight: 350;
-	
-}
-
 .slideshow-container {
     max-width: 600px;
     position: relative;
@@ -193,12 +186,14 @@ footer{
 }
 
 .text {
-    font-family: "Pt serif", Helvetica, Arial, "sans-serif";
-	color: #009F67;
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: white;
 	background-color: black;
-    font-size: 15px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+	opacity: 0.5;
+    font-size: 20px;
+	font-weight: 400;
+    padding-top: 40px;
+    padding-bottom: 40px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -292,12 +287,27 @@ footer{
 .rowD{
 	display: flex;
 	margin: 10%;
-	text-align: justify;
-	
-	
+	text-align: justify;	
+}
+
+/*CSS for produktsider*/
+/*Jenny Marie*/
+.Prow{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	
 }
 
+.Pbilde{
+	width: 35vw;
+	height: 35vw;
+}
+
+#ptekst{
+	margin-left: auto;
+}
 
 #banner {
 	position: static;
@@ -318,7 +328,7 @@ footer{
 .ikonF{ 
  	width: 10vw;
 	margin-left: 5vw;
-	margin-top: 5vw; /*still denne ned når navbaren er satt inn*/
+	margin-top: 7vw; /*still denne ned når navbaren er satt inn*/
 	margin-right: 5vw;
 	
 }
@@ -375,7 +385,27 @@ footer{
 }
 
 /*responsiv navbar///hamburgermeny*/
+.hamburger {
+	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
+	}
+@media (max-width: 940px) {
+	.navbar a:not(:first-child) {  /*a:not(first-child) gjemmer alle linkene i navbaren utenom logo*/
+		display: none;
+	}
+	.hamburger {
+		float: right;
+		display: block; /*gjør at listen skal vises når siden er liten/*
+	}
+}
+@media (max-width:940px){
+	.nav{
+		display: block;
+			
+	}
+	
 
+	
+}
 
 /* ferdig hamburgermeny*/
 /*Start kontaktside*/
