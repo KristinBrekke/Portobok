@@ -30,6 +30,7 @@ p{
     font-size: 20px;
 	margin-left: 5vw;
     margin-bottom: 2vw;
+	margin-right: 10vw;
     
 }
 
@@ -295,7 +296,7 @@ footer{
 .ikonF{ 
  	width: 10vw;
 	margin-left: 5vw;
-	margin-top: 5vw; /*still denne ned når navbaren er satt inn*/
+	margin-top: 7vw; /*still denne ned når navbaren er satt inn*/
 	margin-right: 5vw;
 	
 }
@@ -352,7 +353,27 @@ footer{
 }
 
 /*responsiv navbar///hamburgermeny*/
+.hamburger {
+	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
+	}
+@media (max-width: 940px) {
+	.navbar a:not(:first-child) {  /*a:not(first-child) gjemmer alle linkene i navbaren utenom logo*/
+		display: none;
+	}
+	.hamburger {
+		float: right;
+		display: block; /*gjør at listen skal vises når siden er liten/*
+	}
+}
+@media (max-width:940px){
+	.nav{
+		display: block;
+			
+	}
+	
 
+	
+}
 
 /* ferdig hamburgermeny*/
 /*Start kontaktside*/
