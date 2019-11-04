@@ -398,7 +398,6 @@ footer{
 .navbar li { /*Styling av listeelementer i navigasjonsmenyen*/
 	float: left;
 	width: 20vw;
-    color: #DEF3ED;
     font-size: 20px;
 }
 .navbar a{
@@ -450,6 +449,27 @@ label {
 	
 
 /* ferdig hamburgermeny*/
+
+/*Footer*/
+
+.contact_information{
+    color: #DEF3ED;
+}
+.footer li { /*Styling av listeelementer i navigasjonsmenyen*/
+	float: left;
+	width: 20vw;
+    font-size: 20px;
+}
+#email{
+    float: left;
+}
+#phone{
+    float: left;
+}
+#adress{
+    float: left;
+}
+/*Footer*/
 /*Start kontaktside*/
 
 

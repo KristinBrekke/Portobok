@@ -1,8 +1,7 @@
 // JavaScript Document
 
 function validate() {
-	
-	event.preventDefault();
+
 	
 	var emailValue = document.getElementById("email").value;
 	
@@ -33,7 +32,7 @@ function validate() {
 	
 	var designersArray = [];
 	
-	for (i=0; i<designers.length; i++){
+	for (var i=0; i<designers.length; i++){
 		designersArray.push(designers[i].value);
 	}
 	
@@ -43,6 +42,7 @@ function validate() {
 		
 	}
 	else {
+		event.preventDefault();
 		statusEmail.innerHTML = "Mail-addressen er desverre ikke gyldig...";
 	}
 	
@@ -50,13 +50,20 @@ function validate() {
 			console.log(recieverValue);
 		}
 	else{
+		event.preventDefault();
 		statusReciever.innerHTML = "Vi kan desverre ikke sende til denne mottakeren!..";
 	}
 	
-	if (subjectValue < 2){
-		statusSubject.innerHTML = "Vennligst fyll inn et gyldig emne"
+	if (subjectValue.length < 2){
+		event.preventDefault();
+		statusSubject.innerHTML = "Vennligst fyll inn et gyldig emne";
 	}
-		
+	
+	if 	(messageValue.length < 20){
+		event.preventDefault();
+		statusMessage.innerHTML = "Teksten må inneholde minst 20 tegn!";
+	}
+	
 	}
 
 
