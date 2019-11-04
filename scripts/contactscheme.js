@@ -29,21 +29,36 @@ function validate() {
 	statusMessage.innerHTML = "";
 	
 	
-	var designers = document.getElementById("mottaker_alternativer");
+	var designers = document.getElementsByTagName("option");
 	
-	var designersArray = designers.getElementsByTagName("option").text;
+	var designersArray = [];
 	
+	for (i=0; i<designers.length; i++){
+		designersArray.push(designers[i].value);
+	}
 	
-	console.log(designersArray);
 	
 	
 	if (emailValue.length > 5 && emailValue.includes("@") && emailValue.includes(".")) {
 		
 	}
 	else {
-		statusEmail.innerHTML = "The email address is not valid!";
+		statusEmail.innerHTML = "Mail-addressen er desverre ikke gyldig...";
 	}
 	
-	if (recieverValue ){}
+	if (designersArray.includes(recieverValue)){
+			console.log(recieverValue);
+		}
+	else{
+		statusReciever.innerHTML = "Vi kan desverre ikke sende til denne mottakeren!.."
+	}
 		
 	}
+
+
+
+
+
+
+
+

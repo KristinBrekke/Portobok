@@ -272,6 +272,11 @@ footer{
   	font-size: 30px;
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	opacity: 0;
+	/*
+	background-color: #009F67;*/
+	
+	
+	
 	
 }
 
@@ -412,7 +417,7 @@ footer{
 	}
 	.hamburger {
 		float: right;
-		display: block; /*gjør at listen skal vises når siden er liten/*
+		display: block; /*gjør at listen skal vises når siden er liten*/
 	}
 }
 @media (max-width:940px){
@@ -423,7 +428,8 @@ footer{
 	
 
 	
-}
+	}
+	
 
 /* ferdig hamburgermeny*/
 /*Start kontaktside*/
