@@ -9,7 +9,7 @@ body{
 	max-width: 100vw;
 	overflow-x: hidden;
     padding: 0;
-	
+
 }
 
 header{
@@ -21,14 +21,14 @@ h1,h2 {
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 40px;
 	margin-left: 10vw;
-	margin-bottom: 2vw; 
+	margin-bottom: 2vw;
 	margin-top: 10vw;
-	
+
 }
 
 p{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 20px; 
+    font-size: 20px;
 }
 .text_about_page{
     margin-left: 10vw;
@@ -59,7 +59,7 @@ footer{
 }
 
 .row{
-    display: flex;  
+    display: flex;
 }
 
 @media (max-width: 940px){
@@ -76,7 +76,7 @@ footer{
     padding: 2%;
 }
 
-.image_name_right{ 
+.image_name_right{
     position: absolute;
     bottom: 1vw;
     right: 3vw;
@@ -102,14 +102,14 @@ footer{
     visibility: hidden;
 }
 .image_element:hover .image_name_right{ /* Gjør navnene som er høyrestilt synlig når hovret over*/
-    visibility: visible;  
+    visibility: visible;
 }
 .image_element:hover .image_name_left{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
-    visibility: visible;  
+    visibility: visible;
 }
 .image_element:hover .icon{ /* Gjør ikonene synlig når hovret over*/
     visibility: visible;
-    opacity: 1;  
+    opacity: 1;
 }
 .image_element:hover{ /* Gjør opacityen til bildet svakere når hovret over*/
     opacity: 0.7;
@@ -139,13 +139,13 @@ footer{
     padding: 2%;
 }
 .image_element_project:hover .image_name_design_dark{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
-    visibility: visible;  
+    visibility: visible;
 }
 .image_element_project:hover .image_name_design_light{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
-    visibility: visible;  
+    visibility: visible;
 }
 
-/*CSS til slideshow/bildekarusell */ 
+/*CSS til slideshow/bildekarusell */
 .slideshow-container {
     max-width: 1066.5px;
     position: relative;
@@ -240,7 +240,10 @@ footer{
 	display: flex;
 	flex-direction: row;
 
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 1deaa9f47199b23eacd9b163e1d69223983ad50e
 }
 
 .bilde{
@@ -253,11 +256,11 @@ footer{
 }
 
 #ikon{
-	
+
 	margin-left: auto;
 	padding-right: 10vw;
 	margin-top: 10vw;
-	
+
 }
 
 #kaffekanne{
@@ -267,7 +270,7 @@ footer{
 .produktbilde{
 	width: 35vw;
 	height: 35vw;
-	
+
 }
 
 #produkttekst1{
@@ -279,7 +282,14 @@ footer{
 	opacity: 0;
 	/*
 	background-color: #009F67;*/
+<<<<<<< HEAD
 	
+=======
+
+
+
+
+>>>>>>> 1deaa9f47199b23eacd9b163e1d69223983ad50e
 }
 
 #produkttekst2{
@@ -305,14 +315,14 @@ footer{
 
 .columnD{
 	position: relative;
-	flex: 50%;	
-	
+	flex: 50%;
+
 }
 
 .rowD{
 	display: flex;
 	margin: 10%;
-	text-align: justify;	
+	text-align: justify;
 }
 
 /*CSS for produktsider*/
@@ -322,7 +332,7 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	
+
 }
 
 .Pbilde{
@@ -341,21 +351,21 @@ footer{
 	background-color: black;
 	font-family: "pt-serif"; /*får ikke til å ha en backupfont uten at den blir gjeldende*/
 	font-size: 18vw; /*bruker vw isteden for px fordi den stiller seg inn etter nettsiden*/
-	color: #009F67; 
+	color: #009F67;
 	text-align: center;
-	
+
 }
 .flex-container {
 	display: flex;
-	
+
 }
 
-.ikonF{ 
+.ikonF{
  	width: 10vw;
 	margin-left: 5vw;
 	margin-top: 7vw; /*still denne ned når navbaren er satt inn*/
 	margin-right: 5vw;
-	
+
 }
 .ikon-navn{
 	margin-left: 5vw;
@@ -381,11 +391,11 @@ footer{
 /*framside slutt*/
 
 /* Navigasjonsbar*/
-#blokk{
+#navigasjonsbar{
 	background-color:#000000;
 	height: 100px;
     padding: 20px;
-	position: relative;	
+	position: relative;
 }
 #logo_portobok{
     width: 4vw;
@@ -400,7 +410,6 @@ footer{
 .navbar li { /*Styling av listeelementer i navigasjonsmenyen*/
 	float: left;
 	width: 20vw;
-    color: #DEF3ED;
     font-size: 20px;
 }
 .navbar a{
@@ -410,30 +419,59 @@ footer{
 }
 
 /*responsiv navbar///hamburgermeny*/
-.hamburger {
+label {
+	float: left;
 	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
-	}
-@media (max-width: 940px) {
-	.navbar a:not(:first-child) {  /*a:not(first-child) gjemmer alle linkene i navbaren utenom logo*/
-		display: none;
-	}
-	.hamburger {
-		float: right;
-		display: block; /*gjør at listen skal vises når siden er liten*/
-	}
+	}/*når man trykker på burgermenyen blir boksen kjekket*/
+#box { 
+	display: none;
 }
-@media (max-width:940px){
-	.nav{
-		display: block;
-			
+@media (max-width: 940px) {
 	}
-	
+	.navbar {
+		text-align: center;
+		width: 100vw;
+		
+	}
+	.navbar a {
+		display: block;
+		border-bottom: 1px solid; /*midlertidig*/
+	}
+label {
+	display: block;
+	color: red
+}
 
 	
-	}
 	
 
 /* ferdig hamburgermeny*/
+
+/*Footer*/
+#footer{
+	background-color:#000000;
+	height: 100px;
+    padding: 20px;
+	position: relative;
+}
+.contact_information{
+    color: #DEF3ED;
+}
+.footer li { /*Styling av listeelementer i navigasjonsmenyen*/
+	float: left;
+	width: 20vw;
+    font-size: 20px;
+}
+#email{
+    float: left;
+}
+#phone{
+    float: left;
+}
+#adress{
+    float: left;
+}
+/*Footer*/
 /*Start kontaktside*/
 
 
@@ -462,10 +500,10 @@ footer{
 #contact_form input {
 	width: 100%;
 	padding: 10px;
-	
+
 	margin: 0 0 20px;
 	outline: none;
-} 
+}
 
 #contact_form textarea {
 	width: 100%;
@@ -497,7 +535,7 @@ footer{
 }
 
 #contact_form h1 {
-	
+
 	position: inherit;
 	left: 0;
 	margin: 50px 0;
@@ -511,13 +549,3 @@ footer{
 }
 
 /*Slutt kontaktside*/
-
-
-
-
-
-
-
-
-
-
