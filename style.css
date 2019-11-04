@@ -292,12 +292,27 @@ footer{
 .rowD{
 	display: flex;
 	margin: 10%;
-	text-align: justify;
-	
-	
+	text-align: justify;	
+}
+
+/*CSS for produktsider*/
+/*Jenny Marie*/
+.Prow{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	
 }
 
+.Pbilde{
+	width: 35vw;
+	height: 35vw;
+}
+
+#ptekst{
+	margin-left: auto;
+}
 
 #banner {
 	position: static;
