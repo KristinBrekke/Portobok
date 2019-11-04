@@ -417,7 +417,7 @@ label {
 	.navbar a:not(:first-child) {  /*a:not(first-child) gjemmer alle linkene i navbaren utenom logo*/
 		display: none;
 	}
-	.hamburger {
+	#box {
 		float: right;
 		display: block; /*gjør at listen skal vises når siden er liten*/
 	}
@@ -429,6 +429,7 @@ label {
 	/*	display: none;*/
 
 	}
+
 	label {
 		float: right;
 		display: block;
