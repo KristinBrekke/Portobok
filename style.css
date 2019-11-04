@@ -246,7 +246,7 @@ footer{
 }
 
 #person{
-	
+
 }
 
 #ikon{
@@ -324,7 +324,7 @@ footer{
 	justify-content: center;
 	padding-bottom: 10vw;
 	padding-top: 10vw;
-	
+
 
 }
 
@@ -414,33 +414,35 @@ footer{
 	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
     color: #DEF3ED;
 }
-
-/*responsiv navbar///hamburgermeny*/
+/*
+/*responsiv navbar///hamburgermeny*//*
 label {
 	float: left;
-	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
-	}/*når man trykker på burgermenyen blir boksen kjekket*/
-#box { 
-	display: none;
-}
-@media (max-width: 940px) {
+	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*//*
 	}
+#box { /*når man trykker på burgermenyen blir boksen kjekket*//*
+	display: none;}
+@media (max-width: 940px) {
+	
 	.navbar {
 		text-align: center;
 		width: 100vw;
+		/*display: none;*/
 		
 	}
-	.navbar a {
+	.navbar li {
 		display: block;
 		border-bottom: 1px solid; /*midlertidig*/
 	}
 label {
+	float:right;
 	display: block;
-	color: red
+	color: red;
+	cursor: pointer;
 }
 
-	
-	
+
+
 
 /* ferdig hamburgermeny*/
 
@@ -455,6 +457,7 @@ label {
     color: #DEF3ED;
 }
 .footer li { /*Styling av listeelementer i navigasjonsmenyen*/
+
 	float: left;
 	width: 20vw;
     font-size: 20px;
@@ -468,6 +471,7 @@ label {
 #adress{
     float: left;
 }
+
 /*Footer*/
 /*Start kontaktside*/
 
@@ -486,7 +490,9 @@ label {
 	margin: auto;
 	margin-bottom: 100px;
 	padding: 50px;
+	display: block;
 }
+
 
 #contact_form p {
 	margin-left: 0;
