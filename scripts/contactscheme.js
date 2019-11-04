@@ -53,10 +53,14 @@ function validate() {
 		statusReciever.innerHTML = "Vi kan desverre ikke sende til denne mottakeren!..";
 	}
 	
-	if (subjectValue < 2){
+	if (subjectValue.length < 2){
 		statusSubject.innerHTML = "Vennligst fyll inn et gyldig emne"
 	}
-		
+	
+	if 	(messageValue.length < 20){
+		statusMessage.innerHTML = "Teksten må inneholde minst 20 tegn!"
+	}
+	
 	}
 
 
