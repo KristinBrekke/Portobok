@@ -408,9 +408,12 @@ footer{
 }
 
 /*responsiv navbar///hamburgermeny*/
-.hamburger {
+label {
+	float: left;
 	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
 	}
+#box { /*når man trykker på burgermenyen blir boksen kjekket*/
+	display: none;
 @media (max-width: 940px) {
 	.navbar a:not(:first-child) {  /*a:not(first-child) gjemmer alle linkene i navbaren utenom logo*/
 		display: none;
@@ -420,12 +423,26 @@ footer{
 		display: block; /*gjør at listen skal vises når siden er liten*/
 	}
 }
+
 @media (max-width:940px){
-	.nav{
+/*	.navbar {  /*a:not(first-child) gjemmer alle linkene i navbaren utenom logo*/
+	/*	display: none;*/
+		
+	}
+	label {
+		float: right;
 		display: block;
-			
+		color: #DEF3ED;/*gjør at listen skal vises når siden er liten*/
+	}
+	.navbar{
+		text-align: center;
+		width: 100vw;
+		display: none;
 	}
 	
+	.navbar a {
+		display: block;
+	}
 
 	
 	}
