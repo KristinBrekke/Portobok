@@ -453,7 +453,12 @@ label {
 /* ferdig hamburgermeny*/
 
 /*Footer*/
-
+#footer{
+	background-color:#000000;
+	height: 100px;
+    padding: 20px;
+	position: relative;
+}
 .contact_information{
     color: #DEF3ED;
 }
