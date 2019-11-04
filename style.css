@@ -234,6 +234,7 @@ footer{
     font-size: 20px;
 	margin-left: 5vw;
 	margin-right: 0vw;
+	margin-top: 0vw;
 }
 
 .undertekst{
@@ -247,12 +248,17 @@ footer{
 	height: 35vw;
 }
 
+#person{
+
+}
+
 #ikon{
 
 	margin-left: auto;
 	padding-right: 10vw;
 	margin-top: 10vw;
-
+	width: 250px;
+	height: 250px;
 }
 
 #kaffekanne{
@@ -274,10 +280,6 @@ footer{
 	opacity: 0;
 	/*
 	background-color: #009F67;*/
-
-
-
-
 }
 
 #produkttekst2{
@@ -320,12 +322,19 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 10vw;
+	padding-top: 10vw;
+
 
 }
 
 .Pbilde{
-	width: 35vw;
-	height: 35vw;
+	width: 80vw;
+	height: 45vw;
+}
+
+#produkttekst{
+	margin: 10vw;
 }
 
 #ptekst{
@@ -438,13 +447,16 @@ label {
 	.navbar {
 		text-align: center;
 		width: 100vw;
-		display: none;
-	}
 
+	}
 	.navbar a {
 		display: block;
+		border-bottom: 1px solid; /*midlertidig*/
 	}
-
+label {
+	display: block;
+	color: red
+}
 
 
 
@@ -452,8 +464,12 @@ label {
 /* ferdig hamburgermeny*/
 
 /*Footer*/
-
-
+#footer{
+	background-color:#000000;
+	height: 100px;
+    padding: 20px;
+	position: relative;
+}
 .contact_information{
     color: #DEF3ED;
 }
