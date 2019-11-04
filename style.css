@@ -146,7 +146,7 @@ footer{
 #slideshow{
 	width: 80vw;
 	height: auto;
-	margin: 10%
+	margin: 10%;
 }
 
 .slideshow-container {
@@ -158,6 +158,10 @@ footer{
 
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+	width: 100%;
 }
 
 .prev,
