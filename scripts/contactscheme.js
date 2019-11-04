@@ -32,7 +32,7 @@ function validate() {
 	
 	var designersArray = [];
 	
-	for (i=0; i<designers.length; i++){
+	for (var i=0; i<designers.length; i++){
 		designersArray.push(designers[i].value);
 	}
 	
@@ -56,12 +56,12 @@ function validate() {
 	
 	if (subjectValue.length < 2){
 		event.preventDefault();
-		statusSubject.innerHTML = "Vennligst fyll inn et gyldig emne"
+		statusSubject.innerHTML = "Vennligst fyll inn et gyldig emne";
 	}
 	
 	if 	(messageValue.length < 20){
 		event.preventDefault();
-		statusMessage.innerHTML = "Teksten må inneholde minst 20 tegn!"
+		statusMessage.innerHTML = "Teksten må inneholde minst 20 tegn!";
 	}
 	
 	}
