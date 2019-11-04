@@ -415,19 +415,22 @@ label {
 	display: none;
 }
 @media (max-width: 940px) {
-	}
+	
 	.navbar {
 		text-align: center;
 		width: 100vw;
+		/*display: none;*/
 		
 	}
-	.navbar a {
+	.navbar li {
 		display: block;
 		border-bottom: 1px solid; /*midlertidig*/
 	}
 label {
+	float:right;
 	display: block;
-	color: red
+	color: red;
+	cursor: pointer;
 }
 }
 	
