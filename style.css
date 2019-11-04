@@ -102,6 +102,7 @@ footer{
     top: 0.9vw;
     width: 35vw;
     visibility: hidden;
+    opacity: 0;
 }
 .image_element:hover .image_name_right{ /* Gjør navnene som er høyrestilt synlig når hovret over*/
     visibility: visible;
@@ -111,9 +112,9 @@ footer{
 }
 .image_element:hover .icon{ /* Gjør ikonene synlig når hovret over*/
     visibility: visible;
-    opacity: 1;
+    opacity: 0.9;
 }
-.image_element:hover{ /* Gjør opacityen til bildet svakere når hovret over*/
+.image_element:hover .image_designer_and_project{ /* Gjør opacityen til bildet svakere når hovret over*/
     opacity: 0.7;
 }
 /*CSS til projects.html*/
@@ -123,40 +124,42 @@ footer{
     bottom: 1vw;
     left: 3vw;
     color:#000000;
-    visibility: hidden;
+    opacity: 0;
     font-size: 2vw;
     font-weight: bold;
+    
+    
 }
-.image_name_design_light{
-    position: absolute;
-    bottom: 1vw;
-    left: 3vw;
-    color: #DEF3ED;
-    visibility: hidden;
-    font-size: 2vw;
-    font-weight: bold;
-}
+
 .image_element_project{
     position: relative;
     padding: 2%;
+    
 }
-.image_element_project:hover .image_name_design_dark{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
-    visibility: visible;
+.image_element_project:hover .image_designer_and_project{ /*Gjelder produktbildene på designersidene også*/
+    opacity: 0.4;
 }
-.image_element_project:hover .image_name_design_light{ /* Gjør navnene som er venstrestilt synlig når hovret over*/
-    visibility: visible;
+.image_element_project:hover .image_name_design_dark { /*Gjelder produktbildene på designersidene også*/
+    opacity: 1;  
 }
 
+
 /*CSS til slideshow/bildekarusell */
-.slideshow-container {
-    max-width: 1066.5px;
-    position: relative;
-    margin: auto;
+#slideshow{
+	width: 80vw;
+	height: auto;
+	margin: 10%
 }
+
+.slideshow-container {
+    max-width: 100%; 
+    position: relative; 
+	height: auto;
+	width: 80vw;
+} 
 
 .mySlides {
   display: none;
-  height: 600px;
 }
 
 .prev,
@@ -250,17 +253,16 @@ footer{
 	height: 35vw;
 }
 
-#person{
-
-}
-
 #ikon{
 
+	width: 15vw;
+	height: 15vw;
+}
+
+#ikonbilde{
 	margin-left: auto;
 	padding-right: 10vw;
 	margin-top: 10vw;
-	width: 250px;
-	height: 250px;
 }
 
 #kaffekanne{
@@ -275,26 +277,28 @@ footer{
 
 #produkttekst1{
 	position: absolute;
-	bottom: 50px;
- 	left: 50px;
+	bottom: 2vw;
+ 	left: 1vw;
   	font-size: 30px;
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	opacity: 0;
+    font-weight: bold;
 	/*
 	background-color: #009F67;*/
 }
 
 #produkttekst2{
 	position: absolute;
-	bottom: 50px;
- 	left: 115px;
+	bottom: 2vw;
+ 	left: 6vw;
   	font-size: 30px;
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	opacity: 0;
+    font-weight: bold;
 }
 
 .columnD:hover .produktbilde{
-	opacity: 0.3;
+	opacity: 0.4;
 }
 
 .columnD:hover #produkttekst1{
@@ -308,6 +312,7 @@ footer{
 .columnD{
 	position: relative;
 	flex: 50%;
+    
 
 }
 
@@ -315,6 +320,13 @@ footer{
 	display: flex;
 	margin: 10%;
 	text-align: justify;
+}
+
+@media (max-width: 940px){
+	#persontekst{
+		font-size: 15px;
+	}	
+	
 }
 
 /*CSS for produktsider*/
@@ -486,24 +498,29 @@ responsiv navbar///hamburgermeny*/
 	height: 100px;
     padding: 20px;
 	position: relative;
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    
 }
 .contact_information{
     color: #DEF3ED;
 }
-.footer li { /*Styling av listeelementer i navigasjonsmenyen*/
 
-	float: left;
-	width: 20vw;
-    font-size: 20px;
-}
 #email{
-    float: left;
+    grid-column: 1;
+    position: absolute;
+    bottom: 4px;
 }
 #phone{
-    float: left;
+    grid-column: 2;
+    position: absolute;
+    bottom: 4px;
 }
 #adress{
-    float: left;
+    grid-column: 3;
+    position: absolute;
+    bottom: 4px;
+    
 }
 
 /*Footer*/
@@ -527,6 +544,9 @@ responsiv navbar///hamburgermeny*/
 	display: block;
 }
 
+#thank_you {
+	display: none;
+}
 
 #contact_form p {
 	margin-left: 0;
