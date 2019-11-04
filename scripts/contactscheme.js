@@ -50,7 +50,11 @@ function validate() {
 			console.log(recieverValue);
 		}
 	else{
-		statusReciever.innerHTML = "Vi kan desverre ikke sende til denne mottakeren!.."
+		statusReciever.innerHTML = "Vi kan desverre ikke sende til denne mottakeren!..";
+	}
+	
+	if (subjectValue < 2){
+		statusSubject.innerHTML = "Vennligst fyll inn et gyldig emne"
 	}
 		
 	}

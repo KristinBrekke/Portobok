@@ -502,6 +502,12 @@ footer{
 	padding: 0;
 }
 
+
+#contact_form .status {
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: red;
+}
+
 /*Slutt kontaktside*/
 
 
