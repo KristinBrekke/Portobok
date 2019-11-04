@@ -412,7 +412,7 @@ label {
 	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
 	}
 #box { /*når man trykker på burgermenyen blir boksen kjekket*/
-	display: none;
+	display: none;}
 @media (max-width: 940px) {
 	.navbar a:not(:first-child) {  /*a:not(first-child) gjemmer alle linkene i navbaren utenom logo*/
 		display: none;
@@ -445,7 +445,7 @@ label {
 	}
 
 
-}
+
 
 
 /* ferdig hamburgermeny*/
