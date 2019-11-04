@@ -368,7 +368,7 @@ footer{
 	position: relative;	
 }
 #logo_portobok{
-    width: 6vw;
+    width: 4vw;
 }
 .navbar{
     list-style-type: none;
@@ -412,6 +412,10 @@ footer{
 	padding: 50px;
 }
 
+#contact_form p {
+	margin-left: 0;
+	margin-bottom: 5px;
+}
 
 
 #contact_form input {
@@ -441,8 +445,10 @@ footer{
 	font-size: 16px;
 	font-weight: 600;
 	cursor: pointer;
-	
+	outline: none;
 }
+
+
 
 #contact_form datalist {
 	position: relative;

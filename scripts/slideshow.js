@@ -1,23 +1,6 @@
 // JavaScript Document
-/*
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-*/ 
+// Credit: https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9 (03-04/11/19) 
 
 var slideIndex = 1;
 
@@ -25,43 +8,18 @@ var myTimer;
 
 var slideshowContainer;
 
-window.addEventListener("load",function() {
-    showSlides(slideIndex);
-    myTimer = setInterval(function(){plusSlides(1)}, 4000);
-  
-    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
-  
-    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
-  
-    slideshowContainer.addEventListener('mouseenter', pause)
-    slideshowContainer.addEventListener('mouseleave', resume)
-})
-
-// NEXT AND PREVIOUS CONTROL
-function plusSlides(n){
-  clearInterval(myTimer);
+function plusSlides(n){		//
+  clearInterval(myTimer);	//The clearInterval() method clears a timer set with the setInterval() method
   if (n < 0){
     showSlides(slideIndex -= 1);
   } else {
    showSlides(slideIndex += 1); 
   }
-  
-  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
-  
   if (n === -1){
-    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);		//setInterval("javascript function", milliseconds); calls a function at specified intervals, here each 4000 millisecond.This will continue until clearInterval() is called or the window is closed  
   } else {
     myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
   }
-}
-
-//Controls the current slide and resets interval if needed
-function currentSlide(n){
-  clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
-  showSlides(slideIndex = n);
 }
 
 function showSlides(n){
@@ -74,17 +32,19 @@ function showSlides(n){
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active", "");	
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 
-pause = () => {
-  clearInterval(myTimer);
-}
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+})
 
-resume = () =>{
+function currentSlide(n){
   clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
 }
