@@ -234,16 +234,13 @@ footer{
     font-size: 20px;
 	margin-left: 5vw;
 	margin-right: 0vw;
+	margin-top: 0vw;
 }
 
 .undertekst{
 	display: flex;
 	flex-direction: row;
 
-<<<<<<< HEAD
-	
-=======
->>>>>>> 1deaa9f47199b23eacd9b163e1d69223983ad50e
 }
 
 .bilde{
@@ -282,14 +279,6 @@ footer{
 	opacity: 0;
 	/*
 	background-color: #009F67;*/
-<<<<<<< HEAD
-	
-=======
-
-
-
-
->>>>>>> 1deaa9f47199b23eacd9b163e1d69223983ad50e
 }
 
 #produkttekst2{
