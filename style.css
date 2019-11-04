@@ -20,15 +20,16 @@ header{
 h1,h2 {
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 40px;
-	margin-left: 5vw;
+	margin-left: 10vw;
 	margin-bottom: 2vw; 
+	margin-top: 10vw;
 	
 }
 
 p{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 20px;
-	margin-left: 5vw;
+	margin-left: 10vw;
     margin-bottom: 2vw;
 	margin-right: 10vw;
     
@@ -233,14 +234,30 @@ footer{
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
+#persontekst{
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 20px;
+	margin-left: 5vw;
+	margin-right: 0vw;
+}
+
+.undertekst{
+	display: flex;
+	flex-direction: row;
+	
+}
+
 .bilde{
 	width: 35vw;
 	height: 35vw;
 }
 
 #ikon{
-	display: block;
+	
 	margin-left: auto;
+	padding-right: 10vw;
+	margin-top: 10vw;
+	
 }
 
 #kaffekanne{
