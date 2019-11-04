@@ -32,7 +32,7 @@ function validate() {
 	
 	var designersArray = [];
 	
-	for (var i=0; i<designers.length; i++){
+	for (var i=0; i < designers.length; i++){
 		designersArray.push(designers[i].value);
 	}
 	
