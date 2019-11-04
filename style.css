@@ -33,7 +33,7 @@ p{
 .text_about_page{
     margin-left: 10vw;
     margin-bottom: 2vw;
-	margin-right: 10vw; 
+	margin-right: 10vw;
 }
 
 a{
@@ -239,12 +239,17 @@ footer{
 .undertekst{
 	display: flex;
 	flex-direction: row;
+
 	
 }
 
 .bilde{
 	width: 35vw;
 	height: 35vw;
+}
+
+#person{
+	
 }
 
 #ikon{
@@ -274,9 +279,6 @@ footer{
 	opacity: 0;
 	/*
 	background-color: #009F67;*/
-	
-	
-	
 	
 }
 
