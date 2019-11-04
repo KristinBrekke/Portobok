@@ -9,7 +9,7 @@ document.getElementById("navbar-placeholder").innerHTML =
 
 <body>
     <header>
-        <div id="navigasjonsbar">
+        <div id="blokk">
         <ul class="navbar">
             <li><a href="../html/homepage.html"> <img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok"></a></li>
             <li><a href="../html/designers.html">DESIGNERE</a></li>
