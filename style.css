@@ -452,7 +452,7 @@ label {
 	.navbar a {
 		display: block;
 		border-bottom: 1px solid; /*midlertidig*/
-	}
+	}/*
 label {
 	display: block;
 	color: red
@@ -510,6 +510,9 @@ label {
 	display: block;
 }
 
+#thank_you {
+	display: none;
+}
 
 #contact_form p {
 	margin-left: 0;

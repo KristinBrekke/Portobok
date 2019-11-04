@@ -34,8 +34,8 @@
 		
 			<label>
 				
-				Mottaker:
-				<input list="mottaker_alternativer" name="reciever" id="mottaker" class="mottaker">
+				<p>Mottaker:</p>
+				<input list="mottaker_alternativer" name="reciever" placeholder="designers navn" id="mottaker" class="mottaker">
 				<datalist id="mottaker_alternativer">
 					<option value="Dina">Dina</option>
 					<option value="Kristin">Kristin</option>
@@ -52,8 +52,8 @@
 			
 			<label>
 				
-				Emne:
-				<input type="text" name="subject" id="emne" class="emne"/>
+				<p>Emne:</p>
+				<input type="text" name="subject" placeholder="emne" id="emne" class="emne"/>
 				
 			</label>
 			
@@ -62,21 +62,24 @@
 			
 			<label>
 				
-				Melding:
-				<textarea maxlength="1000" placeholder="Melding" name="message" id="melding"></textarea>
+				<p>Melding:</p>
+				<textarea maxlength="1000" placeholder="melding" name="message" id="melding"></textarea>
 				
 			</label>	
 			
 			<div id="message_status" class="status"></div>
 				
 				
-			<button type="submit" onClick="validate()" name="button">SEND</button>
+			<button type="button" onClick="validate()" name="button">SEND</button>
 			
 		</form>
 		
 		<div id="thank_you">
 		
-		
+			<img alt="designer"/>
+			<h1>Takk for din henvendelse!!</h1>
+			
+			
 		</div>
 			
 		
