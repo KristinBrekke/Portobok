@@ -1,5 +1,5 @@
 // JavaScript Document
-hamburger()
+
 document.getElementById("navbar-placeholder").innerHTML = 
     `<html>
 <head>
@@ -10,39 +10,69 @@ document.getElementById("navbar-placeholder").innerHTML =
 
 <body>
     <header>
-        <div id="blokk">
-        <label for= "box">&#9776</label>
+
+        <a href="../html/homepage.html" > <img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok"></a>
+
+		<div id="navigasjonsbar">
+			
+        <label for= "box" onClick="hamburger()">&#9776</label>
 			<input type = "checkbox" id ="box"/>
+			
 			<ul class="navbar">
-            <li><a href="../html/homepage.html"> <img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok"></a></li>
-            <li><a href="../html/designers.html">DESIGNERE</a></li>
-            <li><a href="../html/projects.html">PROSJEKTER</a></li>
-            <li><a href="../html/contact.html">KONTAKT</a></li>
-        </ul>
+			
+           		<li><a href="../html/designers.html">DESIGNERE</a></li>
+            	<li><a href="../html/projects.html">PROSJEKTER</a></li>
+            	<li><a href="../html/contact.html">KONTAKT</a></li>
+       	 </ul>
     </div>
 	
-	 <!--solveig putter inn hamburgerkode her -->
-		<!--<label for= "box">&#9776</label>
-			<input type = "checkbox" id ="box"/>-->
-		<!--kan bruke koden som allerede er her-->
-			<!--<div class="hamburger">
-            <a href="../html/homepage.html"> <img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok2"></a>
-            <a href="../html/designers.html">DESIGNERE</a>
-			<a href="../html/projects.html">PROSJEKTER</a>
-            <a href="#">KONTAKT</a>
-			</div>-->
     </header>
-<script href= "navbar.js"> </script>	
+<!--<script src="navbar.js" type="text/javascript"> </script>-->	
 </body>
 </html>
+
     `
+/*
+function hamburger(){
+	
+	var x = document.getElementById("box");
+	
+	var navbar = document.getElementsByClassName("navbar");
+	
+	console.log("hello world");
+	
+	for (var i =1; navbar.length; i++){
 
-function hamburger ();
-var x= document.getElementById("box");
-var navbar = document.getElementsByClassName("navbar")
-for (var i =1, navbar.length, i++);
-
-	if x.checked {
-		navbar[i].style.display = "block";
-		navbar[0.style.display] = "";
+		if (x.checked == true) {
+			navbar[i].style.display = "block";
+		}	
+	}
 }
+
+*/
+
+//hva vil jeg: når hamburgermenyen vises ønsker jeg at listen skal legge seg under isteden for sidelengs
+	
+function hamburger(){
+	var x = document.getElementById("box");
+	var navbar = document.getElementsByClassName("navbar");
+	
+	for (var i=0; i < navbar.length; i++){
+		if (x.checked){
+			console.log("hallo");
+			navbar[i].style.display ="block"; //gjør at listeelementene legger seg på linje nedover
+			//navbar.style.flexDirection: "column";
+			navbar[i].style.float= "none"; //gjør at listen ikke lenger legger seg bortover
+		}
+		else {
+			navbar[i].style.display = "none" //gjør at listeleementene ikke vises
+			console.log("hei")
+			navbar[i].style.float = "left";
+		}
+		
+	}
+	
+	
+	
+}
+
