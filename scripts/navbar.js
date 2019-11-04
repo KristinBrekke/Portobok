@@ -1,4 +1,5 @@
 // JavaScript Document
+hamburger()
 document.getElementById("navbar-placeholder").innerHTML = 
     `<html>
 <head>
@@ -21,3 +22,12 @@ document.getElementById("navbar-placeholder").innerHTML =
 </body>
 </html>
     `
+
+function hamburger ();
+var x= document.getElementById("box");
+var navbar = document.getElementsByClassName("navbar")
+for (var i =0, navbar.length, i++);
+
+	if x.checked {
+		navbar[i].style.display = "block";
+}

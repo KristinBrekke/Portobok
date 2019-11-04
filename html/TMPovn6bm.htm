@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<title>Portobook</title>
+<link rel="stylesheet" type="text/css" href="file:///C|/Users/oscar/Documents/GitHub/Portobok/style.css">
+</head>
+	
+	
+
+<body>
+	
+	<header>
+    	<div id="navbar-placeholder"></div>
+	</header> 
+	
+	<main id="contact_main"> <!--Gir den en klasse så det skal være enklere å treffe kun elementer på denne siden med css-->
+		
+		
+		
+		<form id="contact_form">
+			<h1>Kontakt designer</h1>
+			<label>
+				<p>Sender:</p>
+				<input type="email" placeholder="kari.nordmann@mail.no" name="email" id="email" class="email"/>
+			</label>
+			<div id="email_status" class="status"></div>
+			
+			
+			<label>
+				<p>Mottaker:</p>
+				<input list="mottaker_alternativer" name="reciever" id="mottaker" class="mottaker">
+				<datalist id="mottaker_alternativer">
+					<option value="Dina">Dina</option>
+					<option value="Kristin">Kristin</option>
+					<option value="Oskar">Oskar</option>
+					<option value="Solveig">Solveig</option>
+					<option value="Jenny Marie">Jenny Marie</option>
+				
+				</datalist>
+				
+			</label>
+			<div id="reciever_status" class="status"></div>
+			
+			
+			<label>
+				<p>Emne:</p>
+				<input type="text" name="subject" id="emne" class="emne"/>
+			</label>
+			<div id="subject_status" class="status"></div>
+			
+			
+			<label>
+				<p>Melding:</p>
+				<textarea maxlength="1000" placeholder="Melding" name="message" id="melding"></textarea>
+			</label>			
+			<div id="message_status" class="status"></div>
+				
+				
+			<button type="submit" onClick="validate()" name="button">SEND</button>
+			
+		</form>
+		
+		<div id="thank_you">
+			
+		
+		</div>
+		
+		
+		
+	</main>	
+	
+	<footer>
+    	<div id="footer-placeholder"></div>
+    </footer>
+	
+	<script src="file:///C|/Users/oscar/Documents/GitHub/Portobok/scripts/navbar.js"></script>
+	
+	<script src="file:///C|/Users/oscar/Documents/GitHub/Portobok/scripts/footer.js"></script>
+	
+	<script src="file:///C|/Users/oscar/Documents/GitHub/Portobok/scripts/contactscheme.js"></script>
+	
+</body>
+</html>
