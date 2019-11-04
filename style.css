@@ -143,15 +143,22 @@ footer{
 
 
 /*CSS til slideshow/bildekarusell */
+#slideshow{
+	max-width: 100%;
+	height: auto;
+	margin: 10%;
+}
+
 .slideshow-container {
-    max-width: 1066.5px;
-    position: relative;
-    margin: auto;
+    max-width: 100%; 
+    position: relative; 
+	height: auto;
 }
 
 .mySlides {
   display: none;
-  height: 600px;
+  max-width: 100%;
+  height: auto;
 }
 
 .prev,
@@ -433,7 +440,7 @@ label {
 	.navbar li {
 		display: block;
 		border-bottom: 1px solid; /*midlertidig*/
-	}
+	}/*
 label {
 	float:right;
 	display: block;
@@ -498,6 +505,9 @@ label {
 	display: block;
 }
 
+#thank_you {
+	display: none;
+}
 
 #contact_form p {
 	margin-left: 0;
