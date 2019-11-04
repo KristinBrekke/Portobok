@@ -8,7 +8,7 @@ var myTimer;
 
 var slideshowContainer;
 
-function plusSlides(n){		//
+function plusSlides(n){		//this function initializes the slideshow as well as decide whether to go forward or backward within the sequence
   clearInterval(myTimer);	//The clearInterval() method clears a timer set with the setInterval() method
   if (n < 0){
     showSlides(slideIndex -= 1);
@@ -22,7 +22,7 @@ function plusSlides(n){		//
   }
 }
 
-function showSlides(n){
+function showSlides(n){		//the function gathers the slide elements and the dots elements 
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
