@@ -245,17 +245,16 @@ footer{
 	height: 35vw;
 }
 
-#person{
-
-}
-
 #ikon{
 
+	width: 15vw;
+	height: 15vw;
+}
+
+#ikonbilde{
 	margin-left: auto;
 	padding-right: 10vw;
 	margin-top: 10vw;
-	width: 250px;
-	height: 250px;
 }
 
 #kaffekanne{
@@ -313,6 +312,13 @@ footer{
 	display: flex;
 	margin: 10%;
 	text-align: justify;
+}
+
+@media (max-width: 940px){
+	#persontekst{
+		font-size: 15px;
+	}	
+	
 }
 
 /*CSS for produktsider*/
