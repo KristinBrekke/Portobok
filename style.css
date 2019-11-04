@@ -234,6 +234,7 @@ footer{
     font-size: 20px;
 	margin-left: 5vw;
 	margin-right: 0vw;
+	margin-top: 0vw;
 }
 
 .undertekst{
@@ -247,12 +248,17 @@ footer{
 	height: 35vw;
 }
 
+#person{
+
+}
+
 #ikon{
 
 	margin-left: auto;
 	padding-right: 10vw;
 	margin-top: 10vw;
-
+	width: 250px;
+	height: 250px;
 }
 
 #kaffekanne{
@@ -274,10 +280,6 @@ footer{
 	opacity: 0;
 	/*
 	background-color: #009F67;*/
-
-
-
-
 }
 
 #produkttekst2{
@@ -320,12 +322,19 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding-bottom: 10vw;
+	padding-top: 10vw;
+
 
 }
 
 .Pbilde{
-	width: 35vw;
-	height: 35vw;
+	width: 80vw;
+	height: 45vw;
+}
+
+#produkttekst{
+	margin: 10vw;
 }
 
 #ptekst{
@@ -405,15 +414,14 @@ footer{
 	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
     color: #DEF3ED;
 }
-
-/*responsiv navbar///hamburgermeny*/
+/*
+/*responsiv navbar///hamburgermeny*//*
 label {
 	float: left;
-	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
-	}/*når man trykker på burgermenyen blir boksen kjekket*/
-#box { 
-	display: none;
-}
+	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*//*
+	}
+#box { /*når man trykker på burgermenyen blir boksen kjekket*//*
+	display: none;}
 @media (max-width: 940px) {
 	
 	.navbar {
@@ -432,18 +440,24 @@ label {
 	color: red;
 	cursor: pointer;
 }
-}
-	
-	
+
+
+
 
 /* ferdig hamburgermeny*/
 
 /*Footer*/
-
+#footer{
+	background-color:#000000;
+	height: 100px;
+    padding: 20px;
+	position: relative;
+}
 .contact_information{
     color: #DEF3ED;
 }
 .footer li { /*Styling av listeelementer i navigasjonsmenyen*/
+
 	float: left;
 	width: 20vw;
     font-size: 20px;
@@ -457,6 +471,7 @@ label {
 #adress{
     float: left;
 }
+
 /*Footer*/
 /*Start kontaktside*/
 
@@ -475,7 +490,9 @@ label {
 	margin: auto;
 	margin-bottom: 100px;
 	padding: 50px;
+	display: block;
 }
+
 
 #contact_form p {
 	margin-left: 0;
