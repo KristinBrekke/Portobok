@@ -251,17 +251,16 @@ footer{
 	height: 35vw;
 }
 
-#person{
-
-}
-
 #ikon{
 
+	width: 15vw;
+	height: 15vw;
+}
+
+#ikonbilde{
 	margin-left: auto;
 	padding-right: 10vw;
 	margin-top: 10vw;
-	width: 250px;
-	height: 250px;
 }
 
 #kaffekanne{
@@ -319,6 +318,13 @@ footer{
 	display: flex;
 	margin: 10%;
 	text-align: justify;
+}
+
+@media (max-width: 940px){
+	#persontekst{
+		font-size: 15px;
+	}	
+	
 }
 
 /*CSS for produktsider*/
@@ -435,11 +441,11 @@ label {
 		width: 100vw;
 		/*display: none;*/
 		
-	}
+	
 	.navbar li {
 		display: block;
 		border-bottom: 1px solid; /*midlertidig*/
-	}
+	}/*
 label {
 	float:right;
 	display: block;
@@ -458,24 +464,29 @@ label {
 	height: 100px;
     padding: 20px;
 	position: relative;
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    
 }
 .contact_information{
     color: #DEF3ED;
 }
-.footer li { /*Styling av listeelementer i navigasjonsmenyen*/
 
-	float: left;
-	width: 20vw;
-    font-size: 20px;
-}
 #email{
-    float: left;
+    grid-column: 1;
+    position: absolute;
+    bottom: 4px;
 }
 #phone{
-    float: left;
+    grid-column: 2;
+    position: absolute;
+    bottom: 4px;
 }
 #adress{
-    float: left;
+    grid-column: 3;
+    position: absolute;
+    bottom: 4px;
+    
 }
 
 /*Footer*/
@@ -499,6 +510,9 @@ label {
 	display: block;
 }
 
+#thank_you {
+	display: none;
+}
 
 #contact_form p {
 	margin-left: 0;

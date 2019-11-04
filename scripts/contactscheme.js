@@ -1,5 +1,32 @@
 // JavaScript Document
 
+
+
+function sendMail() {
+	
+	
+	
+	var form = document.getElementById("contact_form");
+	form.style.display = "none";
+	
+	var confirmation = document.getElementById("thank_you");
+	confirmation.style.display = "block";
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 function validate() {
 
 	
@@ -37,33 +64,46 @@ function validate() {
 	}
 	
 	
+	var validation = 0;
+	
 	
 	if (emailValue.length > 5 && emailValue.includes("@") && emailValue.includes(".")) {
-		
+		validation += 1;
 	}
 	else {
-		event.preventDefault();
+		event.preventDefault(); //trenger jeg denne? bruker den ikke, men den viser et konsept...
 		statusEmail.innerHTML = "Mail-addressen er desverre ikke gyldig...";
 	}
 	
 	if (designersArray.includes(recieverValue)){
-			console.log(recieverValue);
+			validation += 1;
 		}
 	else{
-		event.preventDefault();
+		event.preventDefault();//trenger jeg denne? bruker den ikke, men den viser et konsept...
 		statusReciever.innerHTML = "Vi kan desverre ikke sende til denne mottakeren!..";
 	}
 	
 	if (subjectValue.length < 2){
-		event.preventDefault();
+		event.preventDefault();//trenger jeg denne? bruker den ikke, men den viser et konsept...
 		statusSubject.innerHTML = "Vennligst fyll inn et gyldig emne";
+	}
+	else{
+		validation += 1;
+		
 	}
 	
 	if 	(messageValue.length < 20){
-		event.preventDefault();
+		event.preventDefault();//trenger jeg denne? bruker den ikke, men den viser et konsept...
 		statusMessage.innerHTML = "Teksten må inneholde minst 20 tegn!";
 	}
+	else{
+		validation += 1;
+		
+	}
 	
+	if (validation == 4){
+		sendMail();
+	}
 	}
 
 
