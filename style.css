@@ -429,7 +429,7 @@ label {
 		width: 100vw;
 		/*display: none;*/
 		
-	}
+	
 	.navbar li {
 		display: block;
 		border-bottom: 1px solid; /*midlertidig*/
@@ -452,24 +452,29 @@ label {
 	height: 100px;
     padding: 20px;
 	position: relative;
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    
 }
 .contact_information{
     color: #DEF3ED;
 }
-.footer li { /*Styling av listeelementer i navigasjonsmenyen*/
 
-	float: left;
-	width: 20vw;
-    font-size: 20px;
-}
 #email{
-    float: left;
+    grid-column: 1;
+    position: absolute;
+    bottom: 4px;
 }
 #phone{
-    float: left;
+    grid-column: 2;
+    position: absolute;
+    bottom: 4px;
 }
 #adress{
-    float: left;
+    grid-column: 3;
+    position: absolute;
+    bottom: 4px;
+    
 }
 
 /*Footer*/
