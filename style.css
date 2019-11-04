@@ -405,35 +405,35 @@ footer{
 	text-decoration: none; /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
     color: #DEF3ED;
 }
-
-/*responsiv navbar///hamburgermeny*/
+/*
+/*responsiv navbar///hamburgermeny*//*
 label {
 	float: left;
-	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
+	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*//*
 	}
-#box { /*når man trykker på burgermenyen blir boksen kjekket*/
+#box { /*når man trykker på burgermenyen blir boksen kjekket*//*
 	display: none;}
 @media (max-width: 940px) {
-	.navbar a:not(:first-child) {  /*a:not(first-child) gjemmer alle linkene i navbaren utenom logo*/
+	.navbar a:not(:first-child) {  /*a:not(first-child) gjemmer alle linkene i navbaren utenom logo*//*
 		display: none;
 	}
 	#box {
 		float: right;
-		display: block; /*gjør at listen skal vises når siden er liten*/
+		display: block; /*gjør at listen skal vises når siden er liten*//*
 	}
 }
 
 
 @media (max-width:940px){
 /*	.navbar {  /*a:not(first-child) gjemmer alle linkene i navbaren utenom logo*/
-	/*	display: none;*/
+	/*	display: none;*//*
 
 	}
 
 	label {
 		float: right;
 		display: block;
-		color: #DEF3ED;/*gjør at listen skal vises når siden er liten*/
+		color: #DEF3ED;/*gjør at listen skal vises når siden er liten*//*
 	}
 	.navbar {
 		text-align: center;
@@ -453,10 +453,12 @@ label {
 
 /*Footer*/
 
+
 .contact_information{
     color: #DEF3ED;
 }
 .footer li { /*Styling av listeelementer i navigasjonsmenyen*/
+
 	float: left;
 	width: 20vw;
     font-size: 20px;
@@ -470,6 +472,7 @@ label {
 #adress{
     float: left;
 }
+
 /*Footer*/
 /*Start kontaktside*/
 
@@ -488,7 +491,9 @@ label {
 	margin: auto;
 	margin-bottom: 100px;
 	padding: 50px;
+	display: block;
 }
+
 
 #contact_form p {
 	margin-left: 0;

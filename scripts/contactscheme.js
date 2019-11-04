@@ -3,7 +3,7 @@
 function validate() {
 
 	
-	var emailValue = document.getElementById("email").value;
+	var emailValue = document.getElementById("contact_email").value;
 	
 	var statusEmail = document.getElementById("email_status");
 	statusEmail.innerHTML = "";
