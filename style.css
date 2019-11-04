@@ -144,21 +144,20 @@ footer{
 
 /*CSS til slideshow/bildekarusell */
 #slideshow{
-	max-width: 100%;
+	width: 80vw;
 	height: auto;
-	margin: 10%;
+	margin: 10%
 }
 
 .slideshow-container {
     max-width: 100%; 
     position: relative; 
 	height: auto;
-}
+	width: 80vw;
+} 
 
 .mySlides {
   display: none;
-  max-width: 100%;
-  height: auto;
 }
 
 .prev,
