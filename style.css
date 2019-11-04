@@ -411,7 +411,7 @@ footer{
 	}
 	.hamburger {
 		float: right;
-		display: block; /*gjør at listen skal vises når siden er liten/*
+		display: block; /*gjør at listen skal vises når siden er liten*/
 	}
 }
 @media (max-width:940px){
@@ -422,7 +422,8 @@ footer{
 	
 
 	
-}
+	}
+	
 
 /* ferdig hamburgermeny*/
 /*Start kontaktside*/
