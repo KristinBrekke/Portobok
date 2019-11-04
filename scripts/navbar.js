@@ -26,8 +26,9 @@ document.getElementById("navbar-placeholder").innerHTML =
 function hamburger ();
 var x= document.getElementById("box");
 var navbar = document.getElementsByClassName("navbar")
-for (var i =0, navbar.length, i++);
+for (var i =1, navbar.length, i++);
 
 	if x.checked {
 		navbar[i].style.display = "block";
+		navbar[0.style.display] = "";
 }
