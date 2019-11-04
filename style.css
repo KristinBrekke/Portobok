@@ -143,14 +143,6 @@ footer{
 }
 
 /*CSS til slideshow/bildekarusell */ 
-#slideshow_header{
-	text-align:left;
-	margin-left: 420px;
-	font-size: 20px;
-	font-weight: 350;
-	
-}
-
 .slideshow-container {
     max-width: 600px;
     position: relative;
@@ -193,12 +185,14 @@ footer{
 }
 
 .text {
-    font-family: "Pt serif", Helvetica, Arial, "sans-serif";
-	color: #009F67;
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: white;
 	background-color: black;
-    font-size: 15px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+	opacity: 0.5;
+    font-size: 20px;
+	font-weight: 400;
+    padding-top: 40px;
+    padding-bottom: 40px;
     position: absolute;
     bottom: 0;
     width: 100%;
