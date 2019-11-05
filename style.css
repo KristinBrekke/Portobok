@@ -327,7 +327,10 @@ footer{
 }
 
 @media (max-width: 940px){
-	#persontekst, #produkttekst1, #produkttekst2{
+	h1{
+		font-size: 30px;
+	}
+	#persontekst, #produkttekst1, #produkttekst2 #produkttekst .text_about_page{
 		font-size: 15px;
 	}	
 	
@@ -500,7 +503,7 @@ responsiv navbar///hamburgermeny*/
 /*Footer*/
 #footer{
 	background-color:#000000;
-	height: 500px;
+	height: 110px;
     padding: 20px;
 	position: relative;
     display: grid;
@@ -534,7 +537,7 @@ responsiv navbar///hamburgermeny*/
 	#footer{
         display: grid;
         height: 150px;
-        grid-template-rows: 30px 30px 30px 30px;
+        grid-template-rows: 50px 30px 30px 30px;
         grid-template-columns: 100vw;
 	}
     .contact_information{
