@@ -415,7 +415,7 @@ footer{
 .navbar{
 	position: absolute;
     list-style-type: none;
-    /*border: dashed green;*/
+    border: dashed green;
 	display: grid;
 	grid-template-columns: 200px 200px 200px;
 	grid-column-gap: 100px; 
@@ -425,17 +425,17 @@ footer{
     /*height: 50px;*/
     
 }
-.navbar li { /*Styling av listeelementer i navigasjonsmenyen*/
+.navbar a { /*Styling av listeelementer i navigasjonsmenyen*/
 	/*float: left;*/
 	display: inline;
 	text-align: center;
-    font-size: 20px;
+    font-size: 15px;
 	margin-right: 3%;
-	/*border: dotted blue;*/
-	width: 200px;
+	border: dotted blue;
+	width: 10vw;
 }
 
-.navbar li:first-child{
+/*.navbar li:first-child{
 	grid-column: 1;
 }
 
@@ -445,7 +445,7 @@ footer{
 
 .navbar li:nth-child(3){
 	grid-column: 3;
-}
+}*/
 
 .navbar a{
     cursor: pointer; /* Gjør pekern om til klikkehånd*/
@@ -471,15 +471,18 @@ responsiv navbar///hamburgermeny*/
 
 @media (max-width: 940px) {
 
-	.navbar {
-		
-		
-	}
 	.navbar  {
 		text-align: center;
-		width: 100vw;
+		width: 60vw;
 		display: none;
 		border-bottom: 1px solid; /*midlertidig*/
+	
+	 }
+	
+@media (min-width: 940px){
+	.navbar {
+		display: inline;
+	}
 	}
 #navigasjonsbar label {
 	float:right;
