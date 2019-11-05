@@ -1,10 +1,10 @@
 // JavaScript Document
 
+function reset() {
+	location.reload();
+}
 
-
-function sendMail() {
-	
-	
+function sendMail(upperName) {
 	
 	var form = document.getElementById("contact_form");
 	form.style.display = "none";
@@ -12,14 +12,29 @@ function sendMail() {
 	var confirmation = document.getElementById("thank_you");
 	confirmation.style.display = "block";
 	
+	var text = "";
 	
+	var name = upperName.toLowerCase(); 
+	
+	var imageDiv = document.getElementById("thank_you");
+	
+	var wordsInName = name.split(' ').length;
+	
+	
+	if (name.split(' ').length > 2){ // husk at det MÅ være mellomrom mellom anførselstegnene her, ellers deler den opp mellom hver bokstav!!!
+		text = "../images/icon_" + name.split(' ')[0] + "_" + name.split(' ')[1] + ".png";
+	}
+	else {
+		text = "../images/icon_" + name.split(' ')[0] + ".png";
+	}
+
+	imageDiv.innerHTML = '<img src=' + text + ' alt="designer"/> <p>Tusen takk for din hendvendese! <br> Jeg svarer deg så raskt jeg kan. :) <br> <span id="mvh">Med vennlig hilsen </span><br> ' + upperName + ' <br>  <a onClick="reset()">Tilbake</a></p>';
+	
+	window.scrollTo(0,0);
+
+
+
 }
-
-
-
-
-
-
 
 
 
@@ -102,7 +117,7 @@ function validate() {
 	}
 	
 	if (validation == 4){
-		sendMail();
+		sendMail(recieverValue);
 	}
 	}
 
