@@ -500,7 +500,7 @@ responsiv navbar///hamburgermeny*/
 /*Footer*/
 #footer{
 	background-color:#000000;
-	height: 100px;
+	height: 500px;
     padding: 20px;
 	position: relative;
     display: grid;
@@ -513,26 +513,46 @@ responsiv navbar///hamburgermeny*/
 
 #email{
     grid-column: 1;
-    position: absolute;
+    position: relative;
     bottom: 4px;
 }
 #phone{
     grid-column: 2;
-    position: absolute;
+    position: relative;
     bottom: 4px;
 }
 #adress{
     grid-column: 3;
-    position: absolute;
+    position: relative;
     bottom: 4px;
     
 }
 
 @media (max-width: 940px){
+    
+    
 	#footer{
-		grid-template-rows: 33vw 33vw 33vw;
-	}	
-	
+        display: grid;
+        height: 150px;
+        grid-template-rows: 30px 30px 30px 30px;
+        grid-template-columns: 100vw;
+	}
+    .contact_information{
+        grid-row: 1;
+    }
+    #email{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #phone{
+         grid-column: 1;
+        grid-row: 3;
+    }
+    #adress{
+         grid-column: 1;
+        grid-row: 4;
+    }
+
 }
 
 /*Footer*/
