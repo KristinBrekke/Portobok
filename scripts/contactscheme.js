@@ -21,14 +21,14 @@ function sendMail(upperName) {
 	var wordsInName = name.split(' ').length;
 	
 	
-	if (name.split(' ').length > 1){ // husk at det MÅ være mellomrom mellom anførselstegnene her, ellers deler den opp mellom hver bokstav!!!
+	if (name.split(' ').length > 2){ // husk at det MÅ være mellomrom mellom anførselstegnene her, ellers deler den opp mellom hver bokstav!!!
 		text = "../images/icon_" + name.split(' ')[0] + "_" + name.split(' ')[1] + ".png";
 	}
 	else {
-		text = "../images/icon_" + name + ".png";
+		text = "../images/icon_" + name.split(' ')[0] + ".png";
 	}
 
-	imageDiv.innerHTML = '<img src=' + text + ' alt="designer"/> <p>Tusen takk for din hendvendese! <br> Jeg svarer deg så raskt jeg kan. :) <br> Med vennlig hilsen <br> ' + upperName + ' <br>  <a onClick="reset()">Tilbake</a></p>';
+	imageDiv.innerHTML = '<img src=' + text + ' alt="designer"/> <p>Tusen takk for din hendvendese! <br> Jeg svarer deg så raskt jeg kan. :) <br> <span id="mvh">Med vennlig hilsen </span><br> ' + upperName + ' <br>  <a onClick="reset()">Tilbake</a></p>';
 	
 	window.scrollTo(0,0);
 
