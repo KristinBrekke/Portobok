@@ -2,9 +2,7 @@
 
 
 
-function sendMail() {
-	
-	
+function sendMail(upperName) {
 	
 	var form = document.getElementById("contact_form");
 	form.style.display = "none";
@@ -12,14 +10,21 @@ function sendMail() {
 	var confirmation = document.getElementById("thank_you");
 	confirmation.style.display = "block";
 	
+	var name = upperName.toLowerCase(); 
 	
+	var text = "../images/icon_" + name + ".png";
+	
+	var imageDiv = document.getElementById("thank_you");
+	
+	//var image = imageDiv.getElementsByTagName("img");
+
+	imageDiv.innerHTML = "<img src=" + text + " alt='designer'/>";
+	
+	
+
+
+
 }
-
-
-
-
-
-
 
 
 
@@ -102,7 +107,7 @@ function validate() {
 	}
 	
 	if (validation == 4){
-		sendMail();
+		sendMail(recieverValue);
 	}
 	}
 

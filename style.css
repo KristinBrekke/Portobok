@@ -327,7 +327,10 @@ footer{
 }
 
 @media (max-width: 940px){
-	#persontekst, #produkttekst1, #produkttekst2{
+	h1{
+		font-size: 30px;
+	}
+	#persontekst, #produkttekst1, #produkttekst2 #produkttekst .text_about_page{
 		font-size: 15px;
 	}	
 	
