@@ -28,7 +28,7 @@ function sendMail(upperName) {
 		text = "../images/icon_" + name + ".png";
 	}
 
-	imageDiv.innerHTML = '<img src=' + text + ' alt="designer"/> <p>Tusen takk for din hendvendese! <br> Jeg svarer deg så raskt jeg kan. :) <br> Med vennlig hilsen ' + upperName + ' <br>  <a onClick="reset()">Tilbake</a></p>';
+	imageDiv.innerHTML = '<img src=' + text + ' alt="designer"/> <p>Tusen takk for din hendvendese! <br> Jeg svarer deg så raskt jeg kan. :) <br> Med vennlig hilsen <br> ' + upperName + ' <br>  <a onClick="reset()">Tilbake</a></p>';
 	
 	window.scrollTo(0,0);
 
