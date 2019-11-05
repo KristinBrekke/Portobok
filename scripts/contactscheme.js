@@ -3,7 +3,7 @@
 function reset() {
 	location.reload();
 }
-
+// mottakerforslagene kommer ikke opp i safari!!!!!
 function sendMail(upperName) {
 	
 	var form = document.getElementById("contact_form");
@@ -121,6 +121,7 @@ function validate() {
 	}
 	else{
 		window.scrollTo(0,0);
+
 	}
 	}
 
