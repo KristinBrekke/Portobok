@@ -578,6 +578,27 @@ responsiv navbar///hamburgermeny*/
 
 #thank_you {
 	display: none;
+	width: 100vw;
+	height: 100vh;
+	margin: auto;
+	
+}
+
+#thank_you p {
+	width: 350px;
+	margin: auto 20vw auto 30vw;
+	line-height: 28px;
+}
+
+#thank_you img {
+	display: block;
+	margin: 50px 20vw 10px 30vw;
+	width: 350px;
+}
+
+#thank_you a {
+	color: blue;
+	font-size: 16px;
 }
 
 #contact_form p {

@@ -1,6 +1,8 @@
 // JavaScript Document
 
-
+function reset() {
+	location.reload();
+}
 
 function sendMail(upperName) {
 	
@@ -10,17 +12,25 @@ function sendMail(upperName) {
 	var confirmation = document.getElementById("thank_you");
 	confirmation.style.display = "block";
 	
-	var name = upperName.toLowerCase(); 
+	var text = "";
 	
-	var text = "../images/icon_" + name + ".png";
+	var name = upperName.toLowerCase(); 
 	
 	var imageDiv = document.getElementById("thank_you");
 	
-	//var image = imageDiv.getElementsByTagName("img");
+	var wordsInName = name.split(' ').length;
+	
+	
+	if (name.split(' ').length > 1){ // husk at det MÅ være mellomrom mellom anførselstegnene her, ellers deler den opp mellom hver bokstav!!!
+		text = "../images/icon_" + name.split(' ')[0] + "_" + name.split(' ')[1] + ".png";
+	}
+	else {
+		text = "../images/icon_" + name + ".png";
+	}
 
-	imageDiv.innerHTML = "<img src=" + text + " alt='designer'/>";
+	imageDiv.innerHTML = '<img src=' + text + ' alt="designer"/> <p>Tusen takk for din hendvendese! <br> Jeg svarer deg så raskt jeg kan. :) <br> Med vennlig hilsen ' + upperName + ' <br>  <a onClick="reset()">Tilbake</a></p>';
 	
-	
+	window.scrollTo(0,0);
 
 
 
