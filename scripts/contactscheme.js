@@ -119,6 +119,9 @@ function validate() {
 	if (validation == 4){
 		sendMail(recieverValue);
 	}
+	else{
+		window.scrollTo(0,0);
+	}
 	}
 
 
