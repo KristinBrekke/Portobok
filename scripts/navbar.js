@@ -1,24 +1,12 @@
 // JavaScript Document
 
-//document.getElementById("navbar-placeholder").innerHTML = 
-    `<html>
-<head>
-<meta charset="utf-8">
-<title>Navbar</title>
-<link rel="stylesheet" type="text/css" href="../style.css">
-</head>
-
-<body>
-    <header>
-
-        <a href="../html/homepage.html" > <img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok"></a>
-
-		<div id="navigasjonsbar">
+document.getElementById("navbar-placeholder").innerHTML = 
+    `<div id="navigasjonsbar">
 			
         <label for= "box" onClick="hamburger()">&#9776</label>
 			<input type = "checkbox" id ="box"/>
-			
-			<ul class="navbar">
+			<a href="../html/homepage.html"> <img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok"></a>
+			<ul id="navbar">
 			
            		<li><a href="../html/designers.html">DESIGNERE</a></li>
             	<li><a href="../html/projects.html">PROSJEKTER</a></li>
@@ -26,10 +14,6 @@
        	 </ul>
     </div>
 	
-    </header>
-<!--<script src="navbar.js" type="text/javascript"> </script>-->	
-</body>
-</html>
 
     `
 /*
@@ -55,40 +39,47 @@ function hamburger(){
 	
 function hamburger(){
 	var x = document.getElementById("box");
-	var navbar = document.getElementsByClassName("navbar");
-	var y = window.matchMedia("(min-width: 940px)");
+	var navbar = document.getElementById("navbar");
 	
 	
-	for (var i=0; i < navbar.length; i++){
-			
-		if (x.checked){
-			
-			navbar[i].style.display ="block"; //skulle gjør at listeelementene legger seg på rad nedover
-			//navbar.style.flexDirection= "column";
-			//navbar[i].style.float= "none"; //gjør at listen ikke lenger legger seg bortover
-			console.log(navbar[i]);
-			if (y.matches){ //dette skal være om skjermen er større enn 940px
-				navbar[i].style.display ="inline"
-				console.log("heia");
+					
+			if (x.checked == false){
+				console.log("if");
+				navbar.style.display = "block"; //skulle gjør at listeelementene legger seg på rad nedover
+				navbar.style.float = "none" //flyter ikke lenger til venstre
+				
+			}
+		
+			else {
+				navbar.style.display = "none"; //gjør at listeleementene ikke vises
+				console.log("else") 
 			}
 		}
 		
-		else {
-			navbar[i].style.display = "none" //gjør at listeleementene ikke vises
-			console.log("hei")
-			
-			if (y.matches){ //dette skal være om skjermen er større enn 940px
-				navbar[i].style.display ="inline"
-				console.log("heia");
+	function resize() {
+		var x = document.getElementById("box");
+		var y = window.matchMedia("(max-width: 940px)");
+		if (y.matches == true){ //dette skal være om skjermen er mindre enn 940px
+			navbar.style.display = "none"
+			if(x.checked){
+			navbar.style.display = "block"
+			navbar.style.float="none"
 			}
 		}
-			
-			
+		else { //når skjermen er større enn 940px
+			console.log("kom igjen");
+			navbar.style.display = "inline"; 
+			navbar.style.float = "right"; //flyter til venstre
+			x.checked = false;
 		}
+			
+	}
+		
+
 		
 	
 	
 	
 	
-}
+
 
