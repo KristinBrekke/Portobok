@@ -1,6 +1,89 @@
 // JavaScript Document
 
-// Credit: https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9 (03-04/11/19) 
+
+
+var bilderObjects = [ 
+{
+  url: "../images/dina_kaffekanne_1_landscape.jpg",
+  href: "project_dina1.html",
+  alt: "dina_kaffekanne", 
+  text: "Dina: Kaffekanne"
+},	
+{
+  url: "../images/dina_terminal_1_landscape.jpg",
+  href:"project_dina2.html",
+  alt:"dina_terminal",
+  text:"Dina: Kundestyrt Bankterminal"
+},
+{
+  url: "../images/jennymarie_høyttaler_1_landskap.png",
+  href:"project_jennymarie1.html",
+  alt:"jm_høyttaler",
+  text:"Jenny Marie: Høyttaler"
+},
+{
+  url: "../images/jennymarie_kaffekanne_1_landskap.png",
+  href:"project_jennymarie2.html", 
+  alt:"jm_kaffekanne", 
+  text:"Jenny Marie: Kaffekanne", 
+},
+{
+  url: "../images/kristin_høyttaler_1_landscape.jpg",
+  href:"project_kristin1.html", 
+  alt:"kristin_høyttaler", 
+  text: "Kristin: Høyttaler"
+},
+{
+  url: "../images/kristin_kaffekanne_1_landscape.jpg",
+  href:"project_kristin2.html", 
+  alt:"kristin_kaffekanne", 
+  text: "Kristin: Kaffekanne"
+},
+{
+  url: "../images/oskar_termokanne_1_landscape.jpeg",
+  href:"project_oskar1.html", 
+  alt:"oskar_termokanne", 
+  text:"Oskar: Termokanne"
+},
+{
+  url: "../images/oskar_ukulele_1_landscape.JPG",
+  href:"project_oskar2.html", 
+  alt:"oskar_ukulele", 
+  text:"Oskar: Ukulele"
+},
+{
+  url: "../images/kaffekanne_1_landskape.JPG",
+  href:"project_solveig1.html",
+  alt:"solveig_kaffekanne",
+  text:"Solveig: Kaffekanne"
+},
+{
+  url: "../images/solveig_mauren_2_landscape-kopi.png",
+  href:"project_solveig2.html",
+  alt:"solveig_lampe", 
+  text:"Solveig: Lampe", 
+}
+];
+
+var dotContainer = document.getElementById("dots");
+var slideshowContainer = document.getElementById("slideshow-container");
+
+var dotsHTML = "";
+var imgsHTML = "";
+for (var i = 0; i < bilderObjects.length; i++) {
+	var imgHTML = 	'<div class="mySlides"><a href="' + bilderObjects[i].href + '"><img src="' + bilderObjects[i].url + '"> <alt="' + bilderObjects[i].alt + '"/></a><div class="text">' + bilderObjects[i].text + '</div></div>';
+	imgsHTML += imgHTML;
+	
+	var dotHTML = '<span class="dot" onclick="currentSlide(' + (i+1) +  ')"></span>';
+	dotsHTML += dotHTML;
+	
+	
+}
+dotContainer.innerHTML = dotsHTML;
+slideshowContainer.innerHTML = imgsHTML;
+
+
+// Inspiration credit: https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9 (03-04/11/19) 
 
 var slideIndex = 1;
 

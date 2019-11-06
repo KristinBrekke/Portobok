@@ -6,19 +6,20 @@
 <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
-<body>
+<body onresize="resize()" >
+	<!--Kaller på funksjonen hver gang bodien er endret-->
     <header>
         <div id="navigasjonsbar">
 			
         <label for= "box" onClick="hamburger()">&#9776</label>
 			<input type = "checkbox" id ="box"/>
 			<a href="../html/homepage.html"> <img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok"></a>
-			<div class="navbar">
+			<ul id="navbar">
 			
-           		<a href="../html/designers.html">DESIGNERE</a>
-            	<a href="../html/projects.html">PROSJEKTER</a>
-            	<a href="../html/contact.html">KONTAKT</a>
-       	 </div>
+           		<li><a href="../html/designers.html">DESIGNERE</a></li>
+            	<li><a href="../html/projects.html">PROSJEKTER</a></li>
+            	<li><a href="../html/contact.html">KONTAKT</a></li>
+       	 </ul>
     </div>
 	
     </header>
