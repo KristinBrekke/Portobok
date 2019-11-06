@@ -37,43 +37,44 @@ function hamburger(){
 
 //hva vil jeg: når hamburgermenyen vises ønsker jeg at listen skal legge seg under isteden for sidelengs
 	
-function hamburger(){
+function hamburger() {
 	var x = document.getElementById("box");
 	var navbar = document.getElementById("navbar");
 	
 	
 					
-			if (x.checked == false){
-				console.log("if");
-				navbar.style.display = "block"; //skulle gjør at listeelementene legger seg på rad nedover
-				navbar.style.float = "none" //flyter ikke lenger til venstre
-				
-			}
-		
-			else {
-				navbar.style.display = "none"; //gjør at listeleementene ikke vises
-				console.log("else") 
-			}
-		}
-		
-	function resize() {
-		var x = document.getElementById("box");
-		var y = window.matchMedia("(max-width: 940px)");
-		if (y.matches == true){ //dette skal være om skjermen er mindre enn 940px
-			navbar.style.display = "none"
-			if(x.checked){
-			navbar.style.display = "block"
-			navbar.style.float="none"
-			}
-		}
-		else { //når skjermen er større enn 940px
-			console.log("kom igjen");
-			navbar.style.display = "inline"; 
-			navbar.style.float = "right"; //flyter til venstre
-			x.checked = false;
-		}
-			
+	if (x.checked == false){
+		console.log("if");
+		navbar.style.display = "block"; //skulle gjør at listeelementene legger seg på rad nedover
+		navbar.style.float = "none" //flyter ikke lenger til venstre
+
 	}
+
+	else {
+		navbar.style.display = "none"; //gjør at listeleementene ikke vises
+		console.log("else") 
+	}
+}
+		
+function resize() {
+	console.log("resized");
+	var x = document.getElementById("box");
+	var y = window.matchMedia("(max-width: 940px)");
+	if (y.matches == true) { //dette skal være om skjermen er mindre enn 940px
+		navbar.style.display = "none"
+		if(x.checked) {
+		navbar.style.display = "block"
+		navbar.style.float="none"
+		}
+	}
+	else { //når skjermen er større enn 940px
+		console.log("kom igjen");
+		navbar.style.display = "inline"; 
+		navbar.style.float = "right"; //flyter til venstre
+		x.checked = false;
+	}
+
+}
 		
 
 		

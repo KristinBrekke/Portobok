@@ -363,7 +363,6 @@ footer{
 	position: static;
 	width: 100vw;
 	height: 20vw;
-	
 	font-family: "pt-serif"; /*får ikke til å ha en backupfont uten at den blir gjeldende*/
 	font-size: 18vw; /*bruker vw isteden for px fordi den stiller seg inn etter nettsiden*/
 	color: #009F67;
@@ -407,23 +406,30 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 }
 
 /* Navigasjonsbar*/
-#navigasjonsbar{
+#navbar-placeholder{
+	z-index: 9999999999; 
 	position: sticky;
 	top: 0px;
+}
+#navigasjonsbar{
+	position: relative;
+	top: 0px;
 	background-color: black;
-	height: 120px;
+	height: 100px;
     padding: 0px;
 }
 
    
 
 #navbar{
-	border: blue dotted;
-	background-color: black;
+	position: absolute;
     list-style-type: none;
-	position: fixed;
-	top: 45px;
-	left: 20vw;
+	width: 70%; 
+	top: 20px;
+	left: 200px;
+	
+	
+	
 	
      
 	
@@ -437,15 +443,17 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 
     display: inline;
 	float: left;
-	padding: 20px;
-	border: dotted blue;
 	cursor: pointer;
+	padding-left: 15px;
+	/*Legger på en padding her for å skille knappene i navbaren*/
+	
 	
 }
 
 #navbar li:nth-child(3){
-	position: fixed;
+	position: absolute;
 	right: 10vw;
+	
 }
 
 
@@ -459,8 +467,8 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	font-size: 20px;
 }
 #logo_portobok {
-	position: fixed;
-	top: 90px;
+	position: absolute;
+	top: 20px;
 	left: 5vw;
 	width: 70px;
 	
@@ -468,9 +476,9 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 /*
 responsiv navbar///hamburgermeny*/
 #navigasjonsbar label {
-	position: fixed;
+	position: absolute;
 	right: 5vw;
-	top: 90px;
+	top: 30px;
 	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
 	}
 
@@ -489,7 +497,7 @@ responsiv navbar///hamburgermeny*/
 		width: 200px;
 		display: none;
 		padding: 0;
-		top: 120px;
+		top:80px;
 		right: 0px;
 		left: initial;
 	 }
