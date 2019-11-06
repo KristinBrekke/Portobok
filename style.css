@@ -444,7 +444,7 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
     display: inline;
 	float: left;
 	cursor: pointer;
-	padding-left: 15px;
+	padding-left: 40px;
 	/*Legger på en padding her for å skille knappene i navbaren*/
 	
 	
@@ -488,18 +488,19 @@ responsiv navbar///hamburgermeny*/
 @media (max-width: 940px) {
 
 	body {
-		overflow-x: visible;
+		overflow-x: hidden;
 		padding: 0;
 	}
 	
 	#navbar  {
 		position: absolute;
-		width: 200px;
+		width: 300px;
 		display: none;
-		padding: 0;
+		padding: 0px;
 		top:80px;
-		right: 0px;
+		right: 12px;
 		left: initial;
+		
 	 }
 	
 	
@@ -509,10 +510,10 @@ responsiv navbar///hamburgermeny*/
 		float: none;
 		display: block;
 		background-color: #DEF3ED;
-		left: 0px;
-		width: 200px;
+		height: 40px;
+		width: 300px;
 		text-align: center;
-		padding: 0;
+		
 		
 		
 	
@@ -541,7 +542,9 @@ responsiv navbar///hamburgermeny*/
 		
 	}
 	#navbar a{
+		position: relative;
 		color: black;
+		top: 10px;
 	}
 	#logo_portobok{
 		width: 50px;

@@ -13,34 +13,14 @@ document.getElementById("navbar-placeholder").innerHTML =
             	<li><a href="../html/contact.html">KONTAKT</a></li>
        	 </ul>
     </div>
-	
 
-    `
-/*
-function hamburger(){
-	
-	var x = document.getElementById("box");
-	
-	var navbar = document.getElementsByClassName("navbar");
-	
-	console.log("hello world");
-	
-	for (var i =1; navbar.length; i++){
-
-		if (x.checked == true) {
-			navbar[i].style.display = "block";
-		}	
-	}
-}
-
-*/
+    `;
 
 //hva vil jeg: når hamburgermenyen vises ønsker jeg at listen skal legge seg under isteden for sidelengs
 	
 function hamburger() {
 	var x = document.getElementById("box");
 	var navbar = document.getElementById("navbar");
-	
 	
 					
 	if (x.checked == false){
@@ -60,7 +40,7 @@ function resize() {
 	console.log("resized");
 	var x = document.getElementById("box");
 	var y = window.matchMedia("(max-width: 940px)");
-	if (y.matches == true) { //dette skal være om skjermen er mindre enn 940px
+	if (y.matches) { //dette skal være om skjermen er mindre enn 940px
 		navbar.style.display = "none"
 		if(x.checked) {
 		navbar.style.display = "block"
@@ -71,6 +51,7 @@ function resize() {
 		console.log("kom igjen");
 		navbar.style.display = "inline"; 
 		navbar.style.float = "right"; //flyter til venstre
+		navbar.style.color= "red";
 		x.checked = false;
 	}
 
