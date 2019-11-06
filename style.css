@@ -17,11 +17,10 @@ html body{
 header{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 40px;
-	
-	
 	background-color: black;
 	width: 100%;
-	position: sticky;
+	position: static;
+	
 }
 /*generelle størrelse på tekst marginer for all tekst*/
 h1,h2 {
@@ -361,7 +360,7 @@ footer{
 }
 
 #banner {
-	position: relative;
+	position: static;
 	width: 100vw;
 	height: 20vw;
 	
@@ -409,14 +408,18 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 
 /* Navigasjonsbar*/
 #navigasjonsbar{
+	position: sticky;
+	top: 0px;
 	background-color: black;
-	height: 160px;
+	height: 120px;
     padding: 0px;
 }
 
    
 
 #navbar{
+	border: blue dotted;
+	background-color: black;
     list-style-type: none;
 	position: fixed;
 	top: 45px;
@@ -435,8 +438,9 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
     display: inline;
 	float: left;
 	padding: 20px;
-	/*border: dotted blue;*/
+	border: dotted blue;
 	cursor: pointer;
+	
 }
 
 #navbar li:nth-child(3){
