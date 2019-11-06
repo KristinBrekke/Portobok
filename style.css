@@ -17,10 +17,11 @@ html body{
 header{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 40px;
-	margin-left: -10;
+	
+	
 	background-color: black;
 	width: 100%;
-	position: absolute;
+	position: sticky;
 }
 /*generelle størrelse på tekst marginer for all tekst*/
 h1,h2 {
@@ -360,7 +361,7 @@ footer{
 }
 
 #banner {
-	position: static;
+	position: relative;
 	width: 100vw;
 	height: 20vw;
 	
@@ -382,8 +383,9 @@ footer{
 }
 
 /*.ikonF:hover {
-	background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bildene*/
-}
+background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bildene
+}*/
+
 .ikon-navn{
 	margin-left: 5vw;
 	margin-right: 5vw;
@@ -407,9 +409,9 @@ footer{
 
 /* Navigasjonsbar*/
 #navigasjonsbar{
-
+	background-color: black;
 	height: 160px;
-    padding: 2px;
+    padding: 0px;
 }
 
    
@@ -419,7 +421,7 @@ footer{
 	position: fixed;
 	top: 45px;
 	left: 20vw;
-	 
+	
      
 	
 	
@@ -458,7 +460,6 @@ footer{
 	left: 5vw;
 	width: 70px;
 	
-	
 }
 /*
 responsiv navbar///hamburgermeny*/
@@ -474,20 +475,28 @@ responsiv navbar///hamburgermeny*/
 }
 @media (max-width: 940px) {
 
+	body {
+		overflow-x: visible;
+		padding: 0;
+	}
+	
 	#navbar  {
-		position: relative;
-		background-color: aliceblue;
+		position: absolute;
 		width: 200px;
 		display: none;
 		padding: 0;
-		top: 100px;
+		top: 120px;
 		right: 0px;
+		left: initial;
 	 }
+	
+	
 	#navbar li {
-		position: relative;
+		border: solid black 0.2px;
+		position: initial;
 		float: none;
 		display: block;
-		background-color: gray;
+		background-color: #DEF3ED;
 		left: 0px;
 		width: 200px;
 		text-align: center;
@@ -501,12 +510,12 @@ responsiv navbar///hamburgermeny*/
 	}
 	
 	#navbar li:first-child {
-		margin-bottom: 1px;
+		
 		
 	}
 	
 	#navbar li:nth-child(2) {
-			margin-bottom: 1px;	
+			
 	}
 	
 	#navbar li:nth-child(3) {
