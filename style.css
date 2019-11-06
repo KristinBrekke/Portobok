@@ -639,6 +639,10 @@ responsiv navbar///hamburgermeny*/
 	width: 100%;
 }
 
+#mottaker_alternativer {
+	background-image: image(&#9776);
+}
+
 #contact_form h1 {
 
 	position: inherit;
