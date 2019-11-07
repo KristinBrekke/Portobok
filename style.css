@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
-/* felles css-kode*/
 
- 
+/* felles css-kode*/
 html body{
     background-color: #DEF3ED;
     width:  100%;
@@ -50,6 +49,12 @@ a{
 
 footer{
     position: relative;
+}
+
+.text_about_page{
+    margin-left: 10vw;
+    margin-bottom: 2vw;
+	margin-right: 10vw;
 }
 
 /*Slutt felleskode*/
@@ -447,21 +452,18 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	position: relative;
 	top: 0px;
 	background-color: #1e1e1e;
-	height: 100px;
+	height: 80px;
     padding: 0px;
 	border-top: 1px #DEF3ED solid;
 	border-opacity: 0.3;
-	
     box-shadow: 0px 0px 20px #1e1e1e;
 }
-
-   
 
 #navbar{
 	position: absolute;
     list-style-type: none;
 	width: 70%; 
-	top: 20px;
+	top: 10px;
 	left: 200px;
 	
     /*display: inline;*/
@@ -482,7 +484,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 #navbar li:nth-child(3){
 	position: absolute;
 	right: 10vw;
-	
 }
 
 
@@ -495,12 +496,12 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 	font-size: 20px;
 }
+
 #logo_portobok {
 	position: absolute;
-	top: 30px;
-	left: 5vw;
+	top: 20px;
+	left: 13%;
 	width: 40px;
-	
 }
 /*
 responsiv navbar///hamburgermeny*/
@@ -546,40 +547,35 @@ responsiv navbar///hamburgermeny*/
 	}
 	
 	#navbar li:first-child {
-		
-		
 	}
 	
-	#navbar li:nth-child(2) {
-			
+	#navbar li:nth-child(2) {	
 	}
 	
 	#navbar li:nth-child(3) {
 		position: initial;
-		
-		
 	}
 	
 	#navbar li:hover{
 		background-color: #009F67;
-		
 	}
+	
 	#navbar a{
 		position: relative;
 		color: black;
 		top: 10px;
 	}
-	#logo_portobok{
-		width: 50px;
-	}
 	
+	#logo_portobok{
+		width: 40px;
+	}
 	
 	#navigasjonsbar label {
 		float:right;
 		color: #DEF3ED;
 		cursor: pointer;
 		display: block;
-}
+	}
 
 } 
 
