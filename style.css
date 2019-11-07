@@ -55,6 +55,36 @@ footer{
 
 /*Slutt felleskode*/
 
+
+/* Homepage.html */ 
+.headerHome {
+	text-align: center;
+	font-family: Pt serif;
+	font-size: 60px;
+	margin: 150px auto 20px auto;
+		
+}
+
+.underHeaderHome {
+	text-align: center;
+	margin: 0px 15%;
+	font-size: 20px;
+	font-weight: 200;
+	
+}
+
+#whiteBoxHome{
+	background-color: white;
+	width: 100%;
+	padding: 10px 0px;
+}
+
+#greenBoxHome{
+	width: 100%;
+	padding: 50px 0px 200px 0px;
+}
+
+
 /*CSS for både designers.html og projects.html*/
 
 .pictures_designers_and_projects{ /*Gjelder både designers og projects*/
@@ -147,9 +177,8 @@ footer{
 
 /*CSS til slideshow/bildekarusell */
 #slideshow{
-	width: 80vw;
 	height: auto;
-	margin: 10%;
+	margin: 15%;
 }
 
 .slideshow-container {
@@ -204,8 +233,9 @@ footer{
 	opacity: 0.5;
     font-size: 20px;
 	font-weight: 400;
-    padding-top: 40px;
-    padding-bottom: 40px;
+	margin-bottom: 4px;
+    padding-top: 3%;
+    padding-bottom: 3%;
     position: absolute;
     bottom: 0;
     width: 100%;
