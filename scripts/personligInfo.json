@@ -1,7 +1,6 @@
 // JSON Document
-[
-	,
-	
+personer = `[
+
 	{
 	"name" : "Jenny Marie Jakobsen",
 	"mail" : "jakobsen.jennymarie@gmail.com",
@@ -13,6 +12,6 @@
 		"emne" : "Design 1",
 		"årstall" : "2018",
 		"produkttekst" : "Å ta plass uten å være massiv. <br> Inspirasjonen til denne høyttaleren var en installasjon utenfor Tate Modern i London hvor oransje stålrør dekte et område og rammet det inn, uten å ta plass. Høyttaleren skal fylle et rom og samtidig virke lett og luftig, slik også musikk fyller et rom på en lett og luftig måte."}
-]
+	]
 	}
-]
+]`
