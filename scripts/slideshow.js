@@ -1,7 +1,5 @@
 // JavaScript Document
 
-
-
 var bilderObjects = [ 
 {
   url: "../images/dina_kaffekanne_1_landscape.jpg",
