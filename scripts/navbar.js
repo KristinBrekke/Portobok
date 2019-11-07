@@ -5,7 +5,7 @@ document.getElementById("navbar-placeholder").innerHTML =
 			
         <label for= "box" onClick="hamburger()">&#9776</label>
 			<input type = "checkbox" id ="box"/>
-			<a href="../html/homepage.html"> <img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok"></a>
+			<a href="../html/homepage.html"> <img src="../images/logo_pb_tykkere.png" alt="logo Portobok" id="logo_portobok"></a>
 			<ul id="navbar">
 			
            		<li><a href="../html/designers.html">DESIGNERE</a></li>

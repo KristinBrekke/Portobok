@@ -1,0 +1,18 @@
+// JSON Document
+[
+	,
+	
+	{
+	"name" : "Jenny Marie Jakobsen",
+	"mail" : "jakobsen.jennymarie@gmail.com",
+	"tlf" : "+47 95 82 82 06",
+	"personligtekst" : "Jenny Marie er 21 år fra Trondheim. Hun studerer andreåret på industriell design og er interessert i produktdesign. På fritiden liker hun å danse, reising og tegning. Hun drømmer om designe flotte ting som gjør verden til et mer fargerikt sted.",
+	
+	"produkt1" : [
+		{"produkt" : "Høyttaler",
+		"emne" : "Design 1",
+		"årstall" : "2018",
+		"produkttekst" : "Å ta plass uten å være massiv. <br> Inspirasjonen til denne høyttaleren var en installasjon utenfor Tate Modern i London hvor oransje stålrør dekte et område og rammet det inn, uten å ta plass. Høyttaleren skal fylle et rom og samtidig virke lett og luftig, slik også musikk fyller et rom på en lett og luftig måte."}
+]
+	}
+]

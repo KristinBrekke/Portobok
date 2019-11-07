@@ -36,11 +36,6 @@ p{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 20px;
 }
-.text_about_page{
-    margin-left: 10vw;
-    margin-bottom: 2vw;
-	margin-right: 10vw;
-}
 
 a{
     cursor: pointer; /* Gjør pekern om til klikkehånd*/
@@ -54,6 +49,36 @@ footer{
 }
 
 /*Slutt felleskode*/
+
+
+/* Homepage.html */ 
+.headerHome {
+	text-align: center;
+	font-family: Pt serif;
+	font-size: 60px;
+	margin: 50px auto 20px auto;
+		
+}
+
+.underHeaderHome {
+	text-align: center;
+	margin: 0px 15%;
+	font-size: 20px;
+	font-weight: 200;
+	
+}
+
+#whiteBoxHome{
+	background-color: white;
+	width: 100%;
+	padding: 50px 0px 100px 0px;
+}
+
+.greenBoxHome{
+	width: 100%;
+	padding: 50px 0px 100px 0px;
+}
+
 
 /*CSS for både designers.html og projects.html*/
 
@@ -147,9 +172,8 @@ footer{
 
 /*CSS til slideshow/bildekarusell */
 #slideshow{
-	width: 80vw;
 	height: auto;
-	margin: 10%;
+	margin: 0 15%;
 }
 
 .slideshow-container {
@@ -157,6 +181,7 @@ footer{
     position: relative; 
 	height: auto;
 	width: 80vw;
+	margin: 100px 0px 0px 0px;
 } 
 
 .mySlides {
@@ -204,8 +229,9 @@ footer{
 	opacity: 0.5;
     font-size: 20px;
 	font-weight: 400;
-    padding-top: 40px;
-    padding-bottom: 40px;
+	margin-bottom: 4px;
+    padding-top: 3%;
+    padding-bottom: 3%;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -302,7 +328,7 @@ footer{
     font-weight: bold;
 }
 
-.columnD:hover .produktbilde{
+.produktbilde:hover {
 	opacity: 0.4;
 }
 
@@ -470,7 +496,7 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	position: absolute;
 	top: 20px;
 	left: 5vw;
-	width: 70px;
+	width: 50px;
 	
 }
 /*
@@ -513,13 +539,7 @@ responsiv navbar///hamburgermeny*/
 		height: 40px;
 		width: 300px;
 		text-align: center;
-		
-		
-		
-	
-	
-
-		
+			
 	}
 	
 	#navbar li:first-child {
