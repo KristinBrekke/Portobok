@@ -444,7 +444,7 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 
 /* Navigasjonsbar*/
 #navbar-placeholder{
-	z-index: 9999999999; 
+	z-index: 1; 
 	position: sticky;
 	top: 0px;
 }
@@ -465,7 +465,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	width: 70%; 
 	top: 10px;
 	left: 200px;
-	
     /*display: inline;*/
     /*height: 50px;*/
     
@@ -475,7 +474,7 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
     display: inline;
 	float: left;
 	cursor: pointer;
-	padding-left: 40px;
+	margin-left: 40px;
 	/*Legger på en padding her for å skille knappene i navbaren*/
 	
 	
@@ -497,12 +496,17 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	font-size: 20px;
 }
 
-#logo_portobok {
+
+
+#logo_portobok{
 	position: absolute;
 	top: 20px;
 	left: 13%;
 	width: 40px;
+	z-index: 1;
+	 
 }
+
 /*
 responsiv navbar///hamburgermeny*/
 #navigasjonsbar label {
