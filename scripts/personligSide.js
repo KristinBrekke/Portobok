@@ -7,5 +7,8 @@ fetch("/personligInfo.json")
 
 var obj = JSON.parse(personer);
 
-console.log(obj[0].name);
+document.getElementById("test").innerHTML = obj[0].name;
+
+console.log(obj[1].name);
+
 
