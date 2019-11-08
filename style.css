@@ -129,7 +129,7 @@ footer{
     bottom: 1vw;
     right: 3vw;
     color: #000000;
-    visibility: hidden;
+    opacity: 0;
     font-size: 2.5vw;
     font-weight: bold;
 }
@@ -138,7 +138,7 @@ footer{
     bottom: 1vw;
     left: 3vw;
     color: #000000;
-    visibility: hidden;
+    opacity: 0;
     font-size: 2.5vw;
     font-weight: bold;
 }
@@ -149,9 +149,6 @@ footer{
     width: 35vw;
     visibility: hidden;
 }
-.image_element:hover .image_name_right .image_name_left{ /* Gjør navnene synlig når hovret over*/
-    visibility: visible;
-}
 
 .image_element:hover .icon{ /* Gjør ikonene synlig når hovret over*/
     visibility: visible;
@@ -159,6 +156,12 @@ footer{
 }
 .image_element:hover .image_designer_and_project{ /* Gjør opacityen til bildet svakere når hovret over*/
     opacity: 0.7;
+}
+.image_element:hover .image_name_right{ /* Gjør navnene synlig når hovret over*/
+    opacity: 0.9;
+}
+.image_element:hover .image_name_left{ /* Gjør navnene synlig når hovret over*/
+    opacity: 0.9;
 }
 /*CSS til projects.html*/
 
