@@ -43,7 +43,7 @@ var designersObjects = [
         alt: "image of Solveig", 
         src_icon: "../images/icon_solveig.png",
         alt_icon: "icon of Solveig",
-        image_name: "image_name_right",
+        image_name: "image_name_left",
         name: "Solveig Kavli"   
     },
 ];
