@@ -729,7 +729,7 @@ footer {
 	bottom: 4px;
 }
 #footer a:hover, #footer a p:hover{
-	color: green;
+	color: #009F67;
 }
 
 @media (max-width: 940px){
