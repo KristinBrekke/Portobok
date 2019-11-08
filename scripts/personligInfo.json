@@ -12,6 +12,30 @@ personer = `[
 		"emne" : "Design 1",
 		"årstall" : "2018",
 		"produkttekst" : "Å ta plass uten å være massiv. <br> Inspirasjonen til denne høyttaleren var en installasjon utenfor Tate Modern i London hvor oransje stålrør dekte et område og rammet det inn, uten å ta plass. Høyttaleren skal fylle et rom og samtidig virke lett og luftig, slik også musikk fyller et rom på en lett og luftig måte."}
+				],
+
+	"produkt2" : [
+	{"produkt" : "Kaffekanne",
+	"emne" : "Estetikk 2",
+	"årstall" : "2019",
+	"prdukttekst" : "Dragsug. Inspirasjon til denne kaffekannen er hentet fra Ole Palsby sin kaffekanne. Det er ønsket et figurativt uttrykk hvor det er tydelige seperasjon mellom inntak, utløp og håndtak. Blåfargen tilfører kaffekannen mykere og vennligere karakter."}
 	]
+
+	},
+
+	{
+	"name" : "Solveig Kavli",
+	"mail" : "solveig@gmail.com",
+	"tlf" : "123",
+	"personligtekst" : "teskt",
+
+	"produkt1" : [ { 
+	"produkt" : "Høyttaler",
+	"emne" : "Design 1",
+	"årstall" : "2018",
+	"produkttekst" : "jade jada"}
+
+	]
+
 	}
 ]`
