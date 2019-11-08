@@ -56,6 +56,12 @@ function resize() {
 	}
 
 }
+
+function firkant(){
+ 	var navbar = document.getElementById("navbar");
+	
+	
+}
 		
 
 		

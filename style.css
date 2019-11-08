@@ -418,13 +418,25 @@ footer{
 
 .flex-container {
 	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: auto;
+	
+	
 } 
 
+.flex-container div {
+	
+	
+	text-align: left;
+	width: 150px;
+}
+
 .ikonF{
+	
  	width: 10vw;
-	margin-left: 5vw;
-	margin-top: 7vw; /*still denne ned når navbaren er satt inn*/ 
-	margin-right: 5vw;
+	margin-top: 7vw; 
+	
 } 
 
 /*.ikonF:hover {
@@ -432,8 +444,7 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 }*/
 
 .ikon-navn{
-	margin-left: 5vw;
-	margin-right: 5vw;
+	
 	font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 	color: black;
 	font-size: 12px;
@@ -443,12 +454,18 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 @media (max-width: 940px){  
 	.flex-container{
 		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
+		justify-content: center;
+		justify-content: space-between;
+		align-content: flex-start;
+		
+		
 	}
 	.ikon-navn {
-		font-size: 10px;
+		font-size: 10px;;
 	}
 	.ikonF{
 		width: 18vw;
+		
 	}
 }
 /* slutt ??? */ 
@@ -467,7 +484,7 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	background-color: #1e1e1e;
 	height: 80px;
     padding: 0px;
-	border-top: 0.5px #DEF3ED solid;
+	/*border-top: 0.5px #DEF3ED solid;*/
 	border-opacity: 0.3;
     box-shadow: 0px 0px 20px #1e1e1e;
 } 
@@ -503,6 +520,11 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	color: #DEF3ED;
 	font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 	font-size: 20px;
+}
+
+#navbar a:hover {
+	text-decoration: underline ;
+	text-decoration-color: #009F67;
 }
 
 #logo_portobok{
@@ -579,6 +601,8 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	}
 	
 	#navigasjonsbar label {
+		right: 13%;
+		width: 40px;
 		float:right;
 		color: #DEF3ED;
 		cursor: pointer;
