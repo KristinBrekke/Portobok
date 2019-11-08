@@ -1,7 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* felles css-kode*/
+/* =========================================
+			Global css-kode
+============================================*/
 html body{
     background-color: #DEF3ED;
     width:  100%;
@@ -52,11 +54,18 @@ a{
 footer{
     position: relative;
 }
-/*Slutt felleskode*/
+/*===========================================
+			 Slutt Global kode
+=============================================*/
 
 
-/* Homepage.html */ 
-.front_header {
+
+/*===========================================
+			 Homepage.html
+=============================================*/
+
+.front_header {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 	text-align: center;
 	font-family: Pt serif;
 	font-size: 11vw;
@@ -64,39 +73,49 @@ footer{
 	color: #009F67; 
 }
 
-.intro {
+.intro { /*Intro text om portobook, plassert øverst på forsiden*/
 	margin: 200px 12vw;
 	color: #1e1e1e; 
 	font-weight: 200;
 	font-size: 40px;
 }
 
-.front_page_logo {
+.front_page_logo {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	width: 20%;
 	height: auto;
+	
 }
 
-.avsnitt {
+.avsnitt {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	text-align: center;
 	margin: 50px 15%;
 	font-size: 20px;
 	color: #1e1e1e;
 }
 
-#whiteBoxHome{
+#whiteBoxHome{ /*Avsnitt med bildekarusell og hvit bakgrunn på forsiden*/
 	background-color: white;
 	width: 100%;
 	padding: 50px 0px 100px 0px;
 }
 
-.greenBoxHome{
+.greenBoxHome{ /*Gjelder for de avsnittene på forsiden med grønn bakgrunn*/
 	width: 100%;
 	padding: 50px 0px 100px 0px;
 }
-/*slutt Homepage*/ 
 
 
-/*CSS for både designers.html og projects.html*/
+
+/*===========================================
+			Slutt homepage.html
+=============================================*/ 
+
+
+/*==========================================================
+			Start designers.html og projects.html
+============================================================*/
+
+
 .pictures_designers_and_projects{ /*Gjelder både designers og projects*/
     margin-left: 10%;
 }
