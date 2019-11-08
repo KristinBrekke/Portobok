@@ -5,15 +5,15 @@
 <title>Navbar</title>
 <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-
+<script src="navbar.js" type="text/javascript"> </script>
 <body onresize="resize()" >
 	<!--Kaller på funksjonen hver gang bodien er endret-->
-    <header>
+    
         <div id="navigasjonsbar">
 			
         <label for= "box" onClick="hamburger()">&#9776</label>
 			<input type = "checkbox" id ="box"/>
-			<a href="../html/homepage.html"> <img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok"></a>
+			<!--<a href="../html/homepage.html" class="logo-portoboklink">--> <img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok" onclick="location.href='#';" style="cursor: pointer;"><!--</a>-->
 			<ul id="navbar">
 			
            		<li><a href="../html/designers.html">DESIGNERE</a></li>
@@ -21,8 +21,6 @@
             	<li><a href="../html/contact.html">KONTAKT</a></li>
        	 </ul>
     </div>
-	
-    </header>
-<script src="navbar.js" type="text/javascript"> </script>	
+
 </body>
 </html>
