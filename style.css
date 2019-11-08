@@ -158,10 +158,10 @@ footer{
     opacity: 0.7;
 }
 .image_element:hover .image_name_right{ /* Gjør navnene synlig når hovret over*/
-    opacity: 1;
+    opacity: 0.9;
 }
 .image_element:hover .image_name_left{ /* Gjør navnene synlig når hovret over*/
-    opacity: 1;
+    opacity: 0.9;
 }
 /*CSS til projects.html*/
 
