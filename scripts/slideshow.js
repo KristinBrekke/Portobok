@@ -81,7 +81,7 @@ dotContainer.innerHTML = dotsHTML;
 slideshowContainer.innerHTML = imgsHTML;
 
 
-// Inspiration credit: https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9 (03-04/11/19) 
+// Inspiration credit for the javascript below: https://medium.com/better-programming/make-a-slideshow-with-automatic-and-manual-controls-using-html-css-and-javascript-b7e9305168f9 (03-04/11/19) 
 
 var slideIndex = 1;
 
