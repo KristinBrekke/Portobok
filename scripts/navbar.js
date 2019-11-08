@@ -5,12 +5,12 @@ document.getElementById("navbar-placeholder").innerHTML =
 			
         <label for= "box" onClick="hamburger()">&#9776</label>
 			<input type = "checkbox" id ="box"/>
-			<a href="../html/homepage.html"> <img src="../images/logo_pb_tykkere.png" alt="logo Portobok" id="logo_portobok"></a>
+			<a href="../html/homepage.html" class="logo-portoboklink"> <img src="../images/logo_pb_tykkere.png" alt="logo Portobok" id="logo_portobok" ></a>
 			<ul id="navbar">
 			
-           		<li><a href="../html/designers.html">DESIGNERE</a></li>
-            	<li><a href="../html/projects.html">PROSJEKTER</a></li>
-            	<li><a href="../html/contact.html">KONTAKT</a></li>
+           		<li><a href="../html/designers.html">Designere</a></li>
+            	<li><a href="../html/projects.html">Prosjekter</a></li>
+            	<li><a href="../html/contact.html">Kontakt</a></li>
        	 </ul>
     </div>
 

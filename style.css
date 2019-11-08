@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
-/* felles css-kode*/
 
- 
+/* felles css-kode*/
 html body{
     background-color: #DEF3ED;
     width:  100%;
@@ -17,9 +16,11 @@ html body{
 header{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 40px;
-	background-color: black;
+	background-color: #1e1e1e;
+	padding: 0;
 	width: 100%;
 	position: static;
+	color: #1e1e1e;
 	
 }
 /*generelle størrelse på tekst marginer for all tekst*/
@@ -29,12 +30,14 @@ h1,h2 {
 	margin-left: 10vw;
 	margin-bottom: 2vw;
 	margin-top: 10vw;
+	color: #1e1e1e;
 
 }
 
 p{
     font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
     font-size: 20px;
+	color: #1e1e1e;
 }
 
 a{
@@ -48,23 +51,31 @@ footer{
     position: relative;
 }
 
+.text_about_page{
+    margin-left: 10vw;
+    margin-bottom: 2vw;
+	margin-right: 10vw;
+}
+
 /*Slutt felleskode*/
 
 
 /* Homepage.html */ 
-.headerHome {
+.header {
 	text-align: center;
 	font-family: Pt serif;
 	font-size: 60px;
-	margin: 50px auto 20px auto;
+	margin: 100px auto 20px auto;
+	color: #1e1e1e;
 		
 }
 
-.underHeaderHome {
+.avsnitt {
 	text-align: center;
-	margin: 0px 15%;
+	margin: 50px 15%;
 	font-size: 20px;
 	font-weight: 200;
+	color: #1e1e1e;
 	
 }
 
@@ -200,7 +211,7 @@ footer{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: black;
+    color: #1e1e1e;
     font-weight: bold;
     font-size: 30px;
     transition: .6s ease;
@@ -254,7 +265,7 @@ footer{
 
 .active,
 .dot:hover {
-	background-color: black;
+	background-color: #1e1e1e;
 }
 
 
@@ -387,8 +398,8 @@ footer{
 
 #banner {
 	position: static;
-	width: 100vw;
-	height: 20vw;
+	width: 100%;
+	height: 20%;
 	font-family: "pt-serif"; /*får ikke til å ha en backupfont uten at den blir gjeldende*/
 	font-size: 18vw; /*bruker vw isteden for px fordi den stiller seg inn etter nettsiden*/
 	color: #009F67;
@@ -433,34 +444,27 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 
 /* Navigasjonsbar*/
 #navbar-placeholder{
-	z-index: 9999999999; 
+	z-index: 1; 
 	position: sticky;
 	top: 0px;
 }
 #navigasjonsbar{
 	position: relative;
 	top: 0px;
-	background-color: black;
-	height: 100px;
+	background-color: #1e1e1e;
+	height: 80px;
     padding: 0px;
+	border-top: 1px #DEF3ED solid;
+	border-opacity: 0.3;
+    box-shadow: 0px 0px 20px #1e1e1e;
 }
-
-   
 
 #navbar{
 	position: absolute;
     list-style-type: none;
 	width: 70%; 
-	top: 20px;
+	top: 10px;
 	left: 200px;
-	
-	
-	
-	
-     
-	
-	
-
     /*display: inline;*/
     /*height: 50px;*/
     
@@ -470,7 +474,7 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
     display: inline;
 	float: left;
 	cursor: pointer;
-	padding-left: 40px;
+	margin-left: 40px;
 	/*Legger på en padding her for å skille knappene i navbaren*/
 	
 	
@@ -479,7 +483,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 #navbar li:nth-child(3){
 	position: absolute;
 	right: 10vw;
-	
 }
 
 
@@ -492,13 +495,18 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
 	font-size: 20px;
 }
-#logo_portobok {
+
+
+
+#logo_portobok{
 	position: absolute;
 	top: 20px;
-	left: 5vw;
-	width: 50px;
-	
+	left: 13%;
+	width: 40px;
+	z-index: 1;
+	 
 }
+
 /*
 responsiv navbar///hamburgermeny*/
 #navigasjonsbar label {
@@ -543,40 +551,35 @@ responsiv navbar///hamburgermeny*/
 	}
 	
 	#navbar li:first-child {
-		
-		
 	}
 	
-	#navbar li:nth-child(2) {
-			
+	#navbar li:nth-child(2) {	
 	}
 	
 	#navbar li:nth-child(3) {
 		position: initial;
-		
-		
 	}
 	
 	#navbar li:hover{
 		background-color: #009F67;
-		
 	}
+	
 	#navbar a{
 		position: relative;
 		color: black;
 		top: 10px;
 	}
-	#logo_portobok{
-		width: 50px;
-	}
 	
+	#logo_portobok{
+		width: 40px;
+	}
 	
 	#navigasjonsbar label {
 		float:right;
 		color: #DEF3ED;
 		cursor: pointer;
 		display: block;
-}
+	}
 
 } 
 
@@ -585,7 +588,7 @@ responsiv navbar///hamburgermeny*/
 
 /*Footer*/
 #footer{
-	background-color:#000000;
+	background-color:#1e1e1e;
 	height: 110px;
     padding: 20px;
 	position: relative;
