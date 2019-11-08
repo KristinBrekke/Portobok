@@ -276,15 +276,14 @@ footer{
 
 
 /*CSS til dina.html, kristin.html +++ */
-/*Jenny Marie*/
 
-.designers{
+/*.designers{
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-}
+}*/
 
 #persontekst{
-	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 20px;
+	/*font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 20px;*/
 	margin-left: 5vw;
 	margin-right: 0vw;
 	margin-top: 0vw;
