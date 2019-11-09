@@ -197,9 +197,10 @@ footer{
 /*CSS til designers.html*/
 
 @media (max-width: 940px){
+	
     .row{
         flex-direction: column;
-        width:50vw;
+        width: 50vw;
         margin: auto;
     }
     .image_name_right{
@@ -378,6 +379,7 @@ footer{
 	display: flex;
 	margin: 10%;
 	text-align: justify;
+	
 }
 
 @media (max-width: 940px){
@@ -629,18 +631,18 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 /* ferdig hamburgermeny*/
 
 /*Footer*/
-footer {
+footer { /*thele footer-tagen*/
 	background-color: #1e1e1e;
 	height: 500px;
 	
 }
 
-#footer{
+#footer{/* div rundt innholdet i footeren */
 	
 	height: 340px;
     padding: 80px 20px ;
 	position: relative;
-    display: grid;
+    display: grid;/* Setter opp et grid inne i footeren for å organisere innholdet på en oversiktlig måte */
 	width: 90%;
     grid-template-columns: auto 300px auto;
 	grid-template-rows:  50px 50px 50px 50px auto auto;
@@ -652,11 +654,11 @@ footer {
 
 
 
-#footer a {
+#footer a {/* linker i footeren */
 	color: #DEF3ED;
 }
 
-#footer_logo{
+#footer_logo{ /* Link rundt Portobok-logoen og teksten under i footeren */
 	grid-column: 2;
 	grid-row: 1;
 	width: 65px;
@@ -665,14 +667,13 @@ footer {
 	
 }
 
-#footer img {
+#footer img { /* bilder i footeren, ment for å bestemme størrelsen på logoen */
 	width: 65px;
 }
 
-#icons_footer {
+#icons_footer { /* div rundt iconene (facebook og instagram) i footeren, leget for å inneholde et grid som plasserer dem */
 	grid-row: 3;
 	grid-column: 2;
-	
 	width: 40%;
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -680,8 +681,18 @@ footer {
 	
 }
 
+#facebook_icon { /* div rundt linken og iconet */
+	width: 30px;
+	margin: auto;
+	
+}
 
-#facebook_icon img {
+#instagram_icon {/* div rundt linken og iconet */
+	margin: auto;
+	width: 30px;
+}
+
+#facebook_icon img {/* facebook-iconet, plasserer og bestemmer størrelse */
 	grid-column: 1;
 	width: 30px;
 	margin:  auto;
@@ -691,7 +702,7 @@ footer {
 
 
 
-#instagram_icon img{
+#instagram_icon img{/* instagram-iconet, plasserer og bestemmer størrelse */
 	
 	grid-column: 2;
 	width: 30px;
@@ -699,11 +710,11 @@ footer {
 	margin: auto;
 }
 
-.contact_information{
+.contact_information{ /* alle overskriftene i footeren */
     color: #DEF3ED;
 }
 
-#email{
+#email{ /* id for overskrift og link til email */
 	grid-column: 1;
 	grid-row: 4;
     position: relative;
@@ -712,7 +723,7 @@ footer {
 	
 }
 
-#phone{
+#phone{ /* id for overskrift og link til telefon */
 	grid-column: 2;
 	grid-row: 4;
     position: relative;
@@ -720,7 +731,7 @@ footer {
 	
 }
 
-#adress{
+#adress{ /* id for overskrift og link til addresse */
 	grid-column: 2;
 	grid-row: 2;
     position: relative;
@@ -728,43 +739,46 @@ footer {
 	margin-top: 40px;
 }
 
-#kontakt_designere {
+#kontakt_designere { /* id for overskrift og link til link til kontaktsiden */
 	grid-row: 4;
 	grid-column: 3;
 	position: relative;
 	bottom: 4px;
 }
-#footer a:hover, #footer a p:hover{
+
+#footer a:hover, #footer a p:hover{ /* fargeendring ved hovering over linker */
 	color: #009F67;
 }
 
 @media (max-width: 940px){
     
-	footer{
+	/*============================================
+				Footer i medie queri
+	*/
+	
+	footer{ /* footer i media queri */
       height: 800px;
 	}
 	
-    .contact_information{
-        grid-row: 1;
-    }
-	
-    #email{
+    #email{ /* footer i media queri */
         grid-column: 2;
         grid-row: 4;
     }
 	
-    #phone{
+    #phone{ /* footer i media queri */
          grid-column: 2;
         grid-row: 5;
 		margin-top: 40px;
     }
 	
-    #kontakt_designere{
+    #kontakt_designere{ /* footer i media queri */
          grid-column: 2;
         grid-row: 6;
     }
 }
-
+/*============================================
+			Footer i medie queri slutt
+*/
 
 
 /*============================================
