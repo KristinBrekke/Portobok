@@ -199,10 +199,22 @@ footer{
 @media (max-width: 940px){
     .row{
         flex-direction: column;
+        width:50vw;
+        margin: auto;
     }
     .image_name_right{
-        right: 55vw !important;
+        right: 30vw!important;
+        opacity: 1 !important;
+        bottom: -4vw !important;
+        
     }
+    .image_name_left{
+        opacity: 1 !important;
+        bottom: -4vw !important;
+    }
+    .image_element:hover .icon{ 
+    visibility: hidden!important;
+}
 }
 
 .image_element{
@@ -419,24 +431,24 @@ footer{
 
 .flex-container {
 	display: flex;
+	margin: auto;
+	justify-content: center;
 	justify-content: space-between;
 	width: 80%;
-	margin: auto;
+
 	
 	
 } 
 
 .flex-container div {
-	
-	
 	text-align: left;
+	border: dashed;
 	width: 150px;
 }
 
 .ikonF{
-	
  	width: 10vw;
-	margin-top: 7vw; 
+	
 	
 } 
 
@@ -454,8 +466,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 
 @media (max-width: 940px){  
 	.flex-container{
-		margin-left: 15%;
-		margin-right: 15%;
 		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
 		justify-content: center;
 		justify-content: space-between;
@@ -466,8 +476,10 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	.ikon-navn {
 		font-size: 10px;;
 	}
+	
 	.ikonF{
 		width: 18vw;
+		
 		
 	}
 }
@@ -634,16 +646,11 @@ footer {
     grid-template-columns: auto 300px auto;
 	grid-template-rows:  50px 50px 50px 50px;
 	grid-row-gap: 40px;
-	margin: auto;
+	margin: 10% auto auto;
 	text-align: center;
 }
 
 
-
-/*#footer_logo p {
-	grid-row: 2;
-}
-*/
 
 
 #footer a {
