@@ -1,9 +1,13 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* =========================================
+
+
+/* =========================================================
 			Global css-kode
-============================================*/
+============================================================*/
+
+
 html body{
     background-color: #DEF3ED;
     width:  100%;
@@ -54,15 +58,116 @@ a{
 footer{
     position: relative;
 }
-/*===========================================
+
+
+/*==========================================================
 			 Slutt Global kode
-=============================================*/
+============================================================*/
 
 
 
-/*===========================================
+/*==========================================================
+			Navigasjonsbar
+============================================================*/
+
+
+#navbar-placeholder{
+	z-index: 1; 
+	position: sticky;
+	top: 0px;
+}
+
+#navigasjonsbar{
+	position: relative;
+	top: 0px;
+	background-color: #1e1e1e;
+	height: 80px;
+    padding: 0px;
+	/*border-top: 0.5px #DEF3ED solid;*/
+	border-opacity: 0.3;
+    box-shadow: 0px 0px 20px #1e1e1e;
+} 
+
+#navbar{
+	position: absolute;
+    list-style-type: none;
+	width: 70%; 
+	top: 10px;
+	left: 200px;
+	font-weight: 200;
+    /*display: inline;*/
+    /*height: 50px;*/    
+}
+
+#navbar li { /*Styling av listeelementer i navigasjonsmenyen*/
+    display: inline;
+	float: left;
+	cursor: pointer;
+	margin-left: 40px;
+	/*Legger på en padding her for å skille knappene i navbaren*/
+}
+
+#navbar li:nth-child(3){
+	position: absolute;
+	right: 13%;
+}
+
+#navbar a{
+     /* Gjør pekern om til klikkehånd*/
+		 /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
+    text-align: right;
+	color: #DEF3ED;
+	font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+	font-size: 20px;
+}
+
+#navbar a:hover {
+	text-decoration: underline ;
+	text-decoration-color: #009F67;
+}
+
+#logo_portobok{
+	position: absolute;
+	top: 20px;
+	left: 13%;
+	width: 40px;
+	z-index: 1;
+}
+
+
+			/*hamburgermeny*/
+
+
+#navigasjonsbar label {
+	position: absolute;
+	right: 	13%;
+	top: 30px;
+	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
+	}
+
+#navigasjonsbar label:hover{
+	color: #009F67;
+}
+
+#box { /*når man trykker på burgermenyen blir boksen kjekket*/
+	display: none; /*gjør at checkboksen ikke synest*/
+}
+
+
+		/*hamburgermeny slutt*/
+
+
+/*==========================================================
+			Navigasjonsbar
+============================================================*/
+
+
+
+/*==========================================================
 			 Homepage.html
-=============================================*/
+============================================================*/
+
+
 #banner {
 	position: static;
 	width: 100%;
@@ -79,9 +184,6 @@ footer{
 	justify-content: center;
 	justify-content: space-between;
 	width: 80%;
-
-	
-	
 } 
 
 .flex-container div {
@@ -91,20 +193,16 @@ footer{
 
 .ikonF{
  	width: 10vw;
-	
-	
 } 
+
 .ikonF:hover{
 	box-shadow: 0px 2px 5px rgba(30,30,30,0.56);
 }
+
 .ikonF:active {
 	position: relative;
 	top: 1px;
 }
-/*.ikonF:hover {
-background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bildene
-}*/
-
 
 .ikon-navn{ /* navnet under ikonene*/
 	
@@ -113,26 +211,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	font-size: 12px;
 }
 
-
-@media (max-width: 940px){  
-	.flex-container{
-		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
-		justify-content: center;
-		justify-content: space-between;
-		align-content: flex-start;
-		
-		
-	}
-	.ikon-navn {
-		font-size: 10px;;
-	}
-	
-	.ikonF{
-		width: 18vw;
-		
-		
-	}
-}
 .headersHome { /* "Prosjekter av våre designere" og "designere"-overskrift på homepagen*/
 	margin: 100px 15% 0px 15%; 
 	text-align: center;
@@ -155,7 +233,10 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	padding: 50px 0px 100px 0px;
 }
 
+
 /*start slideshow/bildekarusell */
+
+
 #slideshow{
 	height: auto;
 	margin: 0 15%;
@@ -241,16 +322,21 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 .dot:hover {
 	background-color: #1e1e1e;
 }
+
+
 /* slutt slideshow/bildekarusell */ 
 
-/*===========================================
+
+/*==========================================================
 			Slutt homepage.html
-=============================================*/ 
+============================================================*/ 
+
 
 
 /*==========================================================
 			Start designers.html og projects.html
 ============================================================*/
+
 
 .pictures_designers_and_projects{ /*Gjelder både designers og projects*/
     margin-left: 10%;
@@ -263,38 +349,10 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 .row{
     display: flex;
 }
-/*CSS til designers.html*/
 
-@media (max-width: 940px){
-	
-    .row{
-        flex-direction: column;
-        width: 50vw;
-        margin: auto;
-		
-    }
-    .image_name_right{
-		
-        left: 2% !important;
-        opacity: 1 !important;
-        bottom: -4vw !important;
-        
-    }
-    .image_name_left{
-        opacity: 1 !important;
-        bottom: -4vw !important;
-		left: 2% !important;
-    }
-    .image_element:hover .icon{ 
-    display: none;
-}
-	
-	.image_element{
-    
-	margin-top: 20%;
-	
-}
-}
+
+			/*CSS til designers.html*/
+
 
 .image_element{
     position: relative;
@@ -312,6 +370,7 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
     font-size: 2.5vw;
     font-weight: bold;
 }
+
 .image_name_left{ /*Venstrestilte navn som passer til ikonene som krever det*/
     position: absolute;
     bottom: 1vw;
@@ -321,6 +380,7 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
     font-size: 2.5vw;
     font-weight: bold;
 }
+
 .icon{
     position: absolute;
     left: 0.9vw;
@@ -333,16 +393,22 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
     visibility: visible;
     opacity: 0.9;
 }
+
 .image_element:hover .image_designer_and_project{ /* Gjør opacityen til bildet svakere når hovret over*/
     opacity: 0.7;
 }
+
 .image_element:hover .image_name_right{ /* Gjør navnene synlig når hovret over*/
     opacity: 0.9;
 }
+
 .image_element:hover .image_name_left{ /* Gjør navnene synlig når hovret over*/
     opacity: 0.9;
 }
-/*CSS til projects.html*/
+
+
+				/*projects.html*/
+
 
 .image_name_design_dark{ /* Navn på designet og årstall*/
     position: absolute;
@@ -362,18 +428,24 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 .image_element_project:hover .image_designer_and_project{ /*Gjelder produktbildene på designersidene også*/
     opacity: 0.4;
 }
+
 .image_element_project:hover .image_name_design_dark { /*Gjelder produktbildene på designersidene også*/
     opacity: 1;  
 }
-/* slutt designers og projects*/ 
 
 
-/*CSS til dina.html, kristin.html +++ */
+/*==========================================================
+			Slutt designers.html og projects.html
+============================================================*/
 
+
+
+/*==========================================================
+						Designersider
+============================================================*/
 
 
 #persontekst{
-	
 	margin-left: 5vw;
 	margin-right: 0vw;
 	margin-top: 0vw;
@@ -382,7 +454,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 .undertekst{
 	display: flex;
 	flex-direction: row;
-
 }
 
 .bilde{
@@ -391,7 +462,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 }
 
 #ikon{
-
 	width: 15vw;
 	height: 15vw;
 }
@@ -409,7 +479,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 .produktbilde{
 	width: 35vw;
 	height: 35vw;
-
 }
 
 #produkttekst1{
@@ -420,8 +489,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	opacity: 0;
     font-weight: bold;
-	/*
-	background-color: #009F67;*/
 }
 
 #produkttekst2{
@@ -449,30 +516,27 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 .columnD{
 	position: relative;
 	flex: 50%;
-	
 }
 
 .rowD{
 	display: flex;
 	margin: 10%;
 	text-align: justify;
-	
 }
 
-@media (max-width: 940px){
-	h1{
-		font-size: 30px;
-	}
-	#persontekst, #produkttekst1, #produkttekst2 #produkttekst .text_about_page{
-		font-size: 15px;
-	}	
-	
-}
-/*slutt designersider*/ 
+
+/*==========================================================
+					slutt designersider
+============================================================*/ 
 
 
-/*CSS for produktsider*/
+
+/*==========================================================
+				    	Produktsider
+============================================================*/
 /*Jenny Marie*/
+
+
 .Prow{
 	display: flex;
 	flex-direction: column;
@@ -494,180 +558,25 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 #ptekst{
 	margin-left: auto;
 }
-/*slutt prosjekter*/ 
 
 
-/* start ??? */ 
-
-/* slutt ??? */ 
-
-
-/* Navigasjonsbar*/
-#navbar-placeholder{
-	z-index: 1; 
-	position: sticky;
-	top: 0px;
-}
-
-#navigasjonsbar{
-	position: relative;
-	top: 0px;
-	background-color: #1e1e1e;
-	height: 80px;
-    padding: 0px;
-	/*border-top: 0.5px #DEF3ED solid;*/
-	border-opacity: 0.3;
-    box-shadow: 0px 0px 20px #1e1e1e;
-} 
-
-#navbar{
-	position: absolute;
-    list-style-type: none;
-	width: 70%; 
-	top: 10px;
-	left: 200px;
-	font-weight: 200;
-    /*display: inline;*/
-    /*height: 50px;*/    
-}
-
-#navbar li { /*Styling av listeelementer i navigasjonsmenyen*/
-    display: inline;
-	float: left;
-	cursor: pointer;
-	margin-left: 40px;
-	/*Legger på en padding her for å skille knappene i navbaren*/
-}
-
-#navbar li:nth-child(3){
-	position: absolute;
-	right: 13%;
-}
-
-#navbar a{
-     /* Gjør pekern om til klikkehånd*/
-		 /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
-    text-align: right;
-	color: #DEF3ED;
-	font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-	font-size: 20px;
-}
-
-#navbar a:hover {
-	text-decoration: underline ;
-	text-decoration-color: #009F67;
-}
-
-#logo_portobok{
-	position: absolute;
-	top: 20px;
-	left: 13%;
-	width: 40px;
-	z-index: 1;
-}
+/*==========================================================
+				 Slutt produktsider
+============================================================*/
 
 
-/*slutt Navigasjonsbar*/
-/*responsiv navbar///hamburgermeny*/
 
-#navigasjonsbar label {
-	position: absolute;
-	right: 	13%;
-	top: 30px;
-	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
-	}
-#navigasjonsbar label:hover{
-	color: #009F67;
-}
-
-#box { /*når man trykker på burgermenyen blir boksen kjekket*/
-	display: none; /*gjør at checkboksen ikke synest*/
-}
-@media (max-width: 940px) {
-
-	body {
-		overflow-x: hidden;
-		padding: 0;
-	}
-	
-	#navbar li {
-		border: solid black 0.2px;
-		position: relative;
-		float: none;
-		display: block;
-		background-color: #DEF3ED;
-		height: 40px;
-		width: 100%;
-		text-align: center;	
-		margin-left: 0;
-		
-	}
-	
-	#navbar  {
-		
-		position: absolute;
-		left: initial;
-		right: 0;
-		width: 300px;
-		display: none;
-		padding: 0px;
-		top: 60px;
-		
-		
-	
-	 }
-	
-	
-	
-	#navbar li:first-child {
-	}
-	
-	#navbar li:nth-child(2) {	
-	}
-	
-	#navbar li:nth-child(3) {
-		position: initial;
-	}
-	
-	#navbar li:hover{
-		background-color: #009F67;
-	}
-	
-	#navbar a{
-		position: relative;
-		color: black;
-		text-align: 10px;
-		
-	}
-	
-	#logo_portobok{
-		width: 40px;
-	}
-	
-	#navigasjonsbar label {
-		right: 13%;
-		width: 40px;
-		float:right;
-		color: #DEF3ED;
-		cursor: pointer;
-		display: block;
-		
-	}
-
-} 
+/*==========================================================
+						Footer
+============================================================*/
 
 
-/* ferdig hamburgermeny*/
-
-/*Footer*/
-footer { /*thele footer-tagen*/
+footer { /*hele footer-tagen*/
 	background-color: #1e1e1e;
 	height: 500px;
-	
 }
 
 #footer{/* div rundt innholdet i footeren */
-	
 	height: 340px;
     padding: 80px 20px ;
 	position: relative;
@@ -680,9 +589,6 @@ footer { /*thele footer-tagen*/
 	text-align: center;
 }
 
-
-
-
 #footer a {/* linker i footeren */
 	color: #DEF3ED;
 }
@@ -693,7 +599,6 @@ footer { /*thele footer-tagen*/
 	width: 65px;
 	margin: auto;
 	display: block;
-	
 }
 
 #footer img { /* bilder i footeren, ment for å bestemme størrelsen på logoen */
@@ -707,13 +612,11 @@ footer { /*thele footer-tagen*/
 	display: grid;
 	grid-template-columns: 50% 50%;
 	margin: auto;
-	
 }
 
 #facebook_icon { /* div rundt linken og iconet */
 	width: 30px;
 	margin: auto;
-	
 }
 
 #instagram_icon {/* div rundt linken og iconet */
@@ -726,10 +629,7 @@ footer { /*thele footer-tagen*/
 	width: 30px;
 	margin:  auto;
 	display: block;
-	
 }
-
-
 
 #instagram_icon img{/* instagram-iconet, plasserer og bestemmer størrelse */
 	
@@ -748,8 +648,6 @@ footer { /*thele footer-tagen*/
 	grid-row: 4;
     position: relative;
     bottom: 4px;
-	
-	
 }
 
 #phone{ /* id for overskrift og link til telefon */
@@ -757,7 +655,6 @@ footer { /*thele footer-tagen*/
 	grid-row: 4;
     position: relative;
     bottom: 4px;
-	
 }
 
 #adress{ /* id for overskrift og link til addresse */
@@ -779,47 +676,16 @@ footer { /*thele footer-tagen*/
 	color: #009F67;
 }
 
-@media (max-width: 940px){
-    
-	/*============================================
-				Footer i medie queri
-	*/
-	
-	footer{ /* footer i media queri */
-      height: 800px;
-	}
-	
-    #email{ /* footer i media queri */
-        grid-column: 2;
-        grid-row: 4;
-    }
-	
-    #phone{ /* footer i media queri */
-         grid-column: 2;
-        grid-row: 5;
-		margin-top: 40px;
-    }
-	
-    #kontakt_designere{ /* footer i media queri */
-         grid-column: 2;
-        grid-row: 6;
-    }
-}
-/*============================================
-			Footer i medie queri slutt
-*/
 
-
-/*============================================
+/*==========================================================
 			Footer slutt
-==============================================*/
+============================================================*/
 
 
 
-/*============================================
+/*==========================================================
 			Start kontaktside
-==============================================*/
-
+============================================================*/
 
 
 #contact_main { /* her kan styling rettet kun mot alt innhold på kontaktsiden skrives */
@@ -873,7 +739,6 @@ footer { /*thele footer-tagen*/
 	color: #1e1e1e;
 }
 
-
 #contact_form input { /* input feltene i kontaktskjema */
 	width: 100%;
 	padding: 10px;
@@ -904,14 +769,10 @@ footer { /*thele footer-tagen*/
 	outline: none;
 }
 
-
-
 #contact_form datalist { /* liste over designere man kan kontakte*/
 	position: relative;
 	width: 100%;
 }
-
-
 
 #contact_form h1 {
 
@@ -921,11 +782,235 @@ footer { /*thele footer-tagen*/
 	padding: 0;
 }
 
-
 #contact_form .status { /* beskjeder om mangelfull utfylling av skjema */
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	color: red;
 }
+
+
+/*==========================================================
+						Slutt kontaktside
+============================================================*/
+
+
+
+
+
+/*==========================================================
+						Media Queries*/
+
+
+
+/*==========================================================
+					Hamburgermeny Media Queries*/
+
+
+@media (max-width: 940px) {
+
+	
+	body {
+		overflow-x: hidden;
+		padding: 0;
+	}
+	
+	#navbar li {
+		border: solid black 0.2px;
+		position: relative;
+		float: none;
+		display: block;
+		background-color: #DEF3ED;
+		height: 40px;
+		width: 100%;
+		text-align: center;	
+		margin-left: 0;
+	}
+	
+	#navbar  {
+		position: absolute;
+		left: initial;
+		right: 0;
+		width: 300px;
+		display: none;
+		padding: 0px;
+		top: 60px;
+	 }
+	
+	#navbar li:first-child {
+	}
+	
+	#navbar li:nth-child(2) {	
+	}
+	
+	#navbar li:nth-child(3) {
+		position: initial;
+	}
+	
+	#navbar li:hover{
+		background-color: #009F67;
+	}
+	
+	#navbar a{
+		position: relative;
+		color: black;
+		text-align: 10px;
+	}
+	
+	#logo_portobok{
+		width: 40px;
+	}
+	
+	#navigasjonsbar label {
+		right: 13%;
+		width: 40px;
+		float:right;
+		color: #DEF3ED;
+		cursor: pointer;
+		display: block;
+	}
+
+} 
+
+
+				/*Hamburgermeny Media Queries Slutt
+============================================================*/
+
+
+
+/*==========================================================
+					Homepage media queri */
+
+
+@media (max-width: 940px){  
+	.flex-container{
+		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
+		justify-content: center;
+		justify-content: space-between;
+		align-content: flex-start;
+		
+		
+	}
+	.ikon-navn {
+		font-size: 10px;;
+	}
+	
+	.ikonF{
+		width: 18vw;
+		
+		
+	}
+}
+
+
+			/*Homepage Media Queries Slutt
+============================================================*/ 
+
+
+
+/*==========================================================
+			Designere og projects Media Queries*/
+
+
+@media (max-width: 940px){
+	
+    .row{
+        flex-direction: column;
+        width: 50vw;
+        margin: auto;	
+    }
+	
+    .image_name_right{
+		
+        left: 2% !important;
+        opacity: 1 !important;
+        bottom: -4vw !important;
+    }
+	
+    .image_name_left{
+        opacity: 1 !important;
+        bottom: -4vw !important;
+		left: 2% !important;
+    }
+	
+    .image_element:hover .icon{ 
+    	display: none;
+	}
+	
+	.image_element{
+		margin-top: 20%;
+	
+}
+	
+
+}
+
+
+		/*Designere og projects Media Queries Slutt
+==========================================================*/
+
+
+
+/*==========================================================
+				Designersider Media Queries*/ 
+
+
+@media (max-width: 940px){
+	
+	h1{
+		font-size: 30px;
+		
+	}
+	#persontekst, #produkttekst1, #produkttekst2 #produkttekst .text_about_page{
+		font-size: 15px;
+	}	
+	
+}
+
+
+			/*Designersider Media Queries Slutt
+============================================================*/ 
+
+
+
+
+/*============================================================
+					Footer media queri */
+
+
+@media (max-width: 940px){
+    
+	
+	
+	
+	footer{ /* footer i media queri */
+      height: 800px;
+	}
+	
+    #email{ /* footer i media queri */
+        grid-column: 2;
+        grid-row: 4;
+    }
+	
+    #phone{ /* footer i media queri */
+         grid-column: 2;
+        grid-row: 5;
+		margin-top: 40px;
+    }
+	
+    #kontakt_designere{ /* footer i media queri */
+         grid-column: 2;
+        grid-row: 6;
+    }
+}
+
+
+				/*Footer medie queri slutt
+=============================================================*/
+
+
+
+/*============================================================
+					Kontakt media queri */
+
 
 @media (max-width: 650px) {
 	#contact_form {
@@ -934,8 +1019,12 @@ footer { /*thele footer-tagen*/
 }
 
 
-/*==================================
-		Slutt kontaktside
-====================================*/
+				/*Kontakt medie queri slutt
+=============================================================*/
 
 
+
+===============
+/*============================================================
+					Media Queries Slutt
+==============================================================*/
