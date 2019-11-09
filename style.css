@@ -366,7 +366,7 @@ footer{
     font-weight: bold;
 }
 
-.produktbilde:hover {
+.columnD:hover .produktbilde{
 	opacity: 0.4;
 }
 
@@ -381,6 +381,7 @@ footer{
 .columnD{
 	position: relative;
 	flex: 50%;
+	
 }
 
 .rowD{
