@@ -475,6 +475,8 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 
 @media (max-width: 940px){  
 	.flex-container{
+		margin-left: 15%;
+		margin-right: 15%;
 		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
 		justify-content: center;
 		justify-content: space-between;
