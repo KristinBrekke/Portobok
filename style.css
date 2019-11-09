@@ -290,13 +290,10 @@ footer{
 
 /*CSS til dina.html, kristin.html +++ */
 
-/*.designers{
-	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-}*/
+
 
 #persontekst{
-	/*font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 20px;*/
+	
 	margin-left: 5vw;
 	margin-right: 0vw;
 	margin-top: 0vw;
@@ -792,15 +789,12 @@ footer { /*thele footer-tagen*/
 ==============================================*/
 
 
-#contact_main {
-	position: relative;
-	width: 95%;
-	overflow-x: hidden;
-	margin: auto;
-	padding: 0;
+
+#contact_main { /* her kan styling rettet kun mot alt innhold på kontaktsiden skrives */
+	
 }
 
-#contact_form {
+#contact_form { /* hele kontaktskjema */
 	width: 500px;
 	position: relative;
 	margin: auto;
@@ -809,7 +803,7 @@ footer { /*thele footer-tagen*/
 	display: block;
 }
 
-#thank_you {
+#thank_you { /* div der bekreftelse på sendt epost og personlig hilsen fra den aktuelle designeren kommer */
 	display: none;
 	width: 100vw;
 	height: 100vh;
@@ -817,34 +811,38 @@ footer { /*thele footer-tagen*/
 	
 }
 
-#thank_you p {
+#thank_you p { /* Brødtekst med personlig beskjed fra designeren som mottar eposten */
 	width: 350px;
 	margin: auto 20vw  auto 30vw;
 	line-height: 28px;
 }
 
-#mvh {
+#mvh { /* for å skape litt luft over og under mvh i personlig beskjed fra designeren som mottar eposten */
 	line-height: 60px;
 }
 
-#thank_you img {
+#thank_you img { /* designer-icon som velges basert på hvem mailen i kontaktskjemaet sendes til */ 
 	display: block;
 	margin: 50px 20vw  40px  30vw;
 	width: 200px;
 }
 
-#thank_you a {
+#thank_you a { /* link for å komme tilbake til kontaktskjema */
 	color: blue;
 	font-size: 16px;
 }
 
-#contact_form p {
+#contact_form label { /* Text i label for skjema */
 	margin-left: 0;
 	margin-bottom: 5px;
+	font-family: "Muli", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 20px;
+	font-weight: 200;
+	color: #1e1e1e;
 }
 
 
-#contact_form input {
+#contact_form input { /* input feltene i kontaktskjema */
 	width: 100%;
 	padding: 10px;
 
@@ -852,7 +850,7 @@ footer { /*thele footer-tagen*/
 	outline: none;
 }
 
-#contact_form textarea {
+#contact_form textarea { /* tekstområde for mail */
 	width: 100%;
 	padding: 10px;
 	height: 300px;
@@ -860,7 +858,7 @@ footer { /*thele footer-tagen*/
 	outline: none;
 }
 
-#contact_form button {
+#contact_form button { /* send knapp */
 	position: absolute;
 	right: 30px;
 	margin-top: 10px;
@@ -876,14 +874,12 @@ footer { /*thele footer-tagen*/
 
 
 
-#contact_form datalist {
+#contact_form datalist { /* liste over designere man kan kontakte*/
 	position: relative;
 	width: 100%;
 }
 
-#mottaker_alternativer {
-	background-image: image(&#9776);
-}
+
 
 #contact_form h1 {
 
@@ -894,16 +890,11 @@ footer { /*thele footer-tagen*/
 }
 
 
-#contact_form .status {
+#contact_form .status { /* beskjeder om mangelfull utfylling av skjema */
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	color: red;
 }
 
 /*Slutt kontaktside*/
 
-/*test*/
-
-#personlig {
-	display: none;
-}
 
