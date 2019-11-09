@@ -8,9 +8,9 @@ document.getElementById("navbar-placeholder").innerHTML =
 			<a href="../html/homepage.html" class="logo-portoboklink"> <img src="../images/logo_pb_tykkere.png" alt="logo Portobok" id="logo_portobok" ></a>
 			<ul id="navbar">
 			
-           		<li><a href="../html/designers.html">Designere</a></li>
-            	<li><a href="../html/projects.html">Prosjekter</a></li>
-            	<li><a href="../html/contact.html">Kontakt</a></li>
+           		<li><a href="../html/designers.html" id="designerknapp">Designere</a></li>
+            	<li><a href="../html/projects.html" id="prosjekterknapp">Prosjekter</a></li>
+            	<li><a href="../html/contact.html" id="kontaktknapp">Kontakt</a></li>
        	 </ul>
     </div>
 
@@ -58,13 +58,29 @@ function resize() {
 }
 
 function firkant(){
- 	var navbar = document.getElementById("navbar");
+ 	var navbar = document.getElementsByTagName("li");
+	
+	const designere = navbar[0];
+	const prosjekter = navbar[1];
+	const kontakt = navbar[2];
+	console.log(prosjekter);
 	var location = window.location.href;
 	console.log(location);
-	if (location == homepage.html){
-		navbar.style.textDecoration: "underline";
-		navbar.style.textUnderlineColor: "red";
+	if (location == document.getElementById("designerknapp")) {
+		designere.style.textDecoration= "underline";
+		designere.style.textUnderlineColor= "red";
 		console.log("jippi");
+	}
+												
+	else if (location == document.getElementById("prosjekterknapp")) {
+		console.log("hei");
+		prosjekter.style.textDecoration= "underline";
+		prosjekter.style.textUnderlineColor= "red";
+	}
+	
+	else  {
+		kontakt.style.textDecoration= "underline";
+		kontakt.style.textUnderlineColor= "red";
 	}
 	
 	
