@@ -653,16 +653,11 @@ footer {
     grid-template-columns: auto 300px auto;
 	grid-template-rows:  50px 50px 50px 50px;
 	grid-row-gap: 40px;
-	margin: auto;
+	margin: 10% auto auto;
 	text-align: center;
 }
 
 
-
-/*#footer_logo p {
-	grid-row: 2;
-}
-*/
 
 
 #footer a {
