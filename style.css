@@ -64,30 +64,22 @@ footer{
 			 Homepage.html
 =============================================*/
 
-.front_header {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-
-	text-align: center;
-	font-family: Pt serif;
-	font-size: 11vw;
-	margin: 100px 10% 20px 10%; 
-	color: #009F67; 
+#forsidetekst{
+	
 }
 
 .intro { /*Intro text om portobook, plassert øverst på forsiden*/
-	margin: 200px 12vw;
+	margin: 200px 15%;
 	color: #1e1e1e; 
 	font-weight: 200;
 	font-size: 40px;
 }
 
-.front_page_logo {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-	width: 20%;
-	height: auto;
-	
+.headersHome { /* "Prosjekter av våre designere" og "designere"-overskrift på homepagen*/
+	margin: 100px 15% 20px 15%; 
 }
 
-.avsnitt {/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-	text-align: center;
+.avsnitt { /* teskten under .headersHome */ 
 	margin: 50px 15%;
 	font-size: 20px;
 	color: #1e1e1e;
@@ -103,8 +95,6 @@ footer{
 	width: 100%;
 	padding: 50px 0px 100px 0px;
 }
-
-
 
 /*===========================================
 			Slutt homepage.html
@@ -366,7 +356,7 @@ footer{
     font-weight: bold;
 }
 
-.produktbilde:hover {
+.columnD:hover .produktbilde{
 	opacity: 0.4;
 }
 
@@ -381,6 +371,7 @@ footer{
 .columnD{
 	position: relative;
 	flex: 50%;
+	
 }
 
 .rowD{
@@ -475,6 +466,8 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 
 @media (max-width: 940px){  
 	.flex-container{
+		margin-left: 15%;
+		margin-right: 15%;
 		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
 		justify-content: center;
 		justify-content: space-between;
