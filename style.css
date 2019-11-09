@@ -638,13 +638,13 @@ footer {
 
 #footer{
 	
-	height: auto;
+	height: 340px;
     padding: 80px 20px ;
 	position: relative;
     display: grid;
 	width: 90%;
     grid-template-columns: auto 300px auto;
-	grid-template-rows:  50px 50px 50px 50px;
+	grid-template-rows:  50px 50px 50px 50px auto auto;
 	grid-row-gap: 40px;
 	margin: 10% auto auto;
 	text-align: center;
@@ -741,31 +741,42 @@ footer {
 
 @media (max-width: 940px){
     
-	#footer{
-        display: grid;
-        height: 150px;
-        grid-template-rows: 50px 30px 30px 30px;
-        grid-template-columns: 100vw;
+	footer{
+      height: 800px;
 	}
+	
     .contact_information{
         grid-row: 1;
     }
+	
     #email{
-        grid-column: 1;
-        grid-row: 2;
-    }
-    #phone{
-         grid-column: 1;
-        grid-row: 3;
-    }
-    #adress{
-         grid-column: 1;
+        grid-column: 2;
         grid-row: 4;
+    }
+	
+    #phone{
+         grid-column: 2;
+        grid-row: 5;
+		margin-top: 40px;
+    }
+	
+    #kontakt_designere{
+         grid-column: 2;
+        grid-row: 6;
     }
 }
 
-/*Footer slutt*/
-/*Start kontaktside*/
+
+
+/*============================================
+			Footer slutt
+==============================================*/
+
+
+
+/*============================================
+			Start kontaktside
+==============================================*/
 
 
 #contact_main {
