@@ -64,24 +64,14 @@ footer{
 			 Homepage.html
 =============================================*/
 
-#forsidetekst{
-	
-}
-
-.intro { /*Intro text om portobook, plassert øverst på forsiden*/
-	margin: 200px 15%;
-	color: #1e1e1e; 
-	font-weight: 200;
-	font-size: 40px;
-}
-
 .headersHome { /* "Prosjekter av våre designere" og "designere"-overskrift på homepagen*/
-	margin: 100px 15% 20px 15%; 
+	margin: 100px 15% 0px 15%; 
+	text-align: center;
 }
 
 .avsnitt { /* teskten under .headersHome */ 
-	margin: 50px 15%;
-	font-size: 20px;
+	text-align: center;
+	margin: 10px 15%;
 	color: #1e1e1e;
 }
 
@@ -95,108 +85,6 @@ footer{
 	width: 100%;
 	padding: 50px 0px 100px 0px;
 }
-
-/*===========================================
-			Slutt homepage.html
-=============================================*/ 
-
-
-/*==========================================================
-			Start designers.html og projects.html
-============================================================*/
-
-
-.pictures_designers_and_projects{ /*Gjelder både designers og projects*/
-    margin-left: 10%;
-}
-
-.image_designer_and_project{ /*Gjelder både designers og projects*/
-    width: 35vw;
-}
-
-.row{
-    display: flex;
-}
-/*CSS til designers.html*/
-
-@media (max-width: 940px){
-    .row{
-        flex-direction: column;
-    }
-    .image_name_right{
-        right: 55vw !important;
-    }
-}
-
-.image_element{
-    position: relative;
-    padding: 2%;
-}
-
-.image_name_right{ /*Høyrestilte navn som passer til ikonene som krever det*/
-    position: absolute;
-    bottom: 1vw;
-    right: 3vw;
-    color: #000000;
-    opacity: 0;
-    font-size: 2.5vw;
-    font-weight: bold;
-}
-.image_name_left{ /*Venstrestilte navn som passer til ikonene som krever det*/
-    position: absolute;
-    bottom: 1vw;
-    left: 3vw;
-    color: #000000;
-    opacity: 0;
-    font-size: 2.5vw;
-    font-weight: bold;
-}
-.icon{
-    position: absolute;
-    left: 0.9vw;
-    top: 0.9vw;
-    width: 35vw;
-    visibility: hidden;
-}
-
-.image_element:hover .icon{ /* Gjør ikonene synlig når hovret over*/
-    visibility: visible;
-    opacity: 0.9;
-}
-.image_element:hover .image_designer_and_project{ /* Gjør opacityen til bildet svakere når hovret over*/
-    opacity: 0.7;
-}
-.image_element:hover .image_name_right{ /* Gjør navnene synlig når hovret over*/
-    opacity: 0.9;
-}
-.image_element:hover .image_name_left{ /* Gjør navnene synlig når hovret over*/
-    opacity: 0.9;
-}
-/*CSS til projects.html*/
-
-.image_name_design_dark{ /* Navn på designet og årstall*/
-    position: absolute;
-    bottom: 1vw;
-    left: 3vw;
-    color:#000000;
-    opacity: 0;
-    font-size: 2vw;
-    font-weight: bold;  
-}
-
-.image_element_project{
-    position: relative;
-    padding: 2%; 
-}
-
-.image_element_project:hover .image_designer_and_project{ /*Gjelder produktbildene på designersidene også*/
-    opacity: 0.4;
-}
-.image_element_project:hover .image_name_design_dark { /*Gjelder produktbildene på designersidene også*/
-    opacity: 1;  
-}
-/* slutt designers og projects*/ 
-
 
 /*start slideshow/bildekarusell */
 #slideshow{
@@ -285,6 +173,118 @@ footer{
 	background-color: #1e1e1e;
 }
 /* slutt slideshow/bildekarusell */ 
+
+/*===========================================
+			Slutt homepage.html
+=============================================*/ 
+
+
+/*==========================================================
+			Start designers.html og projects.html
+============================================================*/
+
+.pictures_designers_and_projects{ /*Gjelder både designers og projects*/
+    margin-left: 10%;
+}
+
+.image_designer_and_project{ /*Gjelder både designers og projects*/
+    width: 35vw;
+}
+
+.row{
+    display: flex;
+}
+/*CSS til designers.html*/
+
+@media (max-width: 940px){
+    .row{
+        flex-direction: column;
+        width:50vw;
+        margin: auto;
+    }
+    .image_name_right{
+        right: 30vw!important;
+        opacity: 1 !important;
+        bottom: -4vw !important;
+        
+    }
+    .image_name_left{
+        opacity: 1 !important;
+        bottom: -4vw !important;
+    }
+    .image_element:hover .icon{ 
+    visibility: hidden!important;
+}
+}
+
+.image_element{
+    position: relative;
+    padding: 2%;
+}
+
+.image_name_right{ /*Høyrestilte navn som passer til ikonene som krever det*/
+    position: absolute;
+    bottom: 1vw;
+    right: 3vw;
+    color: #000000;
+    opacity: 0;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.image_name_left{ /*Venstrestilte navn som passer til ikonene som krever det*/
+    position: absolute;
+    bottom: 1vw;
+    left: 3vw;
+    color: #000000;
+    opacity: 0;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.icon{
+    position: absolute;
+    left: 0.9vw;
+    top: 0.9vw;
+    width: 35vw;
+    visibility: hidden;
+}
+
+.image_element:hover .icon{ /* Gjør ikonene synlig når hovret over*/
+    visibility: visible;
+    opacity: 0.9;
+}
+.image_element:hover .image_designer_and_project{ /* Gjør opacityen til bildet svakere når hovret over*/
+    opacity: 0.7;
+}
+.image_element:hover .image_name_right{ /* Gjør navnene synlig når hovret over*/
+    opacity: 0.9;
+}
+.image_element:hover .image_name_left{ /* Gjør navnene synlig når hovret over*/
+    opacity: 0.9;
+}
+/*CSS til projects.html*/
+
+.image_name_design_dark{ /* Navn på designet og årstall*/
+    position: absolute;
+    bottom: 1vw;
+    left: 3vw;
+    color:#000000;
+    opacity: 0;
+    font-size: 2vw;
+    font-weight: bold;  
+}
+
+.image_element_project{
+    position: relative;
+    padding: 2%; 
+}
+
+.image_element_project:hover .image_designer_and_project{ /*Gjelder produktbildene på designersidene også*/
+    opacity: 0.4;
+}
+.image_element_project:hover .image_name_design_dark { /*Gjelder produktbildene på designersidene også*/
+    opacity: 1;  
+}
+/* slutt designers og projects*/ 
 
 
 /*CSS til dina.html, kristin.html +++ */
@@ -431,24 +431,23 @@ footer{
 
 .flex-container {
 	display: flex;
+	margin: auto;
+	justify-content: center;
 	justify-content: space-between;
 	width: 80%;
-	margin: auto;
+
 	
 	
 } 
 
 .flex-container div {
-	
-	
 	text-align: left;
 	width: 150px;
 }
 
 .ikonF{
-	
  	width: 10vw;
-	margin-top: 7vw; 
+	
 	
 } 
 
@@ -466,8 +465,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 
 @media (max-width: 940px){  
 	.flex-container{
-		margin-left: 15%;
-		margin-right: 15%;
 		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
 		justify-content: center;
 		justify-content: space-between;
@@ -478,8 +475,10 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	.ikon-navn {
 		font-size: 10px;;
 	}
+	
 	.ikonF{
 		width: 18vw;
+		
 		
 	}
 }
