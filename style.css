@@ -271,9 +271,11 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
         flex-direction: column;
         width: 50vw;
         margin: auto;
+		
     }
     .image_name_right{
-        right: 30vw!important;
+		
+        left: 2% !important;
         opacity: 1 !important;
         bottom: -4vw !important;
         
@@ -281,15 +283,24 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
     .image_name_left{
         opacity: 1 !important;
         bottom: -4vw !important;
+		left: 2% !important;
     }
     .image_element:hover .icon{ 
-    visibility: hidden!important;
+    display: none;
+}
+	
+	.image_element{
+    
+	margin-top: 20%;
+	
 }
 }
 
 .image_element{
     position: relative;
     padding: 2%;
+	
+	
 }
 
 .image_name_right{ /*Høyrestilte navn som passer til ikonene som krever det*/
