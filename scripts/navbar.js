@@ -59,6 +59,8 @@ function resize() {
 
 function firkant(){
  	var navbar = document.getElementsByTagName("li");
+	var y = window.matchMedia("(max-width: 940px)");
+	
 	
 	const designere = navbar[0];
 	const prosjekter = navbar[1];
@@ -68,19 +70,19 @@ function firkant(){
 	console.log(location);
 	if (location == document.getElementById("designerknapp")) {
 		designere.style.textDecoration= "underline";
-		designere.style.textUnderlineColor= "red";
 		console.log("jippi");
+		
 	}
 												
 	else if (location == document.getElementById("prosjekterknapp")) {
 		console.log("hei");
 		prosjekter.style.textDecoration= "underline";
-		prosjekter.style.textUnderlineColor= "red";
+		
 	}
 	
 	else  {
 		kontakt.style.textDecoration= "underline";
-		kontakt.style.textUnderlineColor= "red";
+		
 	}
 	
 	
