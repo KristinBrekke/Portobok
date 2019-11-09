@@ -431,24 +431,24 @@ footer{
 
 .flex-container {
 	display: flex;
+	margin: auto;
+	justify-content: center;
 	justify-content: space-between;
 	width: 80%;
-	margin: auto;
+
 	
 	
 } 
 
 .flex-container div {
-	
-	
 	text-align: left;
+	border: dashed;
 	width: 150px;
 }
 
 .ikonF{
-	
  	width: 10vw;
-	margin-top: 7vw; 
+	
 	
 } 
 
@@ -466,8 +466,6 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 
 @media (max-width: 940px){  
 	.flex-container{
-		margin-left: 15%;
-		margin-right: 15%;
 		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
 		justify-content: center;
 		justify-content: space-between;
@@ -478,8 +476,10 @@ background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bi
 	.ikon-navn {
 		font-size: 10px;;
 	}
+	
 	.ikonF{
 		width: 18vw;
+		
 		
 	}
 }
