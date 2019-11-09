@@ -59,6 +59,13 @@ function resize() {
 
 function firkant(){
  	var navbar = document.getElementById("navbar");
+	var location = window.location.href;
+	console.log(location);
+	if (location == homepage.html){
+		navbar.style.textDecoration: "underline";
+		navbar.style.textUnderlineColor: "red";
+		console.log("jippi");
+	}
 	
 	
 }
