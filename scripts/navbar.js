@@ -1,5 +1,9 @@
 // JavaScript Document
 
+
+
+
+
 document.getElementById("navbar-placeholder").innerHTML = 
     `<div id="navigasjonsbar">
 			
