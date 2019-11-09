@@ -895,6 +895,15 @@ footer { /*thele footer-tagen*/
 	color: red;
 }
 
-/*Slutt kontaktside*/
+@media (max-width: 650px) {
+	#contact_form {
+		width: 80%;
+	}
+}
+
+
+/*==================================
+		Slutt kontaktside
+====================================*/
 
 
