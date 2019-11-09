@@ -64,24 +64,14 @@ footer{
 			 Homepage.html
 =============================================*/
 
-#forsidetekst{
-	
-}
-
-.intro { /*Intro text om portobook, plassert øverst på forsiden*/
-	margin: 200px 15%;
-	color: #1e1e1e; 
-	font-weight: 200;
-	font-size: 40px;
-}
-
 .headersHome { /* "Prosjekter av våre designere" og "designere"-overskrift på homepagen*/
-	margin: 100px 15% 20px 15%; 
+	margin: 100px 15% 0px 15%; 
+	text-align: center;
 }
 
 .avsnitt { /* teskten under .headersHome */ 
-	margin: 50px 15%;
-	font-size: 20px;
+	text-align: center;
+	margin: 10px 15%;
 	color: #1e1e1e;
 }
 
@@ -96,6 +86,94 @@ footer{
 	padding: 50px 0px 100px 0px;
 }
 
+/*start slideshow/bildekarusell */
+#slideshow{
+	height: auto;
+	margin: 0 15%;
+}
+
+.slideshow-container {
+    max-width: 100%; 
+    position: relative; 
+	height: auto;
+	width: 80vw;
+	margin: 100px 0px 0px 0px;
+} 
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+	width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #1e1e1e;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #009F67;
+}
+
+.text {
+    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: white;
+	background-color: black;
+	opacity: 0.5;
+    font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 4px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+	background-color: lightgray;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+#dots {
+	text-align: center;
+}
+
+.active,
+.dot:hover {
+	background-color: #1e1e1e;
+}
+/* slutt slideshow/bildekarusell */ 
+
 /*===========================================
 			Slutt homepage.html
 =============================================*/ 
@@ -104,7 +182,6 @@ footer{
 /*==========================================================
 			Start designers.html og projects.html
 ============================================================*/
-
 
 .pictures_designers_and_projects{ /*Gjelder både designers og projects*/
     margin-left: 10%;
@@ -208,95 +285,6 @@ footer{
     opacity: 1;  
 }
 /* slutt designers og projects*/ 
-
-
-/*start slideshow/bildekarusell */
-#slideshow{
-	height: auto;
-	margin: 0 15%;
-}
-
-.slideshow-container {
-    max-width: 100%; 
-    position: relative; 
-	height: auto;
-	width: 80vw;
-	margin: 100px 0px 0px 0px;
-} 
-
-.mySlides {
-  display: none;
-}
-
-.mySlides img {
-	width: 100%;
-}
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #1e1e1e;
-    font-weight: bold;
-    font-size: 30px;
-    transition: .6s ease;
-    border-radius: 0 3px 3px 0
-}
-
-.next {
-    right: -50px;
-    border-radius: 3px 3px 3px 3px
-}
-
-.prev {
-    left: -50px;
-    border-radius: 3px 3px 3px 3px
-}
-
-.prev:hover,
-.next:hover {
-    color: #009F67;
-}
-
-.text {
-    font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	color: white;
-	background-color: black;
-	opacity: 0.5;
-    font-size: 20px;
-	font-weight: 400;
-	margin-bottom: 4px;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-	background-color: lightgray;
-    display: inline-block;
-    transition: background-color .6s ease;
-}
-
-#dots {
-	text-align: center;
-}
-
-.active,
-.dot:hover {
-	background-color: #1e1e1e;
-}
-/* slutt slideshow/bildekarusell */ 
 
 
 /*CSS til dina.html, kristin.html +++ */
