@@ -28,7 +28,6 @@ function hamburger() {
 	
 					
 	if (x.checked == false){
-		console.log("if");
 		navbar.style.display = "block"; //skulle gjør at listeelementene legger seg på rad nedover
 		navbar.style.float = "none" //flyter ikke lenger til venstre
 
@@ -36,12 +35,10 @@ function hamburger() {
 
 	else {
 		navbar.style.display = "none"; //gjør at listeleementene ikke vises
-		console.log("else") 
 	}
 }
 		
 function resize() {
-	console.log("resized");
 	var x = document.getElementById("box");
 	var y = window.matchMedia("(max-width: 940px)");
 	if (y.matches) { //dette skal være om skjermen er mindre enn 940px
@@ -52,7 +49,6 @@ function resize() {
 		}
 	}
 	else { //når skjermen er større enn 940px
-		console.log("kom igjen");
 		navbar.style.display = "inline"; 
 		navbar.style.float = "right"; //flyter til venstre
 		navbar.style.color= "red";
@@ -69,17 +65,14 @@ function firkant(){
 	const designere = navbar[0];
 	const prosjekter = navbar[1];
 	const kontakt = navbar[2];
-	console.log(prosjekter);
 	var location = window.location.href;
-	console.log(location);
+	
 	if (location == document.getElementById("designerknapp")) {
 		designere.style.textDecoration= "underline";
-		console.log("jippi");
 		
 	}
 												
 	else if (location == document.getElementById("prosjekterknapp")) {
-		console.log("hei");
 		prosjekter.style.textDecoration= "underline";
 		
 	}
