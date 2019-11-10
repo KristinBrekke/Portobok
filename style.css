@@ -805,7 +805,7 @@ footer { /*hele footer-tagen*/
 					Hamburgermeny Media Queries*/
 
 
-@media (max-width: 940px) {
+@media only screen and (min-width: 240px) and (max-width: 940px) {
 
 	
 	body {
@@ -879,7 +879,7 @@ footer { /*hele footer-tagen*/
 					Homepage media queri */
 
 
-@media (max-width: 940px){  
+@media only screen and (min-width: 240px) and (max-width: 940px){  
 	
 	.flex-container{
 		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
@@ -910,7 +910,7 @@ footer { /*hele footer-tagen*/
 			Designere og projects Media Queries*/
 
 
-@media (max-width: 940px){
+@media only screen and (min-width: 240px) and (max-width: 940px){
 	
     .row{
         flex-direction: column;
@@ -953,7 +953,7 @@ footer { /*hele footer-tagen*/
 				Designersider Media Queries*/ 
 
 
-@media (max-width: 940px){
+@media only screen and (min-width: 240px) and (max-width: 940px){
 	
 	h1{
 		font-size: 30px;
@@ -994,7 +994,7 @@ footer { /*hele footer-tagen*/
 					Footer media queri */
 
 
-@media (max-width: 940px){
+@media only screen and (min-width: 240px) and (max-width: 940px){
     
 	
 	
@@ -1030,7 +1030,7 @@ footer { /*hele footer-tagen*/
 					Kontakt media queri */
 
 
-@media (max-width: 650px) {
+@media only screen and (min-width: 240px) and (max-width: 650px) {
 	#contact_form {
 		width: 80%;
 	}
