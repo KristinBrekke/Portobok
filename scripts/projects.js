@@ -56,7 +56,7 @@ var projectsObjects = [ /*Bilder av prosjekter, link til prosjekter og tekst om 
     },
      {
         href:"project_solveig1.html",
-        src:"../images/solveig_kaffekanne_1.jpg",
+        src:"../images/solveig_kaffekanne_1.JPG",
         alt:"image of coffee pot made by Solveig",
         info:"Design av kaffekanne<br>Solveig<br>2019", 
     },
