@@ -5,23 +5,21 @@
 <title>Navbar</title>
 <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-<script src="navbar.js" type="text/javascript"> </script>
+
 <body onresize="resize()" onload="firkant()">
 	<!--Kaller på funksjonen hver gang bodien er endret-->
     
-        <div id="navigasjonsbar">
+       <div id="navigasjonsbar">
 			
-        <label for= "box" onClick="hamburger()">&#9776</label>
+        <label for= "box" onClick="hamburger()">&#9776;</label>
 			<input type = "checkbox" id ="box"/>
-			<img src="../images/logo_pb.png" alt="logo Portobok" id="logo_portobok" onclick="location.href='#';" style="cursor: pointer;">
-			<ul id="navbar"></a>
+			<a href="../html/homepage.html" class="logo-portoboklink"> <img src="../images/logo_pb_tykkere.png" alt="logo Portobok" id="logo_portobok" ></a>
+			<ul id="navbar">
 			
-           		<li><a href="../html/designers.html" onClick="firkant" id="designerknapp">DESIGNERE</a></li>
-            	<li><a href="../html/projects.html" onClick="firkant" id"projektknapp">PROSJEKTER</a></li>
-            	<li><a href="../html/contact.html" onClick="firkant" id="kontaktknapp">KONTAKT</a></li>
-				
+           		<li><a href="../html/designers.html" id="designerknapp">Designere</a></li>
+            	<li><a href="../html/projects.html" id="prosjekterknapp">Prosjekter</a></li>
+            	<li><a href="../html/contact.html" id="kontaktknapp">Kontakt</a></li>
        	 </ul>
-	
     </div>
 
 </body>

@@ -7,7 +7,7 @@
 document.getElementById("navbar-placeholder").innerHTML = 
     `<div id="navigasjonsbar">
 			
-        <label for= "box" onClick="hamburger()">&#9776</label>
+        <label for= "box" onClick="hamburger()">&#9776;</label>
 			<input type = "checkbox" id ="box"/>
 			<a href="../html/homepage.html" class="logo-portoboklink"> <img src="../images/logo_pb_tykkere.png" alt="logo Portobok" id="logo_portobok" ></a>
 			<ul id="navbar">
