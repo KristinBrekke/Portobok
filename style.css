@@ -24,11 +24,10 @@ header{
 	padding: 0;
 	width: 100%;
 	position: static;
-	color: #1e1e1e;
 }
 
 h1,h2 {
-	font-family: Pt serif, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family: "Pt serif", "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 40px;
 	margin-left: 12vw;
 	margin-bottom: 2vw;
@@ -83,8 +82,6 @@ footer{
 	background-color: #1e1e1e;
 	height: 80px;
     padding: 0px;
-	/*border-top: 0.5px #DEF3ED solid;*/
-	border-opacity: 0.3;
     box-shadow: 0px 0px 20px #1e1e1e;
 } 
 
@@ -113,8 +110,6 @@ footer{
 }
 
 #navbar a{
-     /* Gjør pekern om til klikkehånd*/
-		 /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
     text-align: right;
 	color: #DEF3ED;
 	font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
@@ -857,7 +852,6 @@ footer { /*hele footer-tagen*/
 	#navbar a{
 		position: relative;
 		color: black;
-		text-align: 10px;
 	}
 	
 	#logo_portobok{
