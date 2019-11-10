@@ -1,6 +1,6 @@
 // JavaScript Document
 
-var designersObjects = [
+var designersObjects = [ /*Bilder av designere, ikoner av designere, linker til designersidene, klasse til navn og navn*/
     { 
         href: "dina.html",
         src: "../images/dina.jpg",
@@ -48,7 +48,7 @@ var designersObjects = [
     },
 ];
 
-var HTMLText = "";
+var HTMLText = ""; /*Tom streng som skal fylles inn i designerContainer*/
 
 for (var i = 0; i < designersObjects.length; i++) {
 	
@@ -57,10 +57,10 @@ for (var i = 0; i < designersObjects.length; i++) {
 			HTMLText += '<div class="row">';
 	}
 
-	HTMLText += '<div class="image_element"><a href="' + designersObjects[i].href + '"><img src="' + designersObjects[i].src + '"alt="'+designersObjects[i].alt + '"class="image_designer_and_project"><div class="icon"><img src="' + designersObjects[i].src_icon + '" alt="' + designersObjects[i].alt_icon + '" class="icon"></div> <p class="' + designersObjects[i].image_name + '">' + designersObjects[i].name + '</p></a></div>' ;
+	HTMLText += '<div class="image_element"><a href="' + designersObjects[i].href + '"><img src="' + designersObjects[i].src + '"alt="'+designersObjects[i].alt + '"class="image_designer_and_project"><div class="icon"><img src="' + designersObjects[i].src_icon + '" alt="' + designersObjects[i].alt_icon + '" class="icon"></div> <p class="' + designersObjects[i].image_name + '">' + designersObjects[i].name + '</p></a></div>' ;/*Legger inn i riktige diver med riktige klasser og henter ut riktige elementer fra arrayen designersObjects*/
     
     if( (i%2==0) && ((designersObjects.length%2 == 0) == false) && (i==(designersObjects.length-1)) ) {
-        HTMLText += '</div>';
+        HTMLText += '</div>';/*Lukker div row på det siste elementet uavhengig om det er partall eller oddetall elementer i arrayen*/
     }
     
 	if ((i%2 == 0) == false) {
@@ -68,6 +68,6 @@ for (var i = 0; i < designersObjects.length; i++) {
 	}
 }
 
-document.getElementById("designerContainer").innerHTML = HTMLText;
+document.getElementById("designerContainer").innerHTML = HTMLText;/*Fyller den genererte html-koden inn i designerContainer*/
 
 

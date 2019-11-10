@@ -1,5 +1,5 @@
 // JavaScript Document
-var projectsObjects = [
+var projectsObjects = [ /*Bilder av prosjekter, link til prosjekter og tekst om prosjekter */
     {
         href:"project_dina1.html",
         src:"../images/dina_kaffekanne_1.jpg",
@@ -63,25 +63,25 @@ var projectsObjects = [
     
 ];
 
-var HTMLText = "";
+var HTMLText = ""; /*Tom streng som skal fylles inn i projectContainer*/
 
 for (var i = 0; i < projectsObjects.length; i++) {
 	
     
     if (i%2 == 0) {
-			HTMLText += '<div class="row">';
+			HTMLText += '<div class="row">'; /*Oppretter div row for hvert andre bilde*/
 	}
 
-	HTMLText += '<div class="image_element_project"><a href="' + projectsObjects[i].href + '"><img src="' + projectsObjects[i].src + '"alt="'+ projectsObjects[i].alt + '"class="image_designer_and_project"> <p class="image_name_design_dark">' + projectsObjects[i].info + '</p></a></div>' ;
+	HTMLText += '<div class="image_element_project"><a href="' + projectsObjects[i].href + '"><img src="' + projectsObjects[i].src + '"alt="'+ projectsObjects[i].alt + '"class="image_designer_and_project"> <p class="image_name_design_dark">' + projectsObjects[i].info + '</p></a></div>' ; /*Legger inn i riktige diver med riktige klasser og henter ut riktige elementer fra arrayen projectsObjects*/
     
-    if( (i%2==0) && ((projectsObjects.length%2 == 0) == false) && (i==(projectsObjects.length-1)) ) {
+    if( (i%2==0) && ((projectsObjects.length%2 == 0) == false) && (i==(projectsObjects.length-1)) ) {/*Lukker div row på det siste elementet uavhengig om det er partall eller oddetall elementer i arrayen*/
         HTMLText += '</div>';
     }
     
-	if ((i%2 == 0) == false) {
+	if ((i%2 == 0) == false) { 
 		HTMLText += '</div>';
 	}
 }
 
-document.getElementById("projectContainer").innerHTML = HTMLText;
+document.getElementById("projectContainer").innerHTML = HTMLText; /*Fyller den genererte html-koden inn i projectContainer*/
 
