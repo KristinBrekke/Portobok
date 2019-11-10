@@ -1,9 +1,13 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* =========================================
+
+
+/* ==========================================================
 			Global css-kode
-============================================*/
+=============================================================*/
+
+
 html body{
     background-color: #DEF3ED;
     width:  100%;
@@ -20,11 +24,10 @@ header{
 	padding: 0;
 	width: 100%;
 	position: static;
-	color: #1e1e1e;
 }
 
 h1,h2 {
-	font-family: Pt serif, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-family: "Pt serif", "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 40px;
 	margin-left: 12vw;
 	margin-bottom: 2vw;
@@ -54,15 +57,154 @@ a{
 footer{
     position: relative;
 }
-/*===========================================
+
+
+/*===========================================================
 			 Slutt Global kode
-=============================================*/
+=============================================================*/
 
 
 
-/*===========================================
+/*===========================================================
+			Navigasjonsbar
+=============================================================*/
+
+
+#navbar-placeholder{
+	z-index: 1; 
+	position: sticky;
+	top: 0px;
+}
+
+#navigasjonsbar{
+	position: relative;
+	top: 0px;
+	background-color: #1e1e1e;
+	height: 80px;
+    padding: 0px;
+    box-shadow: 0px 0px 20px #1e1e1e;
+} 
+
+#navbar{
+	position: absolute;
+    list-style-type: none;
+	width: 70%; 
+	top: 10px;
+	left: 200px;
+	font-weight: 200;
+    /*display: inline;*/
+    /*height: 50px;*/    
+}
+
+#navbar li { /*Styling av listeelementer i navigasjonsmenyen*/
+    display: inline;
+	float: left;
+	cursor: pointer;
+	margin-left: 40px;
+	/*Legger på en padding her for å skille knappene i navbaren*/
+}
+
+#navbar li:nth-child(3){
+	position: absolute;
+	right: 13%;
+}
+
+#navbar a{
+    text-align: right;
+	color: #DEF3ED;
+	font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+	font-size: 20px;
+}
+
+#navbar a:hover {
+	text-decoration: underline ;
+	text-decoration-color: #009F67;
+}
+
+#logo_portobok{
+	position: absolute;
+	top: 20px;
+	left: 13%;
+	width: 40px;
+	z-index: 1;
+}
+
+
+			/*hamburgermeny*/
+
+
+#navigasjonsbar label {
+	position: absolute;
+	right: 	13%;
+	top: 30px;
+	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
+	}
+
+#navigasjonsbar label:hover{
+	color: #009F67;
+}
+
+#box { /*når man trykker på burgermenyen blir boksen kjekket*/
+	display: none; /*gjør at checkboksen ikke synest*/
+}
+
+
+		/*hamburgermeny slutt*/
+
+
+/*===========================================================
+			Navigasjonsbar
+=============================================================*/
+
+
+
+/*===========================================================
 			 Homepage.html
-=============================================*/
+=============================================================*/
+
+
+#banner {
+	position: static;
+	width: 100%;
+	height: 20%;
+	font-family: "pt-serif"; /*får ikke til å ha en backupfont uten at den blir gjeldende*/ 
+	font-size: 18vw; /*bruker vw isteden for px fordi den stiller seg inn etter nettsiden*/
+	color: #009F67;
+	text-align: center;
+}  
+
+.flex-container {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	justify-content: space-between;
+	width: 80%;
+} 
+
+.flex-container div {
+	text-align: left;
+	width: 150px;
+}
+
+.ikonF{
+ 	width: 10vw;
+} 
+
+.ikonF:hover{
+	box-shadow: 0px 2px 5px rgba(30,30,30,0.56);
+}
+
+.ikonF:active {
+	position: relative;
+	top: 1px;
+}
+
+.ikon-navn{ /* navnet under ikonene*/
+	
+	font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+	color: black;
+	font-size: 12px;
+}
 
 .headersHome { /* "Prosjekter av våre designere" og "designere"-overskrift på homepagen*/
 	margin: 100px 15% 0px 15%; 
@@ -86,7 +228,10 @@ footer{
 	padding: 50px 0px 100px 0px;
 }
 
+
 /*start slideshow/bildekarusell */
+
+
 #slideshow{
 	height: auto;
 	margin: 0 15%;
@@ -172,16 +317,21 @@ footer{
 .dot:hover {
 	background-color: #1e1e1e;
 }
+
+
 /* slutt slideshow/bildekarusell */ 
 
-/*===========================================
+
+/*===========================================================
 			Slutt homepage.html
-=============================================*/ 
+=============================================================*/ 
 
 
-/*==========================================================
+
+/*===========================================================
 			Start designers.html og projects.html
-============================================================*/
+=============================================================*/
+
 
 .pictures_designers_and_projects{ /*Gjelder både designers og projects*/
     margin-left: 10%;
@@ -194,33 +344,16 @@ footer{
 .row{
     display: flex;
 }
-/*CSS til designers.html*/
 
-@media (max-width: 940px){
-	
-    .row{
-        flex-direction: column;
-        width: 50vw;
-        margin: auto;
-    }
-    .image_name_right{
-        right: 30vw!important;
-        opacity: 1 !important;
-        bottom: -4vw !important;
-        
-    }
-    .image_name_left{
-        opacity: 1 !important;
-        bottom: -4vw !important;
-    }
-    .image_element:hover .icon{ 
-    visibility: hidden!important;
-}
-}
+
+			/*CSS til designers.html*/
+
 
 .image_element{
     position: relative;
     padding: 2%;
+	
+	
 }
 
 .image_name_right{ /*Høyrestilte navn som passer til ikonene som krever det*/
@@ -232,6 +365,7 @@ footer{
     font-size: 2.5vw;
     font-weight: bold;
 }
+
 .image_name_left{ /*Venstrestilte navn som passer til ikonene som krever det*/
     position: absolute;
     bottom: 1vw;
@@ -241,6 +375,7 @@ footer{
     font-size: 2.5vw;
     font-weight: bold;
 }
+
 .icon{
     position: absolute;
     left: 0.9vw;
@@ -253,16 +388,22 @@ footer{
     visibility: visible;
     opacity: 0.9;
 }
+
 .image_element:hover .image_designer_and_project{ /* Gjør opacityen til bildet svakere når hovret over*/
     opacity: 0.7;
 }
+
 .image_element:hover .image_name_right{ /* Gjør navnene synlig når hovret over*/
     opacity: 0.9;
 }
+
 .image_element:hover .image_name_left{ /* Gjør navnene synlig når hovret over*/
     opacity: 0.9;
 }
-/*CSS til projects.html*/
+
+
+				/*projects.html*/
+
 
 .image_name_design_dark{ /* Navn på designet og årstall*/
     position: absolute;
@@ -282,21 +423,24 @@ footer{
 .image_element_project:hover .image_designer_and_project{ /*Gjelder produktbildene på designersidene også*/
     opacity: 0.4;
 }
+
 .image_element_project:hover .image_name_design_dark { /*Gjelder produktbildene på designersidene også*/
     opacity: 1;  
 }
-/* slutt designers og projects*/ 
 
 
-/*CSS til dina.html, kristin.html +++ */
+/*===========================================================
+			Slutt designers.html og projects.html
+=============================================================*/
 
-/*.designers{
-	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-}*/
+
+
+/*===========================================================
+						Designersider
+=============================================================*/
+
 
 #persontekst{
-	/*font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    font-size: 20px;*/
 	margin-left: 5vw;
 	margin-right: 0vw;
 	margin-top: 0vw;
@@ -305,7 +449,6 @@ footer{
 .undertekst{
 	display: flex;
 	flex-direction: row;
-
 }
 
 .bilde{
@@ -314,7 +457,6 @@ footer{
 }
 
 #ikon{
-
 	width: 15vw;
 	height: 15vw;
 }
@@ -332,7 +474,6 @@ footer{
 .produktbilde{
 	width: 35vw;
 	height: 35vw;
-
 }
 
 #produkttekst1{
@@ -343,8 +484,6 @@ footer{
 	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	opacity: 0;
     font-weight: bold;
-	/*
-	background-color: #009F67;*/
 }
 
 #produkttekst2{
@@ -372,30 +511,32 @@ footer{
 .columnD{
 	position: relative;
 	flex: 50%;
-	
 }
 
 .rowD{
 	display: flex;
 	margin: 10%;
 	text-align: justify;
-	
 }
 
-@media (max-width: 940px){
-	h1{
-		font-size: 30px;
-	}
-	#persontekst, #produkttekst1, #produkttekst2 #produkttekst .text_about_page{
-		font-size: 15px;
-	}	
-	
+#persontekst p {
+	margin: 0; 
 }
-/*slutt designersider*/ 
 
 
-/*CSS for produktsider*/
+
+/*===========================================================
+					slutt designersider
+=============================================================*/ 
+
+
+
+/*===========================================================
+				    	Produktsider
+=============================================================*/
 /*Jenny Marie*/
+
+
 .Prow{
 	display: flex;
 	flex-direction: column;
@@ -417,228 +558,25 @@ footer{
 #ptekst{
 	margin-left: auto;
 }
-/*slutt prosjekter*/ 
 
 
-/* start ??? */ 
-#banner {
-	position: static;
-	width: 100%;
-	height: 20%;
-	font-family: "pt-serif"; /*får ikke til å ha en backupfont uten at den blir gjeldende*/ 
-	font-size: 18vw; /*bruker vw isteden for px fordi den stiller seg inn etter nettsiden*/
-	color: #009F67;
-	text-align: center;
-}  
-
-.flex-container {
-	display: flex;
-	margin: auto;
-	justify-content: center;
-	justify-content: space-between;
-	width: 80%;
-
-	
-	
-} 
-
-.flex-container div {
-	text-align: left;
-	width: 150px;
-}
-
-.ikonF{
- 	width: 10vw;
-	
-	
-} 
-
-/*.ikonF:hover {
-background-color: #009F67;*/ /* lurer på om vi skal ha noe hoverfunksjon på bildene
-}*/
-
-.ikon-navn{
-	
-	font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-	color: black;
-	font-size: 12px;
-}
+/*===========================================================
+				 Slutt produktsider
+=============================================================*/
 
 
-@media (max-width: 940px){  
-	.flex-container{
-		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
-		justify-content: center;
-		justify-content: space-between;
-		align-content: flex-start;
-		
-		
-	}
-	.ikon-navn {
-		font-size: 10px;;
-	}
-	
-	.ikonF{
-		width: 18vw;
-		
-		
-	}
-}
-/* slutt ??? */ 
+
+/*===========================================================
+						Footer
+=============================================================*/
 
 
-/* Navigasjonsbar*/
-#navbar-placeholder{
-	z-index: 1; 
-	position: sticky;
-	top: 0px;
-}
-
-#navigasjonsbar{
-	position: relative;
-	top: 0px;
-	background-color: #1e1e1e;
-	height: 80px;
-    padding: 0px;
-	/*border-top: 0.5px #DEF3ED solid;*/
-	border-opacity: 0.3;
-    box-shadow: 0px 0px 20px #1e1e1e;
-} 
-
-#navbar{
-	position: absolute;
-    list-style-type: none;
-	width: 70%; 
-	top: 10px;
-	left: 200px;
-	font-weight: 200;
-    /*display: inline;*/
-    /*height: 50px;*/    
-}
-
-#navbar li { /*Styling av listeelementer i navigasjonsmenyen*/
-    display: inline;
-	float: left;
-	cursor: pointer;
-	margin-left: 40px;
-	/*Legger på en padding her for å skille knappene i navbaren*/
-}
-
-#navbar li:nth-child(3){
-	position: absolute;
-	right: 10vw;
-}
-
-#navbar a{
-     /* Gjør pekern om til klikkehånd*/
-		 /* fjerner understreken under alle tekstene i alle linker kan sette på klasser her om noen trenger understrek på link*/
-    text-align: right;
-	color: #DEF3ED;
-	font-family: 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-	font-size: 20px;
-}
-
-#navbar a:hover {
-	text-decoration: underline ;
-	text-decoration-color: #009F67;
-}
-
-#logo_portobok{
-	position: absolute;
-	top: 20px;
-	left: 13%;
-	width: 40px;
-	z-index: 1;
-}
-
-/*slutt Navigasjonsbar*/
-/*responsiv navbar///hamburgermeny*/
-
-#navigasjonsbar label {
-	position: absolute;
-	right: 5vw;
-	top: 30px;
-	display: none; /*gjør at denne bare er synelig når vinduet er mindre enn 940*/
-	}
-
-#box { /*når man trykker på burgermenyen blir boksen kjekket*/
-	display: none; /*gjør at checkboksen ikke synest*/
-}
-@media (max-width: 940px) {
-
-	body {
-		overflow-x: hidden;
-		padding: 0;
-	}
-	
-	#navbar  {
-		position: absolute;
-		width: 300px;
-		display: none;
-		padding: 0px;
-		top:80px;
-		right: 12px;
-		left: initial;
-	 }
-	
-	#navbar li {
-		border: solid black 0.2px;
-		position: initial;
-		float: none;
-		display: block;
-		background-color: #DEF3ED;
-		height: 40px;
-		width: 300px;
-		text-align: center;	
-	}
-	
-	#navbar li:first-child {
-	}
-	
-	#navbar li:nth-child(2) {	
-	}
-	
-	#navbar li:nth-child(3) {
-		position: initial;
-	}
-	
-	#navbar li:hover{
-		background-color: #009F67;
-	}
-	
-	#navbar a{
-		position: relative;
-		color: black;
-		top: 10px;
-	}
-	
-	#logo_portobok{
-		width: 40px;
-	}
-	
-	#navigasjonsbar label {
-		right: 13%;
-		width: 40px;
-		float:right;
-		color: #DEF3ED;
-		cursor: pointer;
-		display: block;
-	}
-
-} 
-
-
-/* ferdig hamburgermeny*/
-
-/*Footer*/
-footer { /*thele footer-tagen*/
+footer { /*hele footer-tagen*/
 	background-color: #1e1e1e;
 	height: 500px;
-	
 }
 
 #footer{/* div rundt innholdet i footeren */
-	
 	height: 340px;
     padding: 80px 20px ;
 	position: relative;
@@ -651,9 +589,6 @@ footer { /*thele footer-tagen*/
 	text-align: center;
 }
 
-
-
-
 #footer a {/* linker i footeren */
 	color: #DEF3ED;
 }
@@ -664,7 +599,6 @@ footer { /*thele footer-tagen*/
 	width: 65px;
 	margin: auto;
 	display: block;
-	
 }
 
 #footer img { /* bilder i footeren, ment for å bestemme størrelsen på logoen */
@@ -678,13 +612,11 @@ footer { /*thele footer-tagen*/
 	display: grid;
 	grid-template-columns: 50% 50%;
 	margin: auto;
-	
 }
 
 #facebook_icon { /* div rundt linken og iconet */
 	width: 30px;
 	margin: auto;
-	
 }
 
 #instagram_icon {/* div rundt linken og iconet */
@@ -697,10 +629,7 @@ footer { /*thele footer-tagen*/
 	width: 30px;
 	margin:  auto;
 	display: block;
-	
 }
-
-
 
 #instagram_icon img{/* instagram-iconet, plasserer og bestemmer størrelse */
 	
@@ -719,8 +648,6 @@ footer { /*thele footer-tagen*/
 	grid-row: 4;
     position: relative;
     bottom: 4px;
-	
-	
 }
 
 #phone{ /* id for overskrift og link til telefon */
@@ -728,7 +655,6 @@ footer { /*thele footer-tagen*/
 	grid-row: 4;
     position: relative;
     bottom: 4px;
-	
 }
 
 #adress{ /* id for overskrift og link til addresse */
@@ -750,11 +676,328 @@ footer { /*thele footer-tagen*/
 	color: #009F67;
 }
 
+
+/*===========================================================
+			Footer slutt
+=============================================================*/
+
+
+
+/*===========================================================
+			Start kontaktside
+=============================================================*/
+
+
+#contact_main { /* her kan styling rettet kun mot alt innhold på kontaktsiden skrives */
+	
+}
+
+#contact_form { /* hele kontaktskjema */
+	width: 500px;
+	position: relative;
+	margin: auto;
+	margin-bottom: 100px;
+	padding: 50px;
+	display: block;
+}
+
+#thank_you { /* div der bekreftelse på sendt epost og personlig hilsen fra den aktuelle designeren kommer */
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	margin: auto;
+	
+}
+
+#thank_you p { /* Brødtekst med personlig beskjed fra designeren som mottar eposten */
+	width: 350px;
+	margin: auto 20vw  auto 30vw;
+	line-height: 28px;
+}
+
+#mvh { /* for å skape litt luft over og under mvh i personlig beskjed fra designeren som mottar eposten */
+	line-height: 60px;
+}
+
+#thank_you img { /* designer-icon som velges basert på hvem mailen i kontaktskjemaet sendes til */ 
+	display: block;
+	margin: 50px 20vw  40px  30vw;
+	width: 200px;
+}
+
+#thank_you a { /* link for å komme tilbake til kontaktskjema */
+	color: blue;
+	font-size: 16px;
+}
+
+#contact_form label { /* Text i label for skjema */
+	margin-left: 0;
+	margin-bottom: 5px;
+	font-family: "Muli", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-size: 20px;
+	font-weight: 200;
+	color: #1e1e1e;
+}
+
+#contact_form input { /* input feltene i kontaktskjema */
+	width: 100%;
+	padding: 10px;
+
+	margin: 0 0 20px;
+	outline: none;
+}
+
+#contact_form textarea { /* tekstområde for mail */
+	width: 100%;
+	padding: 10px;
+	height: 300px;
+	resize: none;
+	outline: none;
+}
+
+#contact_form button { /* send knapp */
+	position: absolute;
+	right: 30px;
+	margin-top: 10px;
+	background-color: #009F67;
+	border: none;
+	width: 120px;
+	height: 40px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	outline: none;
+}
+
+#contact_form datalist { /* liste over designere man kan kontakte*/
+	position: relative;
+	width: 100%;
+}
+
+#contact_form h1 {
+
+	position: inherit;
+	left: 0;
+	margin: 50px 0;
+	padding: 0;
+}
+
+#contact_form .status { /* beskjeder om mangelfull utfylling av skjema */
+	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: red;
+}
+
+
+/*===========================================================
+						Slutt kontaktside
+=============================================================*/
+
+
+
+
+
+/*===========================================================
+						Media Queries*/
+
+
+
+/*===========================================================
+					Hamburgermeny Media Queries*/
+
+
+@media (max-width: 940px) {
+
+	
+	body {
+		overflow-x: hidden;
+		padding: 0;
+	}
+	
+	#navbar li {
+		border: solid black 0.2px;
+		position: relative;
+		float: none;
+		display: block;
+		background-color: #DEF3ED;
+		height: 40px;
+		width: 100%;
+		text-align: center;	
+		margin-left: 0;
+	}
+	
+	#navbar  {
+		position: absolute;
+		left: initial;
+		right: 0;
+		width: 300px;
+		display: none;
+		padding: 0px;
+		top: 60px;
+	 }
+	
+	#navbar li:first-child {
+	}
+	
+	#navbar li:nth-child(2) {	
+	}
+	
+	#navbar li:nth-child(3) {
+		position: initial;
+	}
+	
+	#navbar li:hover{
+		background-color: #009F67;
+	}
+	
+	#navbar a{
+		position: relative;
+		color: black;
+	}
+	
+	#logo_portobok{
+		width: 40px;
+	}
+	
+	#navigasjonsbar label {
+		right: 13%;
+		width: 40px;
+		float:right;
+		color: #DEF3ED;
+		cursor: pointer;
+		display: block;
+	}
+
+} 
+
+
+				/*Hamburgermeny Media Queries Slutt
+=============================================================*/
+
+
+
+/*===========================================================
+					Homepage media queri */
+
+
+@media (max-width: 940px){  
+	
+	.flex-container{
+		flex-wrap: wrap; /*gjør at bildene ikke lenger er på rekke når siden blirmindre*/
+		justify-content: center;
+		justify-content: space-between;
+		align-content: flex-start;
+		
+		
+	}
+	.ikon-navn {
+		font-size: 10px;;
+	}
+	
+	.ikonF{
+		width: 18vw;
+		
+		
+	}
+}
+
+
+			/*Homepage Media Queries Slutt
+=============================================================*/ 
+
+
+
+/*===========================================================
+			Designere og projects Media Queries*/
+
+
+@media (max-width: 940px){
+	
+    .row{
+        flex-direction: column;
+        width: 50vw;
+        margin: auto;	
+    }
+	
+    .image_name_right{
+		
+        left: 2% !important;
+        opacity: 1 !important;
+        bottom: -4vw !important;
+    }
+	
+    .image_name_left{
+        opacity: 1 !important;
+        bottom: -4vw !important;
+		left: 2% !important;
+    }
+	
+    .image_element:hover .icon{ 
+    	display: none;
+	}
+	
+	.image_element{
+		margin-top: 20%;
+	
+}
+	
+
+}
+
+
+		/*Designere og projects Media Queries Slutt
+=============================================================*/
+
+
+
+/*===========================================================
+				Designersider Media Queries*/ 
+
+
+@media (max-width: 940px){
+	
+	h1{
+		font-size: 30px;
+		
+	}
+	#persontekst p, #produkttekst1, #produkttekst2, #produkttekst{
+		font-size: 15px;
+		
+	}	
+	
+	.text_about_page{
+		font-size: 15px;
+	}
+	#profilbilde_og_tekst {
+		display: grid;
+		grid-template-rows: auto auto;
+	}
+	
+	#person_bilde {
+		grid-row: 1;
+		margin-bottom:  20px ;
+	}
+	
+	#persontekst {
+		grid-row: 2;
+		margin: auto;
+	}
+}
+
+
+			/*Designersider Media Queries Slutt
+=============================================================*/ 
+
+
+
+
+/*============================================================
+					Footer media queri */
+
+
 @media (max-width: 940px){
     
-	/*============================================
-				Footer i medie queri
-	*/
+	
+	
 	
 	footer{ /* footer i media queri */
       height: 800px;
@@ -776,134 +1019,30 @@ footer { /*thele footer-tagen*/
         grid-row: 6;
     }
 }
-/*============================================
-			Footer i medie queri slutt
-*/
 
 
-/*============================================
-			Footer slutt
-==============================================*/
+				/*Footer medie queri slutt
+=============================================================*/
 
 
 
-/*============================================
-			Start kontaktside
-==============================================*/
+/*============================================================
+					Kontakt media queri */
 
 
-#contact_main {
-	position: relative;
-	width: 95%;
-	overflow-x: hidden;
-	margin: auto;
-	padding: 0;
-}
-
-#contact_form {
-	width: 500px;
-	position: relative;
-	margin: auto;
-	margin-bottom: 100px;
-	padding: 50px;
-	display: block;
-}
-
-#thank_you {
-	display: none;
-	width: 100vw;
-	height: 100vh;
-	margin: auto;
-	
-}
-
-#thank_you p {
-	width: 350px;
-	margin: auto 20vw  auto 30vw;
-	line-height: 28px;
-}
-
-#mvh {
-	line-height: 60px;
-}
-
-#thank_you img {
-	display: block;
-	margin: 50px 20vw  40px  30vw;
-	width: 200px;
-}
-
-#thank_you a {
-	color: blue;
-	font-size: 16px;
-}
-
-#contact_form p {
-	margin-left: 0;
-	margin-bottom: 5px;
+@media (max-width: 650px) {
+	#contact_form {
+		width: 80%;
+	}
 }
 
 
-#contact_form input {
-	width: 100%;
-	padding: 10px;
-
-	margin: 0 0 20px;
-	outline: none;
-}
-
-#contact_form textarea {
-	width: 100%;
-	padding: 10px;
-	height: 300px;
-	resize: none;
-	outline: none;
-}
-
-#contact_form button {
-	position: absolute;
-	right: 30px;
-	margin-top: 10px;
-	background-color: #009F67;
-	border: none;
-	width: 120px;
-	height: 40px;
-	font-size: 16px;
-	font-weight: 600;
-	cursor: pointer;
-	outline: none;
-}
+				/*Kontakt medie queri slutt
+=============================================================*/
 
 
 
-#contact_form datalist {
-	position: relative;
-	width: 100%;
-}
 
-#mottaker_alternativer {
-	background-image: image(&#9776);
-}
-
-#contact_form h1 {
-
-	position: inherit;
-	left: 0;
-	margin: 50px 0;
-	padding: 0;
-}
-
-
-#contact_form .status {
-	font-family: "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	color: red;
-}
-
-/*Slutt kontaktside*/
-
-/*test*/
-
-#personlig {
-	display: none;
-}
-
+/*============================================================
+					Media Queries Slutt
+==============================================================*/
