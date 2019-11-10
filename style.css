@@ -1002,6 +1002,7 @@ footer { /*hele footer-tagen*/
 	
 	footer{ /* footer i media queri */
       height: 800px;
+		margin-top: 20%;
 	}
 	
     #email{ /* footer i media queri */
